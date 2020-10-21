@@ -1,0 +1,294 @@
+/**
+ * Basic typography style for copy text
+ */
+ @import url("https://fonts.googleapis.com/css2?family=Cabin&family=Parisienne&family=Roboto&display=swap");
+ @font-face {
+  font-family: 'alaskan';
+  src: url('../fonts/Alaskan_malamute.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'la-parisienne';
+  src: url('../fonts/la parisienne.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'biko';
+  src: url('../fonts/Biko_Regular.otf') format('truetype');
+}
+
+
+
+$font-parisienne: 'alaskan', serif;
+$font-roboto: 'Roboto', serif;
+$font-cabin: 'Cabin', serif;
+$font-biko: 'biko', serif;
+$font-la-parisienne: 'la-parisienne', serif;
+
+
+.fw-n{ 
+  font-weight:400 !important;
+}
+
+.fw-b{
+  font-weight: 700;
+}
+
+.pink-text{
+  color: $pink!important;
+}
+.rob-font{
+  font-family: $font-roboto;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: $base-text-color;
+}
+
+.logo-font{
+  font-family: $font-la-parisienne;
+  letter-spacing: .2em;
+}
+
+.span-logo-font{
+  font-size: 2em;
+  margin: .5em;
+}
+
+.logo-1{
+  font-family: $font-la-parisienne;
+  line-height: 1.1;
+  font-size: 6.9em;
+  margin: 0;
+  @media #{$breakpoint-md}, #{$breakpoint-lg} {
+    font-size: 5.5em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: 5em;
+  }
+  @media #{$breakpoint-xxl} {
+    font-size: 4.5em;
+  }
+}
+
+.logo-2{
+  font-family: $font-la-parisienne;
+  line-height: 1.1;
+  font-size: 6.5em;
+  margin: 10px 0;
+  @media #{$breakpoint-md} {
+    font-size: 4.3em;
+  }
+  @media #{$breakpoint-lg} {
+    font-size: 4em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: 4em;
+  }
+  @media #{$breakpoint-xxl} {
+    font-size: 3.3em;
+  }
+}
+
+.logo-3{
+  font-family: $font-la-parisienne;
+  line-height: 1.1;
+  font-size: 4.6em;
+  margin: 10px 0;
+  @media #{$breakpoint-md} {
+    font-size: 3em;
+  }
+  @media #{$breakpoint-lg} {
+    font-size: 3em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: 2.8em;
+  }
+  @media #{$breakpoint-xxl} {
+    font-size: 2.6em;
+  }
+}
+
+.logo-subtitle{
+  font-family: $font-roboto;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 1.1em;
+  @media #{$breakpoint-sm} {
+    font-size: 1em;
+  }
+  @media #{$breakpoint-md} {
+    font-size: .7em;
+  }
+  @media #{$breakpoint-lg} {
+    font-size: .6em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: .6em;
+  }
+  
+}
+.sect-title{
+  font-family: $font-biko;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 5px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: $base-text-color;
+  @media #{$breakpoint-md} {
+    font-size: 1.1em;
+  }
+  @media #{$breakpoint-lg} {
+    font-size: 1.1em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: 1em;
+    line-height: 1.4;
+
+  }
+  @media #{$breakpoint-xxl} {
+    font-size: .9em;
+  }
+}
+
+.sect-subtitle{
+  font-family: $font-biko;
+  color: $base-text-color;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  @media #{$breakpoint-md} {
+    font-size: .9em;
+  }
+  @media #{$breakpoint-lg}, #{$breakpoint-xl} {
+    font-size: .7em;
+    margin-bottom: 0;
+    line-height: 1.4;
+
+  }
+  @media #{$breakpoint-xxl} {
+    font-size: .6em;
+  }
+}
+
+.normal-text{
+  font-size: 1.18em;
+  letter-spacing: .04em;
+  font-family: $font-cabin;
+  color: $base-text-color;
+  @media #{$breakpoint-sm} {
+    font-size: 1em;
+  }
+  @media #{$breakpoint-md} {
+    font-size: .78em;
+  }
+  @media #{$breakpoint-lg} {
+    font-size: .69em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: .62em;
+  }
+  @media #{$breakpoint-xxl} {
+    font-size: .55em;
+  }
+  
+}
+
+.quote-text{
+  color: $pink;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.quote-text-white{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: .3em;
+  line-height: 1.2;
+  font-size: 1.5em;
+  @media #{$breakpoint-sm}{
+      font-size: 1.25em;
+  }
+  @media #{$breakpoint-md}{
+      font-size: 1.2em;
+  }
+  @media #{$breakpoint-lg}{
+      font-size: 1.1em;
+  }
+  @media #{$breakpoint-xl}{
+      font-size: 1em;
+  }
+  @media #{$breakpoint-xxl}{
+      font-size: .9em;
+  }
+}
+
+.to-top-text{
+  font-size: 1.05rem;
+  font-family: $font-cabin;
+}
+
+
+.cta-title{
+    font-family: $font-biko;
+    font-size: 2.1em;
+    font-weight: 400;
+    padding: 5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    @media #{$breakpoint-sm} {
+      font-size: 1.7em;
+    }
+    @media #{$breakpoint-md} {
+      font-size: 1.5em;
+    }
+    @media #{$breakpoint-lg} {
+      font-size: 1.3em;
+    }
+    @media #{$breakpoint-xl} {
+      font-size: 1em;
+      letter-spacing: 0.2em;
+    }
+    @media #{$breakpoint-xxl} {
+      font-size: .95em;
+      letter-spacing: 0.2em;
+    }
+}
+
+.cta-subtitle{
+    font-family: $font-biko;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    @media #{$breakpoint-sm} {
+      font-size: 1.3em;
+    }
+    @media #{$breakpoint-md} {
+      font-size: 1em;
+    }
+    @media #{$breakpoint-lg} {
+      font-size: 1em;
+    }
+    @media #{$breakpoint-xl} {
+      font-size: .9em;
+      letter-spacing: 0.2em;
+    }
+    @media #{$breakpoint-xl} {
+      font-size: .75em;
+      letter-spacing: 0.2em;
+    }
+}
+
+

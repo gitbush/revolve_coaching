@@ -1,0 +1,321 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.contact-footer{
+    position: relative;
+    background-color: white;
+    text-align: center;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+        height: 21em;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 18em;
+    }
+}
+
+.cf-content{
+    @media #{$breakpoint-sm}{
+        // padding: 3em 7em;
+    }
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+        padding: 0;
+        width: 35.5em;
+        position: absolute;
+        z-index: 2;
+        top: 4em;
+        left: 0;
+        right: 0;
+        margin: auto;
+        // height: 10em;
+    }
+    @media #{$breakpoint-lg}{
+        width: 36em;
+    }
+    @media #{$breakpoint-xl}{
+        width: 39em;
+    }
+    @media #{$breakpoint-xxl}{
+        width: 33em;
+    }
+
+    .normal-text{
+        @media #{$breakpoint-md}{
+            font-size: .7em;
+        }
+        @media #{$breakpoint-lg}{
+            font-size: .65em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: .6em;
+        }
+    }
+}
+
+.cf-title{
+    margin-bottom: 1.5em;
+    font-size: 1.3em;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}{
+        font-size: .8em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: .7em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .6em;
+    }
+}
+
+.cf-button{
+    width: 17em!important;
+    margin: 3em auto 0 auto!important;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+        width: 11em!important;
+        margin: 0 auto!important;
+    }
+}
+
+.cf-quick-links{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+        background-color: $light-pink;
+        height: 50%;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    
+}
+
+footer{
+    height: 4em;
+    background-color: $light-pink;
+    text-align: center;
+    @media #{$breakpoint-min-md}{
+        height: 2.5em;
+        background-color: $gray;
+    }
+    @media #{$breakpoint-lg}{
+        height: 3em;
+    }
+}   
+
+// -----------------------------------------------------------------------------
+// To top
+// -----------------------------------------------------------------------------
+
+.back-to-top-footer{
+    height: 7em;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    background: white;
+}
+
+.to-top-text{
+    text-transform: uppercase;
+    font-family: $font-biko;
+    letter-spacing: .2em;
+    font-size: .8em;
+    text-decoration: none;
+    color: $base-text-color;
+    @media #{$breakpoint-sm}{
+      font-size: .7em;
+    }
+}
+
+.icon-up-arrow{
+    transform: rotate(-90deg);
+    height: 1em; 
+    margin: 1em;  
+}
+
+.to-top{
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    width: 8em;
+    margin: auto;
+}
+
+.fa-long-arrow-alt-up{
+    padding-bottom: .3em;
+    font-size: 2em;
+}
+
+.back-to-top-md{
+    @media #{$breakpoint-min-md}{
+        position: absolute;
+        top: 9em;
+    }
+
+    .to-top{
+        @media #{$breakpoint-min-md}{
+            height: 7em;
+        }
+        
+    }
+
+    .icon-up-arrow{
+        @media #{$breakpoint-min-md}{
+            height: 1.3em;
+            position: relative;
+            left: -1.9em;
+            top: 2.5em;
+        }
+        @media #{$breakpoint-xl}{
+            left: -2.5em;
+            top: 1.5em;
+        }
+        
+    }
+    .to-top-text{
+        @media #{$breakpoint-min-md}{
+            transform: rotate(90deg);
+            font-size: .55em;
+            position: absolute;
+            left: -2em;
+        }
+        @media #{$breakpoint-lg}{
+            font-size: .5em;
+            left: -1.8em;
+            top: 7.5em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: .45em;
+            left: -2.5em;
+            top: 7em;
+        }
+        @media #{$breakpoint-xxl}{
+            font-size: .4em;
+            left: -2.5em;
+            top: 7em;
+        }
+    }    
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.footer-text{
+    width: 80%;
+    font-size: .75em;
+    margin: auto;
+    @media #{$breakpoint-min-md}{
+        font-size: .6em;
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// Latest IG posts
+// -----------------------------------------------------------------------------
+
+.latest-posts{
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(2, 9em);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media #{$breakpoint-min-md}{
+        // width: 11em;
+        // position: absolute;
+        height: 100%;
+        // z-index: 999;
+        // right: 5em;
+        // top: 2em;
+    }
+}
+
+.latest-post-item{
+    flex: 1 1 33.3333333%;
+    // height: 50%;
+    position: relative;
+    background-color: $light-pink;
+    @media #{$breakpoint-min-md}{
+        flex: 1 1 33.3333333%;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.latest-post-text{
+    height: 60%;
+    margin: auto;
+    position: absolute;
+    width: 80%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @media #{$breakpoint-sm}{
+        width: 72%;
+        height: 40%;
+    }
+    .sect-subtitle{
+        @media #{$breakpoint-md}{
+            font-size: .8em;
+        }
+    }
+    
+}
+
+.latest-post-ig{
+    font-size: 2em;
+    @media #{$breakpoint-md}{
+        font-size: 1.5em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: 1.3em;
+    }
+}
+
+.ig-intro{
+    position: relative;
+    display: grid;
+    height: 22em;
+    grid-template-columns: 1fr 1fr;
+    // padding: 3em 2em;
+    position: relative;
+    background-color: $gray;
+    text-align: center;
+    @media #{$breakpoint-min-md}{
+        height: 100%;;
+    }
+}
+
+.ig-intro-content{
+    height: 16em;
+    width: 80%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @media #{$breakpoint-sm}{
+        height: 14em;
+    }
+    @media #{$breakpoint-md}{
+        height: 9em;
+    }
+    @media #{$breakpoint-lg}{
+        height: 10em;
+    }
+    @media #{$breakpoint-xl}{
+        height: 8em;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 7em;
+    }
+}

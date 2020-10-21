@@ -1,0 +1,58 @@
+// ---------------------------------------------------------------
+// Number section animations
+// ---------------------------------------------------------------
+
+[data-aos="numbers-slide"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    transform: translateX(-1000px);
+  
+    &.aos-animate {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+    @media #{$breakpoint-min-md} {
+      transform: translateY(-2000px);
+  
+      &.aos-animate {
+        transform: translateY(0);
+      }
+    }
+  }
+
+[data-aos="numbers-text-slide"] {
+
+    @media #{$breakpoint-min-md} {
+        transform: translateX(-2000px);
+
+        &.aos-animate {
+        transform: translateX(0);
+        }
+    }
+}
+
+[data-aos="fade-slide-left"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: translateX(-1000px);
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  @media #{$breakpoint-min-md} {
+    transform: translateX(-2000px);
+
+    &.aos-animate {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media #{$breakpoint-xs}, #{$breakpoint-sm} {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
+}

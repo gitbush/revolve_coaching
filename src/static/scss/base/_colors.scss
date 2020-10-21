@@ -1,0 +1,36 @@
+$lightest-pink: rgba(251,242,236,0.6);
+$light-pink: rgba(251,242,236,1);
+$pink: rgba(245,140,124,1);
+$dark-pink: rgba(250,220,210,1);
+$gray: rgba(240,243,243,1);
+$light-gray: rgba(186,197,202,1);
+$base-text-color: rgba(59,64,63,1);
+$aqua-bg: rgba(228, 241, 241, 1);
+
+
+$-aqua: #28dde0;
+$-ink: #2b3742;
+$-plum: #5634d1;
+$-snow: #ffffff;
+
+$colors: (
+	primary: $-plum,
+	accent: $-aqua,
+	black: $-ink,
+	white: $-snow,
+);
+
+.pink-hr{
+	background-color: $pink;
+	border: none;
+	height: 4px;
+	width: 75vw;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	
+	@media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl} {
+        width: 25vw;
+   	 	margin-top: 1rem;
+    	margin-bottom: 2rem;
+	}
+  }

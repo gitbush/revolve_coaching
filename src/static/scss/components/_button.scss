@@ -1,0 +1,216 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+a:focus{outline:0;}
+
+
+
+.coach-cta-btn{
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    width: 10em;
+    background-color: white;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1.5em;
+    &:hover{
+        cursor: pointer;
+    }
+    @media #{$breakpoint-sm} {
+        height: 30px;
+    }
+    @media #{$breakpoint-min-md} {
+        width: 8.5em;
+    }
+    @media #{$breakpoint-xl} {
+        width: 5.5em;
+        bottom: 1em;
+    }
+}
+
+.btn-white-sm{
+    background-color: white;
+    color: $base-text-color;
+    font-size: 1em;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    
+    @media #{$breakpoint-sm} {
+        font-size: 1em;
+      }
+      @media #{$breakpoint-md} {
+        font-size: .78em;
+      }
+      @media #{$breakpoint-lg} {
+        font-size: .69em;
+      }
+      @media #{$breakpoint-xl} {
+        font-size: .58em;
+      }
+      @media #{$breakpoint-xxl} {
+        font-size: .56em;
+      }
+      &:hover{
+        cursor: pointer;
+        color: $base-text-color;
+    }
+}
+
+.btn-pink{
+   
+    text-decoration: none;
+    background-color: $pink;
+    color: white;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    height: 60%;
+    &:hover{
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.about-cta-btn{
+    &:hover{
+        cursor: pointer;
+    }
+    height: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 12em;
+    background-color: $pink;
+    color: white;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    @media #{$breakpoint-min-md} {
+        width: 9em;
+    }
+}
+
+.btn-light-pink{
+    &:hover{
+        cursor: pointer;
+    }
+    background-color: $light-pink;
+    text-transform: uppercase;
+    color: $base-text-color;
+    font-size: 1.1em;
+    padding: .6em 1em;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    @media #{$breakpoint-sm} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-md} {
+        font-size: .8em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: .8em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: .6em;
+    }
+}
+
+.btn-dark-pink{
+    background-color: $dark-pink;
+    text-transform: uppercase;
+    color: $base-text-color;
+    font-size: 1.18em;
+    padding: .5em 1em;
+    letter-spacing: .2em;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    @media #{$breakpoint-sm} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-md} {
+        font-size: .8em;
+        padding: .55em .8em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: .8em;
+        padding: .50em .9em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: .7em;
+    }
+    @media #{$breakpoint-xxl} {
+        font-size: .6em;
+        padding: .6em .6em;
+    }
+    &:hover{
+        cursor: pointer;
+        color: $base-text-color;
+    }
+}
+
+.btn-black{
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    transition: all 1s ease-in;
+
+    &:active{
+        text-decoration: none !important;
+        outline: none !important;
+        background: white;
+    }
+    &:hover{
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.circle-slide-btn{    
+    color: rgba(247,217,137,1);
+    position: relative;
+    height: 4em;
+    background-color: white;
+    border-radius: 2em;
+    width: 4em;
+    border-color: rgba(247,217,137,1);
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+        height: 4em;
+        width: 4em;
+        font-size: .8em;
+    }
+    @media #{$breakpoint-md}{
+    }
+    @media #{$breakpoint-lg}{
+        font-size: .75em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: .6em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .5em;
+    }
+}
+
