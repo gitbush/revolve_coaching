@@ -36,24 +36,24 @@ layout: 'base.njk'
                     <div class="form-grid">
                         <div class="form-group full-name">
                             <hr class="form-hr">
-                            <input type="text" name="name" class="form-field" id="full-name-field" placeholder="Your first and last name">
+                            <input type="text" name="name" class="form-field" id="full-name-field" placeholder="Your first and last name" required>
                         </div>
                         <div class="form-group email">
                             <hr class="form-hr">
-                            <input type="email" name="_replyto" class="form-field" id="email-field" placeholder="Email address">
+                            <input type="email" name="_replyto" class="form-field" id="email-field" placeholder="Email address" required>
                         </div>
                         <div class="form-group service">
                             <hr class="form-hr">
-                            <input type="text" name="_subject" class="form-field" id="service-field" placeholder="Service you're interested in">
+                            <input type="text" name="_subject" class="form-field" id="service-field" placeholder="Service you're interested in" required>
                         </div>
                         <div class="form-group hear">
                             <hr class="form-hr">
-                            <input type="text" class="form-field" id="hear-field" placeholder="How did you hear about us?">
+                            <input type="text" class="form-field" id="hear-field" placeholder="How did you hear about us?" required>
                         </div>
                         <!-- <input id="customSubject" type="hidden" name="subject" value="" class="hidden"> -->
                         <div class="form-group message">
                             <hr class="form-hr">
-                            <textarea class="form-field" name="message" id="message-field" rows="" placeholder="Message"></textarea>
+                            <textarea class="form-field" name="message" id="message-field" rows="" placeholder="Message" required></textarea>
                             <hr class="form-hr">
                         </div>
                     </div>
@@ -69,7 +69,7 @@ layout: 'base.njk'
 
     <!-- FAQ -->
     <section class="faq-section">
-        <h2 class="faq-title logo-3">
+        <h2 class="faq-title sect-title">
             Frequently asked questions
         </h2>
         <div class="faq-content">
@@ -139,7 +139,7 @@ layout: 'base.njk'
                 The coaching  
             </h2>
             <h3 class="quiz-font logo-font">
-                quiz
+                Quiz
             </h3>
             <div class="quiz-cta-content">
                 <h4 id="quizResult" class="quiz-content-title sect-title">
@@ -195,4 +195,5 @@ layout: 'base.njk'
         </div>
     </section>
     <!-- END: parralex services section -->
+    
     

@@ -3,15 +3,10 @@
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180198864-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-180198864-1');
-    </script>
     
+
+   
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mhairi Todd - Revolve Coaching</title>
@@ -20,12 +15,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/favicon_io/site.webmanifest">
-    
-    <!-- Stylesheets --> 
+    <link rel="manifest" href="/src/static/favicon_io/site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body>
     <header id="header">
@@ -36,7 +32,7 @@
             </a>
         </div>
         <div class="toggle-header">
-            <a class="header-link" href="index.html">
+            <a class="header-link" href="/">
                 <h1 class="header-name d-md-none">Mhairi Todd</h1>
             </a>
             <div class="nav-toggle">
@@ -47,15 +43,16 @@
         <nav class="nav">
             <ul>
                 <li class="nav-item nav-close"><svg class="svg-close" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/></svg></li>
-                <li class="nav-item rob-font"><a href="index.html">Home</a></li>
-                <li class="nav-item rob-font"><a href="about.html">About</a></li>
-                <li class="nav-item rob-font"><a href="services.html">Services</a></li>
-                <li class="nav-item rob-font"><a href="testimonials.html">Testimonials</a></li>
-                <li class="nav-item rob-font"><a href="contact.html">Contact</a></li>
+                <li class="nav-item rob-font"><a href="/">Home</a></li>
+                <li class="nav-item rob-font"><a href="/about">About</a></li>
+                <li class="nav-item rob-font"><a href="/services">Services</a></li>
+                <li class="nav-item rob-font"><a href="/testimonials">Testimonials</a></li>
+                <li class="nav-item rob-font"><a href="/contact">Contact</a></li>
                 <li class="nav-item social-nav">
                     <span class="social-nav-item">
                         <a href="https://www.instagram.com/mhairi_lifecoach/?hl=en" target="_blank">
-                            <i class="fab fa-instagram"></a></i>
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </span>
                     <span class="social-nav-item">
                         <a href="https://www.linkedin.com/in/mhairi-todd-49515789/" target="_blank">
@@ -67,16 +64,16 @@
         </nav>
     </header>
 
-     <!-- Preloader -->
+    <!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
     </div>
     <!-- /Preloader -->
-
+    
     <!-- logo on mobile -->
     <div class="logo-xs-container d-md-none">
         <div class="header-xs-logo">
-            <a class="header-link" href="index.html">
+            <a class="header-link" href="/">
                 <h1 class="logo-1 mb-1">Mhairi Todd</h1>
                 <h2 class="logo-subtitle mb-0">Revolve Coaching</h2>
             </a>
@@ -85,6 +82,7 @@
     
     <!-- END: logo on mobile -->
 
+    
     <!-- hero section -->
     <section class="services-hero">
         <div class="services-hero-img">
@@ -94,7 +92,7 @@
             <div class="services-hero-content">
                 <h1 class="about-title">Life transformation coaching</h1>
                 <h2 class="sect-title fw-n">Get ready to live full and free</h2>
-                <p class="logo-3 services-logo-title">
+                <p class="sect-title fw-n">
                     Don't worry..
                 </p>
                 <p class="logo-3 services-logo-title">
@@ -184,7 +182,7 @@
 
     <!-- how it works -->
     <section class="how-it-works">
-        <h2 class="logo-3 how-title">
+        <h2 class="sect-title how-title">
             How my program works:
         </h2>
         <div class="how-content">
@@ -221,7 +219,7 @@
                 The coaching  
             </h2>
             <h3 class="quiz-font logo-font">
-                quiz
+                Quiz
             </h3>
             <div class="quiz-cta-content">
                 <h4 id="quizResult" class="quiz-content-title sect-title">
@@ -265,13 +263,13 @@
 
     <!-- signature package -->
     <section class="signature-package">
-        <h2 class="logo-3 how-title">
+        <h2 class="sect-title how-title">
             Coaching packages
         </h2>
         <div class="signature-content">
             <div class="coaching-package-item">
                 <div class="signature-includes">
-                    <h2 class="sect-title signature-title">
+                    <h2 class="sect-title fw-n signature-title">
                         Swift
                     </h2>
                     <p class="normal-text coaching-package-intro">
@@ -304,7 +302,7 @@
             <hr class="half-width-hr d-md-none">
             <div class="coaching-package-item">
                 <div class="signature-includes">
-                    <h2 class="sect-title signature-title">
+                    <h2 class="sect-title fw-n signature-title">
                         signature
                     </h2>
                     <p class="normal-text coaching-package-intro">
@@ -344,7 +342,7 @@
             <hr class="half-width-hr d-md-none">
             <div class="coaching-package-item">
                 <div class="signature-includes">
-                    <h2 class="sect-title signature-title">
+                    <h2 class="sect-title fw-n signature-title">
                         Shift
                     </h2>
                     <p class="normal-text coaching-package-intro">
@@ -408,7 +406,10 @@
     </section>
     <!-- END: parralex services section -->
          
-    <!-- instagram footer -->
+
+
+
+        <!-- instagram footer -->
     <section class="contact-footer">
         <div class="cf-content">
             <div class="ig-intro">
@@ -435,19 +436,19 @@
                     </div>
                 </div>
                 <div class="latest-post-item">
-                    <img src="static/img/insta/feel-garden-comp2.jpg" alt="mhairi-life-coach-instagram-feel">
+                    <img src="/static/img/insta/feel-garden-comp2.jpg" alt="mhairi-life-coach-instagram-feel">
                 </div>
                 <div class="latest-post-item">
-                    <img src="static/img/insta/sunday-comp2.jpg" alt="mhairi-life-coach-instagram-sunday">
+                    <img src="/static/img/insta/sunday-comp2.jpg" alt="mhairi-life-coach-instagram-sunday">
                 </div>
                 <div class="latest-post-item">
-                    <img src="static/img/insta/believe-comp2.jpg" alt="mhairi-life-coach-instagram-believe">
+                    <img src="/static/img/insta/believe-comp2.jpg" alt="mhairi-life-coach-instagram-believe">
                 </div>
                 <div class="latest-post-item">
-                    <img src="static/img/insta/succeed-comp2.jpg" alt="mhairi-life-coach-instagram-suceed">
+                    <img src="/static/img/insta/succeed-comp2.jpg" alt="mhairi-life-coach-instagram-suceed">
                 </div>
                 <div class="latest-post-item">
-                    <img src="static/img/insta/mindest-comp2.jpg" alt="mhairi-life-coach-instagram-mindset">
+                    <img src="/static/img/insta/mindest-comp2.jpg" alt="mhairi-life-coach-instagram-mindset">
                 </div>
             </div>
             <!-- END: latest instagram posts -->
@@ -458,6 +459,7 @@
         <div class="back-to-top-md d-none d-md-block">
             <a href="#header">
                 <div class="to-top">
+                    <!-- <i class="material-icons icon-up-arrow">arrow_upward</i> -->
                     <svg class="icon-up-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 34"><path d="M9 20l1 1h68v4l1 1h1l5-6v-1l-5-5h-1l-1 1v4H10l-1 1z"></path></svg>
                     <h3 class="to-top-text">Back to top</h3>
                 </div>
@@ -481,19 +483,20 @@
     <!-- END: back to top -->
 
     <!-- footer -->
-    <footer class="design-footer sect-subtitle">
+    <footer class="sect-subtitle">
         <div class="footer-text">
             Website by Munro Designs
         </div>
     </footer>
 
-
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- script -->
-    <script src="static/js/main.js"></script>
+    <!--  script -->
+    <script src="/static/js/main.js"></script>
 </body>
 </html>
