@@ -6,7 +6,7 @@ layout: 'base.njk'
     <!-- hero section -->
     <section class="about-hero">
         <div class="about-hero-img">
-            <img src="static/img/Mhairi_pics/about-hero.jpg" alt="mhairi-life-coach-standing-in-coat">
+            <img src="/static/img/Mhairi_pics/about-hero.jpg" alt="mhairi-life-coach-standing-in-coat">
         </div>
         <div class="about-hero-text">
             <div class="about-hero-content">
@@ -99,55 +99,7 @@ layout: 'base.njk'
 
     <!-- END:what I'm known for section -->
 
-    <!-- quiz section -->
-    <section class="quiz-section">
-        <!-- First quiz CTA section -->
-        <div id="quizCta" class="">
-            <h2 class="quiz-title sect-title">
-                The coaching  
-            </h2>
-            <h3 class="quiz-font logo-font">
-                Quiz
-            </h3>
-            <div class="quiz-cta-content">
-                <h4 id="quizResult" class="quiz-content-title sect-title">
-                    Find out if coaching is for you in less than 60 seconds
-                </h4>
-                <div class="quiz-cta">
-                    <a id="quizIntroBtn" href="" class="quiz-cta-btn btn-black normal-text">Tell me more</a>
-                </div>
-            </div>  
-        </div>
-
-        <!-- Second quiz intro section -->
-        <div id="quizIntro" class="quiz-intro quiz-cta-content">
-            <h2 class="quiz-title sect-title">
-                The coaching <span class="logo-font">quiz</span>
-            </h2>
-            <p id="quizIntroText" class="quiz-content-main normal-text">
-                Personal life coaching is not for everyone. There are some who would benefit from a 
-                life coach, but they aren't ready to make the changes necessary to better their lives. 
-                After the quiz you will have a clearer idea and understanding as to whether a life coach is right for you.
-            </p>
-            <div class="quiz-cta">
-                <a id="quizStart" href="" class="quiz-cta-btn btn-black normal-text">Take the quiz</a>
-            </div>
-        </div>   
-
-        <!-- Third quiz Quiz section -->
-        <div id="quiz" class="quiz-item">
-            <h2 class="quiz-title sect-title">
-                The coaching <span class="logo-font">quiz</span>
-            </h2>
-            <div class="question-number normal-text"><i>Question <span id="questionNumber"></span></i></div>
-            <div id="question" class="normal-text quiz-label"></div> 
-            <div class="options">
-                <button id="choiceTrue" class="option-btn btn-white-sm">True</button>
-                <button id="choiceFalse" class="option-btn btn-white-sm">False</button>
-            </div>
-        </div>
-    </section>
-    <!-- END: quiz section -->
+    {% include 'components/_quiz.njk' %}
    
     <!-- crazy about section -->
     <section class="crazy-about-sect">
@@ -158,7 +110,7 @@ layout: 'base.njk'
         </div>
         <div class="crazy-about-content">
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/candle.jpg" alt="mhairi-life-coach-candles">
+                <img src="/static/img/Mhairi_pics/candle.jpg" alt="mhairi-life-coach-candles">
             </div>
             <div class="crazy-about-text">
                 <p class="favourite-text fw-b">Little detail</p>
@@ -169,10 +121,10 @@ layout: 'base.njk'
                 <p class="favourite-text">This little bundle of cuteness</p>
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/roman-square-comp.jpg" alt="mhairi-life-coach-roman">
+                <img src="/static/img/Mhairi_pics/roman-square-comp.jpg" alt="mhairi-life-coach-roman">
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/lip-gloss.jpg" alt="mhairi-life-coach-lip-gloss">
+                <img src="/static/img/Mhairi_pics/lip-gloss.jpg" alt="mhairi-life-coach-lip-gloss">
             </div>
             <div class="crazy-about-text">
                 <p class="favourite-text fw-b">Favourite accessory</p>
@@ -183,10 +135,10 @@ layout: 'base.njk'
                 <p class="favourite-text">Singing</p>
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/mic-comp.jpg" alt="mhairi-life-coach-microphone">
+                <img src="/static/img/Mhairi_pics/mic-comp.jpg" alt="mhairi-life-coach-microphone">
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/coffee-comp2.jpg" alt="mhairi-life-coach-coffee">
+                <img src="/static/img/Mhairi_pics/coffee-comp2.jpg" alt="mhairi-life-coach-coffee">
             </div>
             <div class="crazy-about-text">
                 <p class="favourite-text fw-b">Treat</p>
@@ -197,14 +149,14 @@ layout: 'base.njk'
                 <p class="favourite-text">Laughter in every day </p>
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/laughing-square-comp.jpg" alt="mhairi-life-coach-laughing">
+                <img src="/static/img/Mhairi_pics/laughing-square-comp.jpg" alt="mhairi-life-coach-laughing">
             </div>
             <div class="crazy-about-text d-none d-md-block">
                 <p class="favourite-text fw-b">Relax</p>
                 <p class="favourite-text">A hot bath</p>
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/lede-the-witcher-comp.jpg" alt="mhairi-life-coach-the-witcher">
+                <img src="/static/img/Mhairi_pics/lede-the-witcher-comp.jpg" alt="mhairi-life-coach-the-witcher">
             </div>
             <div class="crazy-about-text">
                 <p class="favourite-text fw-b">Recent Netlfix</p>
@@ -214,20 +166,5 @@ layout: 'base.njk'
     </section>
     <!-- END: crazy about section -->
     
-    <!-- Parralex services section -->
-    <section class="services-cta">
-        <div class="parallax-container"></div>
-        <div class="services-cta-content">
-            <h2 class="cta-title">
-                Get ready to start living
-            </h2>
-            <h3 class="cta-subtitle">
-                The life of your dreams.
-            </h3>
-            <a class="btn-dark-pink services-cta-btn"
-                href="https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339"
-                target="_blank">Book in your free clarity call</a>
-        </div>
-    </section>
-    <!-- END: parralex services section -->
+    {% include 'components/_services-parralax.njk' %}
     

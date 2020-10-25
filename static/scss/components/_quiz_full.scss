@@ -93,14 +93,17 @@ body { height: 100%; }
     @media #{$breakpoint-sm} {
         height: 16em;
     }
+    @media #{$breakpoint-md} {
+        height: 11.5em;
+    }
     @media #{$breakpoint-lg} {
-        height: 12em;
+        height: 11em;
     }
     @media #{$breakpoint-xl} {
         height: 10em;
     }
     @media #{$breakpoint-xxl} {
-        height: 10em;
+        height: 9em;
     }
  
 }

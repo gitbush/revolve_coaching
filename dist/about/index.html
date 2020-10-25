@@ -15,7 +15,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/src/static/favicon_io/site.webmanifest">
+    <link rel="manifest" href="/static/favicon_io/site.webmanifest">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -26,7 +26,7 @@
 <body>
     <header id="header">
         <div class="header-logo d-none d-md-block">
-            <a class="header-link" href="index.html">
+            <a class="header-link" href="/">
                 <h1 class="logo-1 mb-1">Mhairi Todd</h1>
                 <h2 class="logo-subtitle mb-0">Revolve Coaching</h2>
             </a>
@@ -85,7 +85,7 @@
         <!-- hero section -->
     <section class="about-hero">
         <div class="about-hero-img">
-            <img src="static/img/Mhairi_pics/about-hero.jpg" alt="mhairi-life-coach-standing-in-coat">
+            <img src="/static/img/Mhairi_pics/about-hero.jpg" alt="mhairi-life-coach-standing-in-coat">
         </div>
         <div class="about-hero-text">
             <div class="about-hero-content">
@@ -178,8 +178,8 @@
 
     <!-- END:what I'm known for section -->
 
-    <!-- quiz section -->
-    <section class="quiz-section">
+        <!-- quiz section -->
+    <section id="quizSection" class="quiz-section">
         <!-- First quiz CTA section -->
         <div id="quizCta" class="">
             <h2 class="quiz-title sect-title">
@@ -204,12 +204,12 @@
                 The coaching <span class="logo-font">quiz</span>
             </h2>
             <p id="quizIntroText" class="quiz-content-main normal-text">
-                Personal life coaching is not for everyone. There are some who would benefit from a 
-                life coach, but they aren't ready to make the changes necessary to better their lives. 
-                After the quiz you will have a clearer idea and understanding as to whether a life coach is right for you.
+                Believe it or not, Transformation coaching is not for everyone. There are some 
+                who would really benefit from a coach, but they just aren't ready to make the changes to better their lives. 
+                Take this quick quiz to see if Transformation Coaching is right for you right now. 
             </p>
             <div class="quiz-cta">
-                <a id="quizStart" href="" class="quiz-cta-btn btn-black normal-text">Take the quiz</a>
+                <a id="quizStart" href="" target="_blank" class="quiz-cta-btn btn-black normal-text">Take the quiz</a>
             </div>
         </div>   
 
@@ -237,7 +237,7 @@
         </div>
         <div class="crazy-about-content">
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/candle.jpg" alt="mhairi-life-coach-candles">
+                <img src="/static/img/Mhairi_pics/candle.jpg" alt="mhairi-life-coach-candles">
             </div>
             <div class="crazy-about-text">
                 <p class="favourite-text fw-b">Little detail</p>
@@ -248,10 +248,10 @@
                 <p class="favourite-text">This little bundle of cuteness</p>
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/roman-square-comp.jpg" alt="mhairi-life-coach-roman">
+                <img src="/static/img/Mhairi_pics/roman-square-comp.jpg" alt="mhairi-life-coach-roman">
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/lip-gloss.jpg" alt="mhairi-life-coach-lip-gloss">
+                <img src="/static/img/Mhairi_pics/lip-gloss.jpg" alt="mhairi-life-coach-lip-gloss">
             </div>
             <div class="crazy-about-text">
                 <p class="favourite-text fw-b">Favourite accessory</p>
@@ -262,10 +262,10 @@
                 <p class="favourite-text">Singing</p>
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/mic-comp.jpg" alt="mhairi-life-coach-microphone">
+                <img src="/static/img/Mhairi_pics/mic-comp.jpg" alt="mhairi-life-coach-microphone">
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/coffee-comp2.jpg" alt="mhairi-life-coach-coffee">
+                <img src="/static/img/Mhairi_pics/coffee-comp2.jpg" alt="mhairi-life-coach-coffee">
             </div>
             <div class="crazy-about-text">
                 <p class="favourite-text fw-b">Treat</p>
@@ -276,14 +276,14 @@
                 <p class="favourite-text">Laughter in every day </p>
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/laughing-square-comp.jpg" alt="mhairi-life-coach-laughing">
+                <img src="/static/img/Mhairi_pics/laughing-square-comp.jpg" alt="mhairi-life-coach-laughing">
             </div>
             <div class="crazy-about-text d-none d-md-block">
                 <p class="favourite-text fw-b">Relax</p>
                 <p class="favourite-text">A hot bath</p>
             </div>
             <div class="crazy-about-img">
-                <img src="static/img/Mhairi_pics/lede-the-witcher-comp.jpg" alt="mhairi-life-coach-the-witcher">
+                <img src="/static/img/Mhairi_pics/lede-the-witcher-comp.jpg" alt="mhairi-life-coach-the-witcher">
             </div>
             <div class="crazy-about-text">
                 <p class="favourite-text fw-b">Recent Netlfix</p>
@@ -303,9 +303,7 @@
             <h3 class="cta-subtitle">
                 The life of your dreams.
             </h3>
-            <a class="btn-dark-pink services-cta-btn"
-                href="https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339"
-                target="_blank">Book in your free clarity call</a>
+            <a class="btn-dark-pink services-cta-btn" href="https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339" target="_blank">Book in your free clarity call</a>
         </div>
     </section>
     <!-- END: parralex services section -->
