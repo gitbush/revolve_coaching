@@ -1,5 +1,5 @@
-snippets/
-dist/
+snippets
+dist
 .vscode/
 node_modules
 
