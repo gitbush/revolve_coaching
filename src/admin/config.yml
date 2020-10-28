@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# This line should *not* be indented
+media_folder: "/static/img" # Media files will be stored in the repo under "/static/img"
+
+local_backend: true
+# publish_mode: editorial_workflow
+collections:
+  - label: "Pages"
+    name: "pages"
+    files: 
+      - label: "Home Page"
+        name: "home page"
+        file: "site/index.njk"
+        fields:
+          - label: "Hero text first line"
+            name: "hero text first line"
+            widget: string
+            allow_add: false
+            collapsed: false
+            fields:
+              - { label: Text, name: text, widget: string }
+    create: false
+    editor:
+      preview: false
