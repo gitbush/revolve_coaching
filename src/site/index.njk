@@ -1,6 +1,9 @@
 ---
 
 layout: 'base.njk'
+heroTextFirstLine: Revolutionise
+heroTextSecondLine: your life from the
+heroTextThirdLine: Inside out
 
 ---
     <!-- hero section -->
@@ -12,9 +15,9 @@ layout: 'base.njk'
             <img src="static/img/Mhairi_pics/home_hero_2_comp.jpg" class="home-hero-2" alt="mhairi-life-coach-walking-towards">
         </div>
         <div class="home-hero-text">
-            <p class="first-hero-text" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500">Revolutionise</p>
-            <p class="second-hero-text" data-aos="fade-left" data-aos-delay="1000" data-aos-offset="200" data-aos-duration="1500">your life from the</p>
-            <p class="logo-sub third-hero-text" data-aos="fade-right" data-aos-delay="2000" data-aos-offset="200" data-aos-duration="1500">Inside out</p>
+            <p class="first-hero-text" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500">{{ heroTextFirstLine }}</p>
+            <p class="second-hero-text" data-aos="fade-left" data-aos-delay="1000" data-aos-offset="200" data-aos-duration="1500">{{ heroTextSecondLine }}</p>
+            <p class="logo-sub third-hero-text" data-aos="fade-right" data-aos-delay="2000" data-aos-offset="200" data-aos-duration="1500">{{ heroTextThirdLine }}</p>
         </div>
     </section>
     <!-- END: hero section -->

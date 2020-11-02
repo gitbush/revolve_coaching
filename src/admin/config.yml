@@ -15,13 +15,12 @@ collections:
         name: "home page"
         file: "site/index.njk"
         fields:
-          - label: "Hero text first line"
-            name: "hero text first line"
-            widget: string
-            allow_add: false
-            collapsed: false
-            fields:
-              - { label: Text, name: text, widget: string }
+          - {label: "Hero text first line", name: "heroTextFirstLine", widget: string}
+          - {label: "Hero text second line", name: "heroTextSecondLine", widget: "string"}
+          - {label: "Hero text third line", name: "heroTextThirdLine", widget: "string"}
+            # allow_add: false
+            # collapsed: false
+            
     create: false
     editor:
       preview: false
