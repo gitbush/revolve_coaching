@@ -2,7 +2,6 @@ module.exports = function (eleventyConfig) {
   
     // set copy asset folder to dist
     eleventyConfig.addPassthroughCopy('static');
-    eleventyConfig.addPassthroughCopy('images');
     eleventyConfig.addPassthroughCopy('admin');
   
     // set input and output folder
