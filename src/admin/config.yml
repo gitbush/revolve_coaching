@@ -13,7 +13,7 @@ collections:
     files: 
       - label: "Home Page"
         name: "home page"
-        file: "site/index.njk"
+        file: "src/site/index.njk"
         fields:
           - {label: "Hero text first line", name: "heroTextFirstLine", widget: string}
           - {label: "Hero text second line", name: "heroTextSecondLine", widget: "string"}
