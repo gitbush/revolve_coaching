@@ -1,14 +1,16 @@
 module.exports = function (eleventyConfig) {
   
     // set copy asset folder to dist
-    eleventyConfig.addPassthroughCopy('static');
-    eleventyConfig.addPassthroughCopy('images');
+    // eleventyConfig.addPassthroughCopy('static');
+    // eleventyConfig.addPassthroughCopy('images');
     // eleventyConfig.addPassthroughCopy('src/admin');
 
     // Copy Static Files to dist
-    // eleventyConfig.addPassthroughCopy({
-    //   "./src/admin": "./admin",
-    // });
+    eleventyConfig.addPassthroughCopy({
+      // "./src/admin": "./admin",
+      "static": "./static",
+      "favicon_ico": "./favicon_ico"
+    });
 
   
     // set input and output folder
