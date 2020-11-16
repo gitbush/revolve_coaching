@@ -3316,22 +3316,22 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-sub-hero {
-    width: 30em;
-    margin: 4em auto 2em auto;
+    width: 38em;
+    margin: 2em auto 2em auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .home-sub-hero {
     width: 33em;
-    margin: 4em auto 2em auto;
+    margin: 3em auto 3em auto;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .home-sub-hero {
     width: 33em;
-    margin: 4em auto 2em auto;
+    margin: 3em auto 2em auto;
   }
 }
 
@@ -3340,16 +3340,146 @@ input[type='checkbox'] {
   margin: auto;
 }
 
-@media only screen and (min-width: 768px) {
+.home-sub-hero-content .about-title {
+  color: #3b403f;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-sub-hero-content .about-title {
     line-height: 1.5em;
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-sub-hero-content .about-title {
+    line-height: 1.5em;
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-sub-hero-content .about-title {
+    line-height: 1.5em;
     font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-sub-hero-content .about-title {
+    line-height: 1.5em;
+    font-size: 1.4em;
+  }
+}
+
+.testimonial-alone {
+  width: 90vw;
+  margin: 3em auto;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-alone {
+    width: 38em;
+    margin: 3em auto;
+    text-align: center;
+  }
+}
+
+.testimonial-alone .testimonial-author-job {
+  font-size: 1.1em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-alone .testimonial-author-job {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-alone .testimonial-author-job {
+    font-size: .7em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-alone .testimonial-author-job {
+    font-size: .85em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-alone .testimonial-author-job {
+    font-size: .65em;
+  }
+}
+
+.testimonial-alone-exert {
+  width: 90%;
+  color: #aa9659;
+  text-align: center;
+  margin: 2em auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-alone-exert {
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-alone-exert {
+    width: 80%;
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-alone-exert {
+    width: 70%;
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-alone-exert {
+    width: 60%;
+  }
+}
+
+.testimonial-alone-exert p {
+  font-size: 1.7em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .testimonial-alone-exert p {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-alone-exert p {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-alone-exert p {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-alone-exert p {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-alone-exert p {
+    font-size: 1.2em;
   }
 }
 
@@ -3641,7 +3771,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .home-about {
     background-color: white;
-    height: 36.5em;
+    height: 37.5em;
     padding-bottom: 0;
     -ms-grid-columns: 4em 15em (1fr)[2] 4em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
@@ -3681,7 +3811,7 @@ input[type='checkbox'] {
     grid-column: 3/5;
     -ms-grid-row: 3;
     grid-row: 3/3;
-    margin: 0 auto auto auto;
+    margin: auto;
   }
 }
 
@@ -3725,7 +3855,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-about-title {
-    margin: 2em auto 0 auto;
+    margin: 1em auto 0 auto;
   }
 }
 
@@ -6609,22 +6739,22 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-sub-hero {
-    width: 30em;
-    margin: 4em auto 2em auto;
+    width: 38em;
+    margin: 2em auto 2em auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .home-sub-hero {
     width: 33em;
-    margin: 4em auto 2em auto;
+    margin: 3em auto 3em auto;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .home-sub-hero {
     width: 33em;
-    margin: 4em auto 2em auto;
+    margin: 3em auto 2em auto;
   }
 }
 
@@ -6633,16 +6763,146 @@ input[type='checkbox'] {
   margin: auto;
 }
 
-@media only screen and (min-width: 768px) {
+.home-sub-hero-content .about-title {
+  color: #3b403f;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-sub-hero-content .about-title {
     line-height: 1.5em;
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-sub-hero-content .about-title {
+    line-height: 1.5em;
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-sub-hero-content .about-title {
+    line-height: 1.5em;
     font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-sub-hero-content .about-title {
+    line-height: 1.5em;
+    font-size: 1.4em;
+  }
+}
+
+.testimonial-alone {
+  width: 90vw;
+  margin: 3em auto;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-alone {
+    width: 38em;
+    margin: 3em auto;
+    text-align: center;
+  }
+}
+
+.testimonial-alone .testimonial-author-job {
+  font-size: 1.1em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-alone .testimonial-author-job {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-alone .testimonial-author-job {
+    font-size: .7em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-alone .testimonial-author-job {
+    font-size: .85em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-alone .testimonial-author-job {
+    font-size: .65em;
+  }
+}
+
+.testimonial-alone-exert {
+  width: 90%;
+  color: #aa9659;
+  text-align: center;
+  margin: 2em auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-alone-exert {
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-alone-exert {
+    width: 80%;
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-alone-exert {
+    width: 70%;
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-alone-exert {
+    width: 60%;
+  }
+}
+
+.testimonial-alone-exert p {
+  font-size: 1.7em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .testimonial-alone-exert p {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-alone-exert p {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-alone-exert p {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-alone-exert p {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-alone-exert p {
+    font-size: 1.2em;
   }
 }
 
@@ -6934,7 +7194,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .home-about {
     background-color: white;
-    height: 36.5em;
+    height: 37.5em;
     padding-bottom: 0;
     -ms-grid-columns: 4em 15em (1fr)[2] 4em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
@@ -6974,7 +7234,7 @@ input[type='checkbox'] {
     grid-column: 3/5;
     -ms-grid-row: 3;
     grid-row: 3/3;
-    margin: 0 auto auto auto;
+    margin: auto;
   }
 }
 
@@ -7018,7 +7278,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-about-title {
-    margin: 2em auto 0 auto;
+    margin: 1em auto 0 auto;
   }
 }
 

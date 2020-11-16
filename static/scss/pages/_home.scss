@@ -178,16 +178,16 @@
         margin: 3em auto 2em auto;
     }
     @media #{$breakpoint-lg}{
-        width: 30em;
-        margin: 4em auto 2em auto;
+        width: 38em;
+        margin: 2em auto 2em auto;
     }
     @media #{$breakpoint-xl}{
         width: 33em;
-        margin: 4em auto 2em auto;
+        margin: 3em auto 3em auto;
     }
     @media #{$breakpoint-xxl}{
         width: 33em;
-        margin: 4em auto 2em auto;
+        margin: 3em auto 2em auto;
     }
 }
 
@@ -201,17 +201,96 @@
         
     }
     .about-title{
-        @media #{$breakpoint-min-md}{
+        color: $base-text-color;
+        font-weight: 400;
+        font-size: 2em;
+        @media #{$breakpoint-md}{
             line-height: 1.5em;
-            font-size: 1.8em;
+            font-size: 1.7em;
         }  
         @media #{$breakpoint-lg}{
+            line-height: 1.5em;
+            font-size: 1.3em;
+        }     
+        @media #{$breakpoint-xl}{
+            line-height: 1.5em;
             font-size: 1.6em;
-        }      
+        } 
+        @media #{$breakpoint-xl}{
+            line-height: 1.5em;
+            font-size: 1.4em;
+        } 
   
     }
 
 }
+
+.testimonial-alone{
+    width: 90vw;
+    margin: 3em auto;
+    text-align: center;
+    @media #{$breakpoint-lg}{
+        width: 38em;
+        margin: 3em auto;
+        text-align: center;
+    } 
+    .testimonial-author-job{
+        font-size: 1.1em;
+        @media #{$breakpoint-md}{
+            font-size: .9em;   
+        }
+        @media #{$breakpoint-lg}{
+            font-size: .7em;   
+        }
+        @media #{$breakpoint-xl}{
+            font-size: .85em;   
+        }
+        @media #{$breakpoint-xxl}{
+            font-size: .65em;   
+        }
+    }
+}
+
+.testimonial-alone-exert{
+    width: 90%;
+    color: #aa9659;
+    text-align: center;
+    margin: 2em auto;
+    @media  #{$breakpoint-md}{
+        margin: 1em auto;
+    }
+    @media  #{$breakpoint-lg}{
+        width: 80%;
+        margin: 1em auto;
+    }
+    @media  #{$breakpoint-xl}{
+        width: 70%;
+        margin: 1em auto;
+    }
+    @media  #{$breakpoint-xxl}{
+        width: 60%;
+
+    }
+    p {
+        font-size: 1.7em;
+        @media  #{$breakpoint-sm}{
+            font-size: 1.4em;
+        }
+        @media  #{$breakpoint-md}{
+            font-size: 1.1em;
+        }
+        @media  #{$breakpoint-lg}{
+            font-size: 1.1em;
+        }
+        @media  #{$breakpoint-xl}{
+            font-size: 1.4em;
+        }
+        @media  #{$breakpoint-xxl}{
+            font-size: 1.2em;
+        }
+    }
+}
+
 // ---------------------------------------------------------------
 // Home coaching section
 // ---------------------------------------------------------------
@@ -401,7 +480,7 @@
     }
     @media #{$breakpoint-min-md} {
         background-color: white;
-        height: 36.5em;
+        height: 37.5em;
         padding-bottom: 0;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
         grid-template-rows:repeat(3, 1fr);
@@ -424,7 +503,7 @@
         .about-cta-btn{
             grid-column: 3/5;
             grid-row: 3/3;
-            margin: 0 auto auto auto;
+            margin: auto;
         }
     }
     @media #{$breakpoint-md} {
@@ -451,7 +530,7 @@
     text-align: center;
     padding-top: 3em;
     @media #{$breakpoint-md}, #{$breakpoint-lg} {
-        margin: 2em auto 0 auto;
+        margin: 1em auto 0 auto;
     }
     @media #{$breakpoint-xl} {
         // margin: 2em auto 0 auto;
