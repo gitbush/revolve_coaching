@@ -19,7 +19,7 @@ body { height: 100%; }
 }
 
 .quiz-section{
-    height: 27em;
+    height: 30em;
     position: relative;
     @media #{$breakpoint-md} {
         height: 16em;
@@ -261,21 +261,21 @@ input[type='checkbox'] {
 }
 
 .quiz-result{
-    height: 19em!important;
+    height: 24em!important;
     @media #{$breakpoint-sm} {
-        height: 15em!important;
+        height: 19em!important;
     }
     @media #{$breakpoint-md} {
-        height: 11em!important;
+        height: 13em!important;
     }
     @media #{$breakpoint-lg} {
+        height: 13em!important;
+    }
+    @media #{$breakpoint-xl} {
         height: 11em!important;
     }
-    @media #{$breakpoint-xl} {
-        height: 9em!important;
-    }
-    @media #{$breakpoint-xl} {
-        height: 9em!important;
+    @media #{$breakpoint-xxl} {
+        height: 11em!important;
     }
 }
 

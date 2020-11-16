@@ -151,33 +151,32 @@ let numberOfQuestions = 7
 // create our questions
 let questions = [
   {
-      question : `I am ready to make a positive change and 
-                  live a life I absolutely love`,
+      question : `I’m feeling pumped about this journey! I’m ready to embrace every opportunity that comes my way and start living my best life.`,
       choiceTrue : "True",
       choiceFalse : "False",
       number: `1/${numberOfQuestions}`,
   },{
-      question : `I want to get unstuck and stop repeating the same old patterns`,
+      question : `I’m ready to let go. I want to overcome my personal blockers and stop repeating the same old patterns.`,
       choiceTrue : "True",
       choiceFalse : "False",
       number: `2/${numberOfQuestions}`
   },{
-      question : `I know deep down that I have the power to change my life`,
+      question : `I know that only I have the power to make a change. My life. My decisions. My happiness.`,
       choiceTrue : "True",
       choiceFalse : "False",
       number: `3/${numberOfQuestions}`
   },{
-      question : `I acknowledge that much of the coaching process takes place between sessions and I’m ready and willing to do the work`,
+      question : `I know that working on myself doesn’t only happen in my sessions. I’m ready to give my time and effort to creating the life I want. `,
       choiceTrue : "True",
       choiceFalse : "False",
       number: `4/${numberOfQuestions}`
   },{
-      question : `I am ready to challenge and confront my way of thinking and doing in order to change my life for the better`,
+      question : `I’m ready to challenge my way of thinking and the status quo.`,
       choiceTrue : "True",
       choiceFalse : "False",
       number: `5/${numberOfQuestions}`
   },{
-      question : `I recognise my coach can’t fix my problems on my behalf, the work is mine to do with their expert support`,
+      question : `I recognise my coach can’t fix my problems on my behalf, the work is mine to do with their expert support. `,
       choiceTrue : "True",
       choiceFalse : "False",
       number: `6/${numberOfQuestions}`
@@ -192,14 +191,10 @@ let questions = [
 // create our results
 let results = [
   {
-      result : `You were ready yesterday! Nothing can stand in your way. Lets chat! Book your free, no obligation clarity call here with yours truly`,
-  },{
-      result : `You are ready...yet a little tentative.  That’s okay!  Often the biggest step is commiting to the process and affirming you are active 
-                rather than passive in your current situation.  I’m here to help. Book your free, no obligation clarity call here and let's chat about 
-                your next steps`,
-  },{
-      result : `You might not be quite ready...yet.  Think of the questions you answered ‘False’ to, what would it take to turn 1 or more of those to ‘True’? 
-                If you want to discuss with an expert you can book your free clarity call with me here`,
+      result : `You were ready yesterday! <br><br> There’s nothing standing in your way. Book your free, no obligation call here to find out a little more and get to know eachother better. <br><br>Let’s chat!`,
+  },
+  {
+      result : `You might not be ready… yet. Think of the questions you answered ‘false’ to. What would it take to turn some of those to ‘true’? You might benefit from having a 1 to 1 chat. Book a call with me below. `,
   }
 ];
 
@@ -310,21 +305,17 @@ function resultRender(){
   quiz.style.display ="none";
   quizIntro.style.display = "block";
   quizIntro.classList.add("quiz-result")
-  if(trueCount >= 5){
+  if(trueCount >= 6){
     quizIntroText.innerHTML = `${results[0].result}`;
-    quizStart.innerHTML = `Free clarity call`;
+    quizStart.innerHTML = `BOOK A CHAT`;
     quizStart.href = `https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339`;
   } 
-  else if(trueCount < 3){
+  else if(trueCount < 6){
     quizIntroText.innerHTML = `${results[2].result}`;
-    quizStart.innerHTML = `Free clarity call`;
+    quizStart.innerHTML = `BOOK A CHAT`;
     quizStart.href = `https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339`;
 
-  } else{
-    quizIntroText.innerHTML = `${results[1].result}`;
-    quizStart.innerHTML = `Free clarity call`;
-    quizStart.href = `https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339`;
-  }
+  } 
 }
 
 
