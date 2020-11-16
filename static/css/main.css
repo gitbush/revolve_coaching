@@ -1979,7 +1979,7 @@ a:focus {
 
 .about-cta-btn {
   height: auto;
-  margin: auto;
+  margin: auto 1.5em;
   padding: .5em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
