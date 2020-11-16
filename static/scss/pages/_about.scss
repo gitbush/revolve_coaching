@@ -1119,7 +1119,7 @@
 
 .services-cta{
     position: relative;
-    height: 25em;
+    height: 32em;
     background-image: url("../img/Mhairi_pics/patio_sitting_comp.jpg");
     background-position: center;
     background-size: cover;
@@ -1187,7 +1187,7 @@
     text-align: center;
     color: white;
     width: 23em;
-    height: 17em;
+    height: 25em;
     margin: auto;
     position: absolute;
     top: 0;
@@ -1195,20 +1195,24 @@
     right: 0;
     left: 0;
     @media #{$breakpoint-sm}{
-        height: 11em;
+        height: 16em;
         width: 28em;
     }
     @media #{$breakpoint-md}{
         height: 11em;
+        width: 35em;
     }
     @media #{$breakpoint-lg} {
-        height: 9em;
+        height: 10em;
+        width: 33em;
     }
     @media #{$breakpoint-xl} {
-        height: 7em;
+        width: 28em;
+        height: 9em;
     }
     @media #{$breakpoint-xxl} {
-        height: 5.5em;
+        height: 7.5em;
+        width: 28em;
     }
 }
 

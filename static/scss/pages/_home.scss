@@ -175,7 +175,7 @@
     }
     @media #{$breakpoint-md}{
         width: 33em;
-        margin: 3em auto 2em auto;
+        margin: 2em auto 2em auto;
     }
     @media #{$breakpoint-lg}{
         width: 38em;
@@ -604,8 +604,10 @@
 
 .home-you-will-gain{
     text-align: center;
-    background-color: $gray;
     padding: 1em 0 2em 0;
+    @media  #{$breakpoint-min-md}{
+        background-color: $gray;
+    }
 }
 
 .home-gain-heading{
@@ -874,6 +876,100 @@
             font-size: .6em;
         }
     }
+}
+
+// ---------------------------------------------------------------
+// Why Mhairi section
+// ---------------------------------------------------------------
+
+.why-mhairi{
+    @media #{$breakpoint-min-md} {
+        margin: 3em 0;
+  
+    }
+}
+.why-mhairi-title{
+    text-align: center;
+    margin: 2em 0;
+}
+
+.why-mhairi-content{
+    margin-top: 0;
+    padding-bottom: 4em;
+    text-align: center;
+    // display: grid;
+    // grid-template-rows: auto 35em minmax(auto, 37em) 7em;
+
+    @media #{$breakpoint-sm} {
+        // grid-template-rows: auto 36em minmax(auto, 28em) 4em;
+        margin-top: 2em;
+    }
+    @media #{$breakpoint-min-md} {
+        background-color: white;
+        height: 31.5em;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: auto 25em 2em 16em auto;
+        grid-template-rows: 4em 19em auto;
+    }
+    @media #{$breakpoint-lg} {
+        grid-template-columns: auto 25em 2em 16em auto;
+        height: 29em;
+    }
+    @media #{$breakpoint-xl}, #{$breakpoint-xxl} {
+        height: 25em;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 25em;
+        grid-template-rows: 4em 16em auto;
+    }
+    .home-about-title{
+        padding-top: 0;
+        @media #{$breakpoint-min-md} {
+            grid-column: 2/3;
+            grid-row: 1/1;
+            text-align: start;
+            padding: 0 0 0 1em;
+        }
+    }
+    .home-about-img{
+        width: 90vw;
+        @media #{$breakpoint-min-md} {
+            width: 100%;
+            height: 100%;
+            grid-column: 4/5;
+            grid-row: 1/5;
+        }
+    }
+    .home-about-text{
+        margin: 3em auto;
+        @media #{$breakpoint-min-md} {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin: 1em auto 0 auto;
+            text-align: start;
+            padding: 0 0 0 1.5em;
+        }
+        @media #{$breakpoint-lg}, #{$breakpoint-xl} {
+            margin: 0 auto;
+        }
+        .sect-subtitle{
+            margin: 0 auto 2em auto;
+            @media #{$breakpoint-lg}, #{$breakpoint-xl} {
+                margin: 1em auto 2em auto;
+            }
+        }
+    }
+    .about-cta-btn{
+        
+        @media #{$breakpoint-min-md} {
+            grid-column: 2/3;
+            grid-row: 3/3;
+            margin: auto;
+        }
+        
+    }
+
 }
 
 // ---------------------------------------------------------------

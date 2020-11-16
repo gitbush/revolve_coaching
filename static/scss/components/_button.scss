@@ -106,6 +106,7 @@ a:focus{outline:0;}
         margin: auto 2.5em;
     }
     @media #{$breakpoint-min-md} {
+        padding: .4em 1em;
         width: auto;
     }
 }
