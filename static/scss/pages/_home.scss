@@ -75,6 +75,7 @@
 
 .home-hero-text{
     font-family: $font-biko;
+    overflow-x: hidden;
     @media #{$breakpoint-xs}, #{$breakpoint-sm}{
         position: absolute;
         top: 17em;

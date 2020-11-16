@@ -14,39 +14,40 @@ $nav-toggle-z-index: 2;
   background: $light-pink;
   color: green($color: #000000);
   cursor: pointer;
-  right: -25rem;
+  right: -23rem;
   padding: 1em 2em 1em 2em;
   position: fixed;
   top: 15px;
-  height: 23em;
-  width: 18em;
+  height: 24em;
+  width: 20em;
   z-index: 99;
   
   @media #{$breakpoint-sm} {
-    height: 21em;
-    width: 16em;
+    height: 22em;
+    width: 19em;
+    padding: 1em 1em 1em 2em;
   }
   @media #{$breakpoint-min-md} {
     padding: 1em 1.5em 1em 1.5em;
   }
   @media #{$breakpoint-md} {
     height: 19.5em;
-    width: 14em;
+    width: 16.5em;
   }
   @media #{$breakpoint-lg} {
     padding: 1em 2em .6em 1.5em;
-    height: 17em;
-    width: 12.5em;
+    height: 18.5em;
+    width: 15em;
   }
   @media #{$breakpoint-xl} {
     padding: 1em 1em .8em 1.3em;
     height: 16em;
-    width: 11em;
+    width: 14em;
   }
   @media #{$breakpoint-xxl} {
-    padding: 1em 1em .8em 1em;
+    padding: 1em 1em .5em 1em;
     height: 14em;
-    width: 9em;
+    width: 12em;
   }
 }
 
@@ -276,7 +277,13 @@ $nav-toggle-z-index: 2;
 
 .social-nav-item{
   margin: .5em;
-  font-size: 1.3em;
+  font-size: 1.4em;
+  @media #{$breakpoint-sm} {
+    font-size: 1.6em;
+  }
+  @media #{$breakpoint-md} {
+    font-size: 1.6em;
+  }
   @media #{$breakpoint-lg} {
     font-size: 1.35em;
   }
@@ -292,7 +299,10 @@ $nav-toggle-z-index: 2;
    position: absolute;
    width: 100%;
    text-align: center;
-   bottom: 5px;
+   bottom: .5em;
+   @media #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl} {
+    bottom: .5em;
+  }
  }
 
 
