@@ -3303,13 +3303,13 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-sub-hero {
     width: 33em;
-    margin: 4em auto 2em auto;
+    margin: 3em auto 2em auto;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-sub-hero {
-    width: 33em;
+    width: 30em;
     margin: 4em auto 2em auto;
   }
 }
@@ -3337,6 +3337,12 @@ input[type='checkbox'] {
   .home-sub-hero-content .about-title {
     line-height: 1.5em;
     font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-sub-hero-content .about-title {
+    font-size: 1.6em;
   }
 }
 
@@ -3674,7 +3680,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-about {
-    margin: 4em 0 3em 0;
+    margin: 2em 0 3em 0;
   }
 }
 
@@ -3700,7 +3706,7 @@ input[type='checkbox'] {
   .home-about {
     -ms-grid-columns: auto 12em (12em)[2] auto;
         grid-template-columns: auto 12em repeat(2, 12em) auto;
-    height: 23em;
+    height: 21em;
   }
 }
 
@@ -6464,13 +6470,13 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-sub-hero {
     width: 33em;
-    margin: 4em auto 2em auto;
+    margin: 3em auto 2em auto;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-sub-hero {
-    width: 33em;
+    width: 30em;
     margin: 4em auto 2em auto;
   }
 }
@@ -6498,6 +6504,12 @@ input[type='checkbox'] {
   .home-sub-hero-content .about-title {
     line-height: 1.5em;
     font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-sub-hero-content .about-title {
+    font-size: 1.6em;
   }
 }
 
@@ -6835,7 +6847,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-about {
-    margin: 4em 0 3em 0;
+    margin: 2em 0 3em 0;
   }
 }
 
@@ -6861,7 +6873,7 @@ input[type='checkbox'] {
   .home-about {
     -ms-grid-columns: auto 12em (12em)[2] auto;
         grid-template-columns: auto 12em repeat(2, 12em) auto;
-    height: 23em;
+    height: 21em;
   }
 }
 
