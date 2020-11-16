@@ -11,7 +11,7 @@
     }
     @media #{$breakpoint-xs} {
         position: relative;
-        height: 45em;
+        height: 42em;
     }
     @media #{$breakpoint-sm}{
         position: relative;
@@ -163,6 +163,50 @@
     z-index: 2;
 }
 
+.home-sub-hero{
+    @media #{$breakpoint-xs}{
+        margin: 6.5em 1.5em;
+    }
+    @media #{$breakpoint-sm}{
+        width: 33em;
+        margin: 3em auto 4em auto;
+    }
+    @media #{$breakpoint-md}{
+        width: 33em;
+        margin: 4em auto 2em auto;
+    }
+    @media #{$breakpoint-lg}{
+        width: 33em;
+        margin: 4em auto 2em auto;
+    }
+    @media #{$breakpoint-xl}{
+        width: 33em;
+        margin: 4em auto 2em auto;
+    }
+    @media #{$breakpoint-xxl}{
+        width: 33em;
+        margin: 4em auto 2em auto;
+    }
+}
+
+.home-sub-hero-content{
+    text-align: center;
+    margin: auto;
+    @media #{$breakpoint-xs}{
+      
+    }
+    @media #{$breakpoint-sm}{
+        
+    }
+    .about-title{
+        @media #{$breakpoint-min-md}{
+            line-height: 2em;
+            font-size: 1.8em;
+        }      
+  
+    }
+
+}
 // ---------------------------------------------------------------
 // Home coaching section
 // ---------------------------------------------------------------

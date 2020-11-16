@@ -3071,7 +3071,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
-    height: 45em;
+    height: 42em;
   }
 }
 
@@ -3285,6 +3285,59 @@ input[type='checkbox'] {
 .hero-showing {
   opacity: 1;
   z-index: 2;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-sub-hero {
+    margin: 6.5em 1.5em;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-sub-hero {
+    width: 33em;
+    margin: 3em auto 4em auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-sub-hero {
+    width: 33em;
+    margin: 4em auto 2em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-sub-hero {
+    width: 33em;
+    margin: 4em auto 2em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-sub-hero {
+    width: 33em;
+    margin: 4em auto 2em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-sub-hero {
+    width: 33em;
+    margin: 4em auto 2em auto;
+  }
+}
+
+.home-sub-hero-content {
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-sub-hero-content .about-title {
+    line-height: 2em;
+    font-size: 1.8em;
+  }
 }
 
 .home-coaching {
@@ -6179,7 +6232,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
-    height: 45em;
+    height: 42em;
   }
 }
 
@@ -6393,6 +6446,59 @@ input[type='checkbox'] {
 .hero-showing {
   opacity: 1;
   z-index: 2;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-sub-hero {
+    margin: 6.5em 1.5em;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-sub-hero {
+    width: 33em;
+    margin: 3em auto 4em auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-sub-hero {
+    width: 33em;
+    margin: 4em auto 2em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-sub-hero {
+    width: 33em;
+    margin: 4em auto 2em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-sub-hero {
+    width: 33em;
+    margin: 4em auto 2em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-sub-hero {
+    width: 33em;
+    margin: 4em auto 2em auto;
+  }
+}
+
+.home-sub-hero-content {
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-sub-hero-content .about-title {
+    line-height: 2em;
+    font-size: 1.8em;
+  }
 }
 
 .home-coaching {
