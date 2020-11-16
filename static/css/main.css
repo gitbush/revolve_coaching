@@ -1416,7 +1416,7 @@ footer {
   position: relative;
   display: -ms-grid;
   display: grid;
-  height: 22em;
+  height: 26em;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   position: relative;
@@ -1431,7 +1431,7 @@ footer {
 }
 
 .ig-intro-content {
-  height: 16em;
+  height: 20em;
   width: 80%;
   position: absolute;
   margin: auto;
@@ -3384,10 +3384,11 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-alone {
     width: 70vw;
+    margin: 3em auto;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .testimonial-alone {
     width: 38em;
     margin: 3em auto;
@@ -6991,10 +6992,11 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-alone {
     width: 70vw;
+    margin: 3em auto;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .testimonial-alone {
     width: 38em;
     margin: 3em auto;

@@ -231,8 +231,9 @@
     text-align: center;
     @media #{$breakpoint-md}{
         width: 70vw; 
+        margin: 3em auto;
     }
-    @media #{$breakpoint-lg}{
+    @media #{$breakpoint-lg},#{$breakpoint-xl}{
         width: 38em;
         margin: 3em auto;
         text-align: center;
