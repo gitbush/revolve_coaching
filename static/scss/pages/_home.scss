@@ -229,25 +229,42 @@
     width: 90vw;
     margin: 3em auto;
     text-align: center;
+    @media #{$breakpoint-md}{
+        width: 70vw; 
+    }
     @media #{$breakpoint-lg}{
         width: 38em;
         margin: 3em auto;
         text-align: center;
     } 
-    .testimonial-author-job{
-        font-size: 1.1em;
-        @media #{$breakpoint-md}{
-            font-size: .9em;   
-        }
-        @media #{$breakpoint-lg}{
-            font-size: .7em;   
-        }
-        @media #{$breakpoint-xl}{
-            font-size: .85em;   
-        }
-        @media #{$breakpoint-xxl}{
-            font-size: .65em;   
-        }
+}
+
+.testimonial-alone-author-job{
+    font-size: 1.1em;
+    @media #{$breakpoint-sm}{
+        font-size: 1em;   
+    }
+    @media #{$breakpoint-md}{
+        font-size: .8em;   
+    }
+    @media #{$breakpoint-lg}{
+        font-size: .7em;   
+    }
+    @media #{$breakpoint-xl}{
+        font-size: .7em;   
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .65em;   
+    }
+}
+
+.testimonial-alone-content{
+    margin: 3em 0 4em 0;
+    @media  #{$breakpoint-lg}{
+        margin: 2em 0;
+    }
+    @media  #{$breakpoint-xl}{
+        margin: 3em 0 2em 0;
     }
 }
 
@@ -255,7 +272,7 @@
     width: 90%;
     color: #aa9659;
     text-align: center;
-    margin: 2em auto;
+    margin: 2em auto 1em auto;
     @media  #{$breakpoint-md}{
         margin: 1em auto;
     }
@@ -277,16 +294,16 @@
             font-size: 1.4em;
         }
         @media  #{$breakpoint-md}{
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
         @media  #{$breakpoint-lg}{
             font-size: 1.1em;
         }
         @media  #{$breakpoint-xl}{
-            font-size: 1.4em;
+            font-size: 1.1em;
         }
         @media  #{$breakpoint-xxl}{
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
     }
 }
@@ -814,6 +831,11 @@
     margin: auto;
     padding: 2em 1em;
     background: white;
+    .sect-subtitle{
+        @media #{$breakpoint-lg} {
+            margin: .4em auto;
+        }
+    }
     .quote-text{
         font-size: 1.2em;
         margin: 0.6em .6em 0 .6em;
@@ -855,7 +877,7 @@
     @media #{$breakpoint-lg} {
         height: 11em;
         width: 32em;
-        padding: 2em 3em;
+        padding: .5em;
         .quote-author{
             font-size: .6em;
         }
@@ -910,14 +932,16 @@
         padding-bottom: 0;
         display: grid;
         grid-template-columns: auto 25em 2em 16em auto;
-        grid-template-rows: 4em 19em auto;
+        grid-template-rows: 4em 23em auto;
     }
     @media #{$breakpoint-lg} {
         grid-template-columns: auto 25em 2em 16em auto;
+        grid-template-rows: 4em 20em auto;
         height: 29em;
     }
     @media #{$breakpoint-xl}, #{$breakpoint-xxl} {
         height: 25em;
+        grid-template-rows: 4em 18em auto;
     }
     @media #{$breakpoint-xxl} {
         height: 25em;
