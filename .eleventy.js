@@ -6,9 +6,9 @@ module.exports = function (eleventyConfig) {
     // eleventyConfig.addPassthroughCopy('src/admin');
 
     // Copy Static Files to dist
-    eleventyConfig.addPassthroughCopy({
-      "./src/admin": "./admin",
-    });
+    // eleventyConfig.addPassthroughCopy({
+    //   "./src/admin": "./admin",
+    // });
 
   
     // set input and output folder
