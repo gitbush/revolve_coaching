@@ -541,7 +541,7 @@
 }
 
 .home-gain-content{
-    width: 80vw;
+    width: 90vw;
     margin: 1em auto;
     position: relative;
     @media  #{$breakpoint-sm}{
@@ -564,7 +564,7 @@
         margin: 1em 0;
         align-self: end;
         width: 31%!important;
-        padding: 0 .5em;
+        padding: 0 .8em;
         &:nth-of-type(1),
         &:nth-of-type(2),
         &:nth-of-type(4),
@@ -574,7 +574,7 @@
                 background-color: #f58c7c;
                 position: absolute;
                 width: 2px;
-                height: 5em;
+                height: 10em;
                 margin: auto;
                 top: 0;
                 bottom: 0;
@@ -585,10 +585,88 @@
     }
     .sect-subtitle{
         margin: .5em;
-        color: $pink;
+        // color: $pink;
     }
 }
 
+.gain-item-intro{
+    margin-bottom: 3em;
+    @media #{$breakpoint-sm}{
+        font-size: 1.4em;
+        margin: 1em 1em 1.5em 1em;
+    }
+    @media #{$breakpoint-md}{
+        margin-bottom: 2em;
+    }
+    @media #{$breakpoint-lg}{
+        font-size: 1em;
+        margin: .5em 1em 1.5em 1em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: .9em;
+        margin: .5em 1em 1.5em 1em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .8em;
+        margin: .5em 1em 1.5em 1em;
+    }
+    .sect-subtitle{
+        @media #{$breakpoint-sm}{
+            font-size: .8em;
+        }
+        @media #{$breakpoint-md}{
+            font-size: .9em;
+        }
+        @media #{$breakpoint-lg}{
+            font-size: .8em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: .8em;
+        }
+        @media #{$breakpoint-xxl}{
+            font-size: .8em;
+        }
+    }
+}
+
+.gain-intro-subtitle{
+    font-size: 1.2em;
+    font-family: $font-biko;
+    color: $pink;
+    margin: 1em 1em 0.5em 1em;
+    @media #{$breakpoint-sm}{
+        font-size: 1.4em;
+        margin: 1em 1em 0.5em 1em;
+    }
+    @media #{$breakpoint-md}{
+        font-size: 1.1em;
+        // margin: .5em 1em 1.5em 1em;
+    }
+    @media #{$breakpoint-lg}{
+        font-size: 1em;
+        margin: .5em 1em 0.5em 1em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: .9em;
+        margin: .5em 1em 0.5em 1em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .8em;
+        margin: .5em 1em 0.5em 1em;
+    }
+}
+
+.gain-item-text{
+    @media #{$breakpoint-sm}{
+        min-height: 4em;
+    }
+    @media #{$breakpoint-md}{
+        min-height: 4em;
+    }
+    @media #{$breakpoint-lg}{
+        min-height: 5em;
+    }
+}
 
 // ---------------------------------------------------------------
 // Home quote parallex section

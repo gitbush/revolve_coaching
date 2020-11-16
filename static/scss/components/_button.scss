@@ -93,16 +93,20 @@ a:focus{outline:0;}
     &:hover{
         cursor: pointer;
     }
-    height: 30px;
+    height: auto;
     margin: auto;
+    padding: .5em 1em;
     display: flex;
     align-items: center;
-    width: 12em;
+    width: auto;
     background-color: $pink;
     color: white;
     box-shadow: 3px 5px 9px -7px #3b403f;
+    @media #{$breakpoint-sm} {
+        margin: auto 2.5em;
+    }
     @media #{$breakpoint-min-md} {
-        width: 9em;
+        width: auto;
     }
 }
 
