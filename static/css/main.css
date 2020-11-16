@@ -3071,7 +3071,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
-    height: 42em;
+    height: 37em;
   }
 }
 
@@ -3289,7 +3289,7 @@ input[type='checkbox'] {
 
 @media only screen and (max-width: 500px) {
   .home-sub-hero {
-    margin: 6.5em 1.5em;
+    margin: 3.5em 1.5em;
   }
 }
 
@@ -3335,7 +3335,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) {
   .home-sub-hero-content .about-title {
-    line-height: 2em;
+    line-height: 1.5em;
     font-size: 1.8em;
   }
 }
@@ -6232,7 +6232,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
-    height: 42em;
+    height: 37em;
   }
 }
 
@@ -6450,7 +6450,7 @@ input[type='checkbox'] {
 
 @media only screen and (max-width: 500px) {
   .home-sub-hero {
-    margin: 6.5em 1.5em;
+    margin: 3.5em 1.5em;
   }
 }
 
@@ -6496,7 +6496,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) {
   .home-sub-hero-content .about-title {
-    line-height: 2em;
+    line-height: 1.5em;
     font-size: 1.8em;
   }
 }
