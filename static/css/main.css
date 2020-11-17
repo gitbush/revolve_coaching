@@ -779,6 +779,44 @@ template {
   }
 }
 
+.pronounce {
+  font-style: italic;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .pronounce {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pronounce {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pronounce {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .pronounce {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .pronounce {
+    font-size: .8em;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
 /**
  * Set up a decent box model on the root element
  */
@@ -3383,7 +3421,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-alone {
-    width: 70vw;
+    width: 75vw;
     margin: 3em auto;
   }
 }
@@ -3408,25 +3446,25 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-alone-author-job {
-    font-size: .8em;
+    font-size: .65em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-alone-author-job {
-    font-size: .7em;
+    font-size: .6em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .testimonial-alone-author-job {
-    font-size: .7em;
+    font-size: .5em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .testimonial-alone-author-job {
-    font-size: .65em;
+    font-size: .6em;
   }
 }
 
@@ -5242,7 +5280,23 @@ input[type='checkbox'] {
   width: 100%;
   background-color: #f0f3f3;
   text-align: center;
-  padding-top: 1em;
+  padding: 3em 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-detail {
+    padding: 3em 0 2em 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-detail {
+    padding: 3em 0 2em 0;
+  }
+}
+
+.about-detail .italic {
+  margin: 2em auto;
 }
 
 .about-detail-title {
@@ -5344,8 +5398,8 @@ input[type='checkbox'] {
   .about-detail-content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 14em 4em 14em auto;
-        grid-template-columns: auto 14em 4em 14em auto;
+    -ms-grid-columns: auto 17em 4em 17em auto;
+        grid-template-columns: auto 17em 4em 17em auto;
   }
   .about-detail-content .normal-text:nth-child(1) {
     -ms-grid-column: 2;
@@ -5501,6 +5555,249 @@ input[type='checkbox'] {
 @media only screen and (min-width: 1600px) {
   .about-detail-quote .logo-3 {
     font-size: 2.7em;
+  }
+}
+
+.how-i-help {
+  margin: 3em 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-i-help {
+    margin: 2em 0;
+  }
+}
+
+.how-i-help .known-for-title {
+  margin: 0 1em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-i-help .known-for-title {
+    margin: 0 0 1em 0;
+  }
+}
+
+.how-i-help-content {
+  width: 85vw;
+  margin: 1em auto;
+  position: relative;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .how-i-help-content {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .how-i-help-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-i-help-content {
+    width: 90vw;
+  }
+}
+
+.how-i-help-item {
+  margin: 4em 0;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-i-help-item {
+    position: relative;
+    margin: 1em 0;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    width: 48% !important;
+    padding: 0 .8em;
+  }
+  .how-i-help-item:nth-of-type(1):after {
+    content: "";
+    background-color: #f58c7c;
+    position: absolute;
+    width: 2px;
+    height: 10em;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-i-help-item {
+    padding: 0 .7em;
+  }
+}
+
+.how-i-help-item .sect-subtitle {
+  margin: .5em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-i-help-item .sect-subtitle {
+    margin: .5em 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .how-i-help-item .sect-subtitle {
+    margin: .5em 0;
+  }
+}
+
+.how-i-help-item-intro {
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .how-i-help-item-intro {
+    font-size: 1em;
+    margin: 1em 0 1.5em 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-i-help-item-intro {
+    margin-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .how-i-help-item-intro {
+    font-size: 1em;
+    margin: .5em 0 1.5em 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-i-help-item-intro {
+    font-size: .9em;
+    margin: .5em 0 1.5em 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .how-i-help-item-intro {
+    font-size: .8em;
+    margin: .5em 0 1.5em 0;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .how-i-help-item-intro .sect-subtitle {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-i-help-item-intro .sect-subtitle {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .how-i-help-item-intro .sect-subtitle {
+    font-size: .7em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-i-help-item-intro .sect-subtitle {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .how-i-help-item-intro .sect-subtitle {
+    font-size: .8em;
+  }
+}
+
+.how-i-help-item-subtitle {
+  font-size: 1.2em;
+  font-family: "biko", serif;
+  color: #f58c7c;
+  text-align: center;
+  margin: 1em 0 0.5em 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .how-i-help-item-subtitle {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-i-help-item-subtitle {
+    font-size: .9em;
+    margin: .5em 0 .5em 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .how-i-help-item-subtitle {
+    font-size: .8em;
+    margin: 1em 0 0.5em 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-i-help-item-subtitle {
+    font-size: .9em;
+    margin: .5em 1em 0.5em 1em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .how-i-help-item-subtitle {
+    font-size: .8em;
+    margin: .5em 1em 0.5em 1em;
+  }
+}
+
+.how-i-help-list {
+  list-style: none;
+  padding-left: .5em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-i-help-list {
+    padding-left: .5em;
+  }
+}
+
+.how-i-help-text {
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .how-i-help-text {
+    margin-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .how-i-help-text {
+    margin-bottom: 1em;
   }
 }
 
@@ -7029,7 +7326,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-alone {
-    width: 70vw;
+    width: 75vw;
     margin: 3em auto;
   }
 }
@@ -7054,25 +7351,25 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-alone-author-job {
-    font-size: .8em;
+    font-size: .65em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-alone-author-job {
-    font-size: .7em;
+    font-size: .6em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .testimonial-alone-author-job {
-    font-size: .7em;
+    font-size: .5em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .testimonial-alone-author-job {
-    font-size: .65em;
+    font-size: .6em;
   }
 }
 

@@ -190,7 +190,16 @@
     width: 100%;
     background-color: $gray;
     text-align: center;
-    padding-top: 1em;
+    padding: 3em 0;
+    @media #{$breakpoint-md}{
+        padding: 3em 0 2em 0;
+    }
+    @media #{$breakpoint-lg}{
+        padding: 3em 0 2em 0;
+    }
+    .italic{
+        margin: 2em auto;
+    }
 }
 
 .about-detail-title{
@@ -256,7 +265,7 @@
     }
     @media #{$breakpoint-md} {
         display: grid;
-        grid-template-columns: auto 14em 4em 14em auto;
+        grid-template-columns: auto 17em 4em 17em auto;
         .normal-text:nth-child(1){
             grid-column: 2/3;
         }
@@ -356,6 +365,162 @@
     }
 }
 
+
+.how-i-help{
+    margin: 3em 0;
+    @media #{$breakpoint-md} {
+        margin: 2em 0;
+    }
+    .known-for-title{
+        margin: 0 1em;
+        @media #{$breakpoint-xl} {
+            margin: 0 0 1em 0;
+        }
+    }
+}
+
+.how-i-help-content{
+    width: 85vw;
+    margin: 1em auto;
+    position: relative;
+    @media  #{$breakpoint-sm}{
+        width: 80vw;
+    }
+    @media  #{$breakpoint-min-md}{
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+        height: auto;
+        margin: 0 auto;
+    }
+    @media  #{$breakpoint-md}{
+        width: 90vw;
+    }
+}
+
+.how-i-help-item{
+    margin: 4em 0;
+    position: relative;
+    @media  #{$breakpoint-min-md}{
+        position: relative;
+        margin: 1em 0;
+        align-self: end;
+        width: 48%!important;
+        padding: 0 .8em;
+        &:nth-of-type(1){
+            &:after{
+                content: "";
+                background-color: #f58c7c;
+                position: absolute;
+                width: 2px;
+                height: 10em;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                display: block;
+            }
+        }
+    }
+    @media #{$breakpoint-xl}{
+        padding: 0 .7em;
+    }
+    .sect-subtitle{
+        margin: .5em;
+        // color: $pink;
+        @media #{$breakpoint-md}{
+            margin: .5em 0;
+        }
+        @media #{$breakpoint-lg}{
+            margin: .5em 0;
+        }
+    }
+}
+
+.how-i-help-item-intro{
+    margin-bottom: 2em;
+    @media #{$breakpoint-sm}{
+        font-size: 1em;
+        margin: 1em 0 1.5em 0;
+    }
+    @media #{$breakpoint-md}{
+        margin-bottom: 1em;
+    }
+    @media #{$breakpoint-lg}{
+        font-size: 1em;
+        margin: .5em 0 1.5em 0;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: .9em;
+        margin: .5em 0 1.5em 0;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .8em;
+        margin: .5em 0 1.5em 0;
+    }
+    .sect-subtitle{
+        @media #{$breakpoint-sm}{
+            font-size: .8em;
+        }
+        @media #{$breakpoint-md}{
+            font-size: .9em;
+        }
+        @media #{$breakpoint-lg}{
+            font-size: .7em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: .8em;
+        }
+        @media #{$breakpoint-xxl}{
+            font-size: .8em;
+        }
+    }
+}
+
+.how-i-help-item-subtitle{
+    font-size: 1.2em;
+    font-family: $font-biko;
+    color: $pink;
+    text-align: center;
+    margin: 1em 0 0.5em 0;
+    @media #{$breakpoint-sm}{
+        font-size: 1.4em;
+    }
+    @media #{$breakpoint-md}{
+        font-size: .9em;
+        margin: .5em 0 .5em 0;
+    }
+    @media #{$breakpoint-lg}{
+        font-size: .8em;
+        margin: 1em 0 0.5em 0;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: .9em;
+        margin: .5em 1em 0.5em 1em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .8em;
+        margin: .5em 1em 0.5em 1em;
+    }
+}
+
+.how-i-help-list{
+    list-style: none;
+    padding-left: .5em;
+    @media #{$breakpoint-md} {
+        padding-left: .5em;
+    }
+}
+
+.how-i-help-text{
+    margin-bottom: 1em;
+    @media #{$breakpoint-sm} {
+        margin-bottom: 1em;
+    }
+    @media #{$breakpoint-md} {
+        margin-bottom: 1em;
+    }
+}
 // ---------------------------------------------------------------
 // What I'm known for section
 // ---------------------------------------------------------------

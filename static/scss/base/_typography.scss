@@ -304,3 +304,25 @@ $font-la-parisienne: 'la-parisienne', serif;
 }
 
 
+.pronounce{
+  font-style: italic;
+  @media #{$breakpoint-sm} {
+    font-size: 1.3em;
+  }
+  @media #{$breakpoint-md} {
+    font-size: 1em;
+  }
+  @media #{$breakpoint-lg} {
+    font-size: .9em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: 1em;
+  }
+  @media #{$breakpoint-xl} {
+    font-size: .8em;
+  }
+}
+
+.italic{
+  font-style: italic;
+}

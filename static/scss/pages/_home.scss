@@ -230,7 +230,7 @@
     margin: 5em auto;
     text-align: center;
     @media #{$breakpoint-md}{
-        width: 70vw; 
+        width: 75vw; 
         margin: 3em auto;
     }
     @media #{$breakpoint-lg},#{$breakpoint-xl}{
@@ -246,16 +246,16 @@
         font-size: 1em;   
     }
     @media #{$breakpoint-md}{
-        font-size: .8em;   
+        font-size: .65em;   
     }
     @media #{$breakpoint-lg}{
-        font-size: .7em;   
+        font-size: .6em;   
     }
     @media #{$breakpoint-xl}{
-        font-size: .7em;   
+        font-size: .5em;   
     }
     @media #{$breakpoint-xxl}{
-        font-size: .65em;   
+        font-size: .6em;   
     }
 }
 
