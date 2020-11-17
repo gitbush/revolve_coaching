@@ -95,7 +95,7 @@ a:focus{outline:0;}
     }
     height: auto;
     margin: auto 1.5em;
-    padding: .5em 1em;
+    padding: .5em .5em;
     display: flex;
     align-items: center;
     width: auto;
@@ -103,7 +103,7 @@ a:focus{outline:0;}
     color: white;
     box-shadow: 3px 5px 9px -7px #3b403f;
     @media #{$breakpoint-sm} {
-        margin: auto 2.5em;
+        margin: auto 4.5em;
     }
     @media #{$breakpoint-min-md} {
         padding: .4em 1em;

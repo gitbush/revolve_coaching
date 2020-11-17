@@ -922,6 +922,12 @@
 .why-mhairi-title{
     text-align: center;
     margin: 2em 0;
+    @media #{$breakpoint-sm} {
+        margin: 2em 1em;
+    }
+    @media #{$breakpoint-min-md} {
+        margin: 0;
+    }
 }
 
 .why-mhairi-content{
@@ -937,30 +943,30 @@
     }
     @media #{$breakpoint-min-md} {
         background-color: white;
-        height: 31.5em;
+        height: 34.5em;
         padding-bottom: 0;
         display: grid;
         grid-template-columns: auto 25em 2em 16em auto;
-        grid-template-rows: 4em 23em auto;
+        grid-template-rows: repeat(3, 1fr);
     }
     @media #{$breakpoint-lg} {
         grid-template-columns: auto 25em 2em 16em auto;
-        grid-template-rows: 4em 20em auto;
+        // grid-template-rows: 4em 20em auto;
         height: 29em;
     }
-    @media #{$breakpoint-xl}, #{$breakpoint-xxl} {
-        height: 25em;
-        grid-template-rows: 4em 18em auto;
+    @media #{$breakpoint-xl} {
+        height: 29em;
+        // grid-template-rows: 4em 18em auto;
     }
     @media #{$breakpoint-xxl} {
         height: 25em;
-        grid-template-rows: 4em 16em auto;
+        // grid-template-rows: 4em 16em auto;
     }
-    .home-about-title{
+    .why-mhairi-title{
         padding-top: 0;
         @media #{$breakpoint-min-md} {
             grid-column: 2/3;
-            grid-row: 1/1;
+            grid-row: 1/2;
             text-align: start;
             padding: 0 0 0 1em;
         }
@@ -988,6 +994,9 @@
         }
         .sect-subtitle{
             margin: 0 auto 2em auto;
+            @media #{$breakpoint-min-md} {
+                margin: 0 auto 1em auto;
+            }
             @media #{$breakpoint-lg}, #{$breakpoint-xl} {
                 margin: 1em auto 2em auto;
             }
