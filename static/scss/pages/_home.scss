@@ -682,9 +682,18 @@
             }
         }
     }
+    @media #{$breakpoint-xl}{
+        padding: 0 .7em;
+    }
     .sect-subtitle{
         margin: .5em;
         // color: $pink;
+        @media #{$breakpoint-md}{
+            margin: .5em 0;
+        }
+        @media #{$breakpoint-lg}{
+            margin: .5em 0;
+        }
     }
 }
 
@@ -699,15 +708,15 @@
     }
     @media #{$breakpoint-lg}{
         font-size: 1em;
-        margin: .5em 1em 1.5em 1em;
+        margin: .5em 0 1.5em 0;
     }
     @media #{$breakpoint-xl}{
         font-size: .9em;
-        margin: .5em 1em 1.5em 1em;
+        margin: .5em 0 1.5em 0;
     }
     @media #{$breakpoint-xxl}{
         font-size: .8em;
-        margin: .5em 1em 1.5em 1em;
+        margin: .5em 0 1.5em 0;
     }
     .sect-subtitle{
         @media #{$breakpoint-sm}{
@@ -717,7 +726,7 @@
             font-size: .9em;
         }
         @media #{$breakpoint-lg}{
-            font-size: .8em;
+            font-size: .7em;
         }
         @media #{$breakpoint-xl}{
             font-size: .8em;
@@ -735,15 +744,14 @@
     margin: 1em 1em 0.5em 1em;
     @media #{$breakpoint-sm}{
         font-size: 1.4em;
-        margin: 1em 1em 0.5em 1em;
     }
     @media #{$breakpoint-md}{
         font-size: 1.1em;
-        // margin: .5em 1em 1.5em 1em;
+        margin: .5em 0 .5em 0;
     }
     @media #{$breakpoint-lg}{
         font-size: 1em;
-        margin: .5em 1em 0.5em 1em;
+        margin: 1em 0 0.5em 0;
     }
     @media #{$breakpoint-xl}{
         font-size: .9em;
