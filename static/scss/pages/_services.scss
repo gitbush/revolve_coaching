@@ -4,29 +4,29 @@
 
 .services-hero{
     @media #{$breakpoint-sm}{
-        height: 62em;
+        height: 57em;
     }
     @media #{$breakpoint-md}{
         display: grid;
-        grid-template-columns: auto 21em 1em 21em auto;
+        grid-template-columns: auto 19em 1em 22em auto;
         height: 22em;
         margin: 3em 0 0 0;
     }
     @media #{$breakpoint-lg}{
         display: grid;
-        grid-template-columns: auto 22em 1em 17em auto;
+        grid-template-columns: auto 22em 1em 22em auto;
         height: 22em;
         margin: 3em 0 0 0;
     }
     @media #{$breakpoint-xl}{
         display: grid;
-        grid-template-columns:  auto 21em 2em 17em auto;
+        grid-template-columns:  auto 21em 2em 21em auto;
         height: 20em;
         margin: 2em 0 2em 0;
     }
     @media #{$breakpoint-xxl}{
         display: grid;
-        grid-template-columns: auto 20em 2em 16em auto;
+        grid-template-columns: auto 20em 2em 18em auto;
         height: 20em;
         margin: 2em 0 0 0;
     }
@@ -38,7 +38,7 @@
     }
     @media #{$breakpoint-sm}{
         margin: 3.5em 1.5em;
-        height: 15em;
+        height: 17em;
     }
     @media #{$breakpoint-md}{
         grid-column: 4;
@@ -47,7 +47,7 @@
     }
     @media #{$breakpoint-lg}{
         grid-column: 4;
-        height: 90%;
+        height: 100%;
         position: relative;
     }
     @media #{$breakpoint-xl}{
@@ -78,7 +78,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 16em;
+        height: 13em;
         margin: auto;
     }
     @media #{$breakpoint-lg}{
@@ -87,7 +87,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 13em;
+        height: 11em;
         margin: auto;
     }
     @media #{$breakpoint-xl}{
@@ -96,7 +96,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 13em;
+        height: 12em;
         margin: auto;
     }
     @media #{$breakpoint-xxl}{
@@ -105,7 +105,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 13em;
+        height: 11em;
         margin: auto;
     }
 
@@ -379,6 +379,222 @@
     @media #{$breakpoint-xxl}{
         width: 34em;
         margin-bottom: 0;
+    }
+}
+
+// ---------------------------------------------------------------
+// what can this look like
+// ---------------------------------------------------------------
+
+
+.look-like{
+    @media #{$breakpoint-sm}{
+        height: 57em;
+    }
+    @media #{$breakpoint-md}{
+        display: grid;
+        grid-template-columns: auto 19em 1em 22em auto;
+        height: 22em;
+        margin: 3em 0 0 0;
+    }
+    @media #{$breakpoint-lg}{
+        display: grid;
+        grid-template-columns: auto 22em 1em 22em auto;
+        height: 25em;
+        margin: 3em 0 0 0;
+    }
+    @media #{$breakpoint-xl}{
+        display: grid;
+        grid-template-columns:  auto 21em 2em 21em auto;
+        height: 20em;
+        margin: 2em 0 2em 0;
+    }
+    @media #{$breakpoint-xxl}{
+        display: grid;
+        grid-template-columns: auto 20em 2em 18em auto;
+        height: 20em;
+        margin: 2em 0 0 0;
+    }
+}
+
+.look-like-content{
+    text-align: center;
+    margin: auto;
+    @media #{$breakpoint-xs}{
+        width: 24em;
+    }
+    @media #{$breakpoint-sm}{
+        width: 32em;
+    }
+    @media #{$breakpoint-md}{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 24em;
+        margin: auto;
+    }
+    @media #{$breakpoint-lg}{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 24em;
+        margin: auto;
+    }
+    @media #{$breakpoint-xl}{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 12em;
+        margin: auto;
+    }
+    @media #{$breakpoint-xxl}{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 11em;
+        margin: auto;
+    }
+
+    .about-title{
+        @media #{$breakpoint-md}{
+            font-size: 1.7em;
+            letter-spacing: .2em;
+            margin: 0;
+        }
+        @media #{$breakpoint-lg}{
+            font-size: 1.6em;
+            letter-spacing: .2em;
+            margin: 0;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: 1.4em;
+            letter-spacing: .2em;
+            margin: 0;
+        }
+        @media #{$breakpoint-xxl}{
+            font-size: 1.35em;
+            letter-spacing: .2em;
+            margin: 0;
+        }
+    }
+    
+    .sect-title{
+        margin: 1.5em 0;
+        @media #{$breakpoint-sm}{
+            margin: .6em 0 1em 0;
+        }
+        @media #{$breakpoint-md}{
+            margin: .6em 0 .8em 0;
+        }
+        @media #{$breakpoint-lg}{
+            margin: .5em 0;
+        }
+        @media #{$breakpoint-xl}{
+            margin: .5em 0 .9em;
+        }
+
+        
+    }
+    .normal-text{
+        margin-top: 2em;
+       
+        @media #{$breakpoint-sm}{
+            position: relative;
+            top: 3em;
+            width: 80%;
+            margin: auto;
+            font-size: 1.1em;
+        }
+        @media #{$breakpoint-md}{
+            position: relative;
+            width: 90%;
+            margin: 1.5em auto;
+            font-size: .85em;
+        }
+        @media #{$breakpoint-lg}{
+            position: relative;
+            width: 90%;
+            margin: 1.5em auto;
+            font-size: .8em;
+        }
+        @media #{$breakpoint-xl}{
+            position: relative;
+            width: 90%;
+            margin: 1.5em auto;
+            font-size: .65em;
+        }
+        @media #{$breakpoint-xxl}{
+            position: relative;
+            width: 90%;
+            margin: 1.5em auto;
+            font-size: .65em;
+        }
+    }
+}
+
+.look-like-text{
+    @media #{$breakpoint-xs}{
+        margin: 3.5em 1.5em;
+    }
+    @media #{$breakpoint-sm}{
+        margin: 3.5em 1.5em;
+        height: 17em;
+    }
+    @media #{$breakpoint-md}{
+        grid-column: 4;
+        height: 100%;
+        position: relative;
+    }
+    @media #{$breakpoint-lg}{
+        grid-column: 4;
+        height: 100%;
+        position: relative;
+    }
+    @media #{$breakpoint-xl}{
+        grid-column: 4;
+        height: 100%;
+        position: relative;
+    }
+    @media #{$breakpoint-xxl}{
+        grid-column: 4;
+        height: 100%;
+        position: relative;
+    }
+}
+
+.look-like-img{
+    @media #{$breakpoint-sm}{
+        height: 33em;
+    }
+    @media #{$breakpoint-min-md}{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    @media #{$breakpoint-xl}{
+        height: 100%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 15%;
+       
+    }
+}
+
+.look-like-list{
+    list-style: none;
+    @media #{$breakpoint-min-md}{
+        text-align: left;
+        padding-left: .5em;
     }
 }
 
