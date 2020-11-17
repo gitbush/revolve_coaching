@@ -944,7 +944,7 @@
 
 .why-mhairi-content{
     margin-top: 0;
-    padding-bottom: 4em;
+    padding-bottom: 3em;
     text-align: center;
     // display: grid;
     // grid-template-rows: auto 35em minmax(auto, 37em) 7em;
@@ -998,7 +998,7 @@
         }
     }
     .home-about-text{
-        margin: 3em auto;
+        margin: 1em auto 3em auto;
         padding: 0 2em;
         @media #{$breakpoint-min-md} {
             grid-column: 2/3;
