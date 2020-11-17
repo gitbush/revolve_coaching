@@ -4500,6 +4500,13 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .why-mhairi-content .home-about-img img {
+    -o-object-position: 20% 50%;
+       object-position: 20% 50%;
+  }
+}
+
 .why-mhairi-content .home-about-text {
   margin: 3em auto;
 }
@@ -8136,6 +8143,13 @@ input[type='checkbox'] {
     -ms-grid-row: 1;
     -ms-grid-row-span: 4;
     grid-row: 1/5;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .why-mhairi-content .home-about-img img {
+    -o-object-position: 20% 50%;
+       object-position: 20% 50%;
   }
 }
 

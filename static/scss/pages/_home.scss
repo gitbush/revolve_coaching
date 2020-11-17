@@ -979,6 +979,11 @@
             grid-column: 4/5;
             grid-row: 1/5;
         }
+        img{
+            @media #{$breakpoint-min-md} {
+                object-position: 20% 50%;
+            }
+        }
     }
     .home-about-text{
         margin: 3em auto;
