@@ -309,6 +309,18 @@
     }
 }
 
+.client-love{
+    margin: 3em auto;
+    @media  #{$breakpoint-md}{
+        margin: 2em auto;
+    }
+    @media  #{$breakpoint-lg}{
+        margin: 1em auto;
+    }
+    @media  #{$breakpoint-xl}{
+        margin: 1em auto;
+    }
+}
 // ---------------------------------------------------------------
 // Home coaching section
 // ---------------------------------------------------------------
@@ -987,6 +999,7 @@
     }
     .home-about-text{
         margin: 3em auto;
+        padding: 0 2em;
         @media #{$breakpoint-min-md} {
             grid-column: 2/3;
             grid-row: 2/3;

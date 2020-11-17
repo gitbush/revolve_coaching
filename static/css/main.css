@@ -3551,6 +3551,28 @@ input[type='checkbox'] {
   }
 }
 
+.client-love {
+  margin: 3em auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-love {
+    margin: 2em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .client-love {
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .client-love {
+    margin: 1em auto;
+  }
+}
+
 .home-coaching {
   display: -ms-grid;
   display: grid;
@@ -4547,6 +4569,7 @@ input[type='checkbox'] {
 
 .why-mhairi-content .home-about-text {
   margin: 3em auto;
+  padding: 0 2em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -5296,7 +5319,7 @@ input[type='checkbox'] {
 }
 
 .about-detail .italic {
-  margin: 2em auto;
+  margin: 2em 1em;
 }
 
 .about-detail-title {
@@ -5569,7 +5592,7 @@ input[type='checkbox'] {
 }
 
 .how-i-help .known-for-title {
-  margin: 0 1em;
+  margin: 0 1.5em;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -7456,6 +7479,28 @@ input[type='checkbox'] {
   }
 }
 
+.client-love {
+  margin: 3em auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-love {
+    margin: 2em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .client-love {
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .client-love {
+    margin: 1em auto;
+  }
+}
+
 .home-coaching {
   display: -ms-grid;
   display: grid;
@@ -8452,6 +8497,7 @@ input[type='checkbox'] {
 
 .why-mhairi-content .home-about-text {
   margin: 3em auto;
+  padding: 0 2em;
 }
 
 @media only screen and (min-width: 768px) {

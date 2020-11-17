@@ -198,7 +198,7 @@
         padding: 3em 0 2em 0;
     }
     .italic{
-        margin: 2em auto;
+        margin: 2em 1em;
     }
 }
 
@@ -372,7 +372,7 @@
         margin: 2em 0;
     }
     .known-for-title{
-        margin: 0 1em;
+        margin: 0 1.5em;
         @media #{$breakpoint-xl} {
             margin: 0 0 1em 0;
         }
