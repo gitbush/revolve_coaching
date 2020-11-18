@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -9672,56 +9673,6 @@ input[type='checkbox'] {
   }
 }
 
-.look-like-content .normal-text {
-  margin-top: 2em;
-}
-
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .look-like-content .normal-text {
-    position: relative;
-    top: 3em;
-    width: 80%;
-    margin: auto;
-    font-size: 1.1em;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .look-like-content .normal-text {
-    position: relative;
-    width: 90%;
-    margin: 1.5em auto;
-    font-size: .85em;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .look-like-content .normal-text {
-    position: relative;
-    width: 90%;
-    margin: 1.5em auto;
-    font-size: .8em;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .look-like-content .normal-text {
-    position: relative;
-    width: 90%;
-    margin: 1.5em auto;
-    font-size: .65em;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .look-like-content .normal-text {
-    position: relative;
-    width: 90%;
-    margin: 1.5em auto;
-    font-size: .65em;
-  }
-}
-
 @media only screen and (max-width: 500px) {
   .look-like-text {
     margin: 3.5em 1.5em;
@@ -9807,9 +9758,19 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) {
   .look-like-list {
-    text-align: left;
+    text-align: center;
     padding-left: .5em;
   }
+}
+
+.look-like-item {
+  margin: 0;
+}
+
+.look-like-item::after {
+  content: "·";
+  display: block;
+  text-align: center;
 }
 
 .who-is-this-for {
