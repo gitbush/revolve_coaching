@@ -9355,7 +9355,6 @@ input[type='checkbox'] {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  padding: 2em 0;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -9364,15 +9363,16 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .services-intro {
-    margin: 0 0;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .services-intro {
     background-color: white;
+    margin: 3em 0 2em 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .services-intro {
+    margin: 3em 0 2em 0;
   }
 }
 
@@ -9496,6 +9496,43 @@ input[type='checkbox'] {
     width: 34em;
     margin-bottom: 0;
   }
+}
+
+.look-like-fade-sect {
+  text-align: center;
+  margin: 1em 0 3em 0;
+}
+
+.look-like-fade-sect .look-like-title {
+  margin-bottom: 2em;
+}
+
+.look-like-fade {
+  width: 90vw;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: auto;
+  margin: 0 auto;
+  --gap: .7em;
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+}
+
+.look-like-fade .look-like-item {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  width: 40% !important;
+  margin: var(--gap) 0 0 var(--gap);
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {

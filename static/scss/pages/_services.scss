@@ -287,16 +287,17 @@
     text-align: center;
     display: grid;
     justify-items: center;
-    padding: 2em 0;
+    // padding: 2em 0;
     @media #{$breakpoint-sm}{
         padding: 1em 0;
 
     }
-    @media #{$breakpoint-lg}{
-        margin: 0 0;
-    }
     @media #{$breakpoint-min-md}{
         background-color: white;
+        margin: 3em 0 2em 0;
+    }
+    @media #{$breakpoint-lg}{
+        margin: 3em 0 2em 0;
     }
     .normal-text{
         width: 100%;
@@ -386,7 +387,37 @@
 // what can this look like
 // ---------------------------------------------------------------
 
+.look-like-fade-sect{
+    text-align: center;
+    margin: 1em 0 3em 0;
 
+    .look-like-title{
+        margin-bottom: 2em;
+    }
+
+}
+
+.look-like-fade{
+    width: 90vw;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    margin: 0 auto;
+
+    // gap between look items
+    --gap: .7em;
+    margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+    width: calc(100% + var(--gap));
+    .look-like-item{
+        align-self: end;
+        width: 40%!important;
+        margin: var(--gap) 0 0 var(--gap);
+    }
+}
+
+// temp
 .look-like{
     @media #{$breakpoint-sm}{
         height: 57em;
