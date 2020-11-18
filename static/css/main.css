@@ -8966,7 +8966,7 @@ input[type='checkbox'] {
     display: grid;
     -ms-grid-columns: auto 21em 2em 21em auto;
         grid-template-columns: auto 21em 2em 21em auto;
-    height: 20em;
+    height: 21em;
     margin: 2em 0 2em 0;
   }
 }
@@ -9230,8 +9230,13 @@ input[type='checkbox'] {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 15%;
-     object-position: 50% 15%;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .services-hero-img img {
+    -o-object-position: 50% 90%;
+       object-position: 50% 90%;
+  }
 }
 
 .services-title {
@@ -9355,18 +9360,14 @@ input[type='checkbox'] {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-}
-
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .services-intro {
-    padding: 1em 0;
-  }
+  padding: 3em 0;
 }
 
 @media only screen and (min-width: 768px) {
   .services-intro {
     background-color: white;
     margin: 3em 0 2em 0;
+    padding: 0;
   }
 }
 
@@ -9468,7 +9469,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .intro-text {
-    width: 25em;
+    width: 80vw;
   }
 }
 
@@ -9487,7 +9488,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 1200px) {
   .intro-text {
     width: 32.5em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 }
 
@@ -9499,40 +9500,61 @@ input[type='checkbox'] {
 }
 
 .look-like-fade-sect {
+  margin: 3em 0;
   text-align: center;
-  margin: 1em 0 3em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .look-like-fade-sect {
+    margin: 1em 0 3em 0;
+  }
 }
 
 .look-like-fade-sect .look-like-title {
-  margin-bottom: 2em;
+  margin: 0 auto 2em auto;
 }
 
 .look-like-fade {
   width: 90vw;
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  height: auto;
-  margin: 0 auto;
-  --gap: .7em;
-  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
-  width: calc(100% + var(--gap));
+  margin: auto;
 }
 
-.look-like-fade .look-like-item {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  width: 40% !important;
-  margin: var(--gap) 0 0 var(--gap);
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .look-like-fade {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .look-like-fade {
+    width: 90vw;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    height: auto;
+    margin: 0 auto;
+    --gap: .7em;
+    margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+    width: calc(100% + var(--gap));
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .look-like-fade .look-like-item {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    width: 40% !important;
+    margin: var(--gap) 0 0 var(--gap);
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -10013,7 +10035,7 @@ input[type='checkbox'] {
 }
 
 .how-item:nth-child(1) {
-  margin: 2em 1.5em;
+  margin: 2em auto;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
