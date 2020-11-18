@@ -111,6 +111,9 @@
         }
         
     }
+    h3{
+        color: $base-text-color;
+    }
 }
 
 .testimonial-intro-text{
@@ -146,6 +149,9 @@
         width: 70%;
 
     }
+    &:last-of-type{
+        margin-bottom: 4em;
+    }
 }
 
 .testimonial-author {
@@ -155,17 +161,14 @@
     align-items: baseline;
     margin: auto;
     width: 90%;
+    @media  #{$breakpoint-min-md}{
+        grid-template-columns: 14em auto;
+    }
     @media  #{$breakpoint-lg}{
         width: 90%;
-
-    }
-    @media  #{$breakpoint-min-md}{
-        grid-template-columns: 13em auto;
-
     }
     @media  #{$breakpoint-xxl}{
         width: 75%;
-
     }
 }
 
@@ -280,6 +283,9 @@
 
 .you-will-gain-section{
     padding: 2em 0 0 0;
+    @media  #{$breakpoint-min-md}{
+        padding: 0 0 0 0;
+    }
 }
 
 .you-will-gain{

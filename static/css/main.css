@@ -11357,6 +11357,10 @@ input[type='checkbox'] {
   }
 }
 
+.testimonial-intro h3 {
+  color: #3b403f;
+}
+
 @media only screen and (min-width: 768px) {
   .testimonial-intro-text {
     margin-bottom: 0;
@@ -11397,6 +11401,10 @@ input[type='checkbox'] {
   }
 }
 
+.testimonial-item:last-of-type {
+  margin-bottom: 4em;
+}
+
 .testimonial-author {
   display: -ms-grid;
   display: grid;
@@ -11407,16 +11415,16 @@ input[type='checkbox'] {
   width: 90%;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
   .testimonial-author {
-    width: 90%;
+    -ms-grid-columns: 14em auto;
+        grid-template-columns: 14em auto;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-author {
-    -ms-grid-columns: 13em auto;
-        grid-template-columns: 13em auto;
+    width: 90%;
   }
 }
 
@@ -11585,6 +11593,12 @@ input[type='checkbox'] {
 
 .you-will-gain-section {
   padding: 2em 0 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .you-will-gain-section {
+    padding: 0 0 0 0;
+  }
 }
 
 .you-will-gain {
