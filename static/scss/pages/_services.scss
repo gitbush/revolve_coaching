@@ -749,7 +749,35 @@
     background: white;
     padding-top: 1em;
     @media #{$breakpoint-min-md}{
-        padding-top: 2em;
+        margin: 2em 0 3em 0;
+        padding: 0;
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}{
+        margin: 2em 0 4em 0;
+        padding: 0;
+    }
+}
+
+.how-content{
+    @media #{$breakpoint-min-md}{
+        display: grid;
+        height: 30em;
+    }
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        margin: 2em 0 3em 0;
+        grid-template-columns: auto 13em 2em 13em 2em 13em auto;
+    }
+    @media #{$breakpoint-lg}{
+        height: 22em;
+        grid-template-columns: auto 14em 1.5em 14em 1.5em 14em auto;
+    }
+    @media #{$breakpoint-xl}{
+        height: 19em;
+        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 17em;
+        grid-template-columns: auto 13em 2em 13em 2em 13em auto;
     }
 }
 
@@ -759,7 +787,10 @@
     height: auto;
     padding: 2em 2em;
     &:nth-child(1){
-        margin: 2em auto;
+        margin: 2em 1.5em;
+        @media #{$breakpoint-sm}{
+            margin: 2em auto;
+        }
     }
     @media #{$breakpoint-sm}{
         height: auto;
@@ -768,6 +799,7 @@
     }
     @media #{$breakpoint-min-md}{
         background-color: $gray;
+        height: 100%;
         &:nth-child(1){
             grid-column: 2;
             margin: 0;
@@ -782,17 +814,17 @@
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 0;
         padding: .8em .7em;
-        height: 22em;
         width: 100%;
     }
     @media #{$breakpoint-lg}{
-        height: 19em;
     }
     @media #{$breakpoint-xl}{
-        height: 16em;
     }
     @media #{$breakpoint-xxl}{
-        height: 14em;
+        padding: .8em 1em;
+    }
+    .sect-subtitle{
+        margin-bottom: 1.5em;
     }
 }
 
@@ -819,9 +851,8 @@
 .how-item-title{
     margin: .8em .7em;
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
-        margin: 0;
+        margin-bottom: .5em;
         font-size: 1em;
-        height: 3.5em;
     }
 
     @media #{$breakpoint-xl}{
@@ -829,22 +860,6 @@
     }
     @media #{$breakpoint-xxl}{
         font-size: .85em;
-    }
-}
-
-.how-content{
-    @media #{$breakpoint-min-md}{
-        display: grid;
-    }
-    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
-        margin: 2em 0 3em 0;
-        grid-template-columns: auto 13em 2em 13em 2em 13em auto;
-    }
-    @media #{$breakpoint-lg}{
-        grid-template-columns: auto 14em 1.5em 14em 1.5em 14em auto;
-    }
-    @media #{$breakpoint-xxl}{
-        grid-template-columns: auto 13em 2em 13em 2em 13em auto;
     }
 }
 
@@ -861,12 +876,25 @@
     position: relative;
     z-index: 5;
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
-        margin: 2em 0 0 0;
+        margin: 2em 0 4em 0;
+        padding: 0;
         width: 100%;
+    }
+    @media#{$breakpoint-lg}{
+        margin: 2em 0 2em 0;
+    }
+    @media#{$breakpoint-xl}{
+        margin: 2em 0 3em 0;
     }
     .how-title{
         @media #{$breakpoint-md}{
-            margin: .8em 0 1.5em 0;
+            margin: .8em 0 .5em 0;
+        
+        }
+    }
+    .sect-subtitle{
+        @media #{$breakpoint-min-md}{
+            margin-bottom: 2em;
         
         }
     }
@@ -885,6 +913,7 @@
     
     }
     @media #{$breakpoint-md}{
+        margin: 2em 0;
         --gap: 2em;
         flex-wrap: wrap;
         margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
@@ -896,9 +925,16 @@
     }
     @media #{$breakpoint-lg}{
         width: 100%;
+        height: 29em;
         grid-template-columns: auto 14em 2em 14em 2em 14em auto;
     }
     @media #{$breakpoint-xl}{
+        width: 85%;
+        grid-template-columns: auto 15em 2em 15em 2em 15em auto;
+    }
+    @media #{$breakpoint-xxl}{
+        width: 85%;
+        height: 22em;
         grid-template-columns: auto 15em 2em 15em 2em 15em auto;
     }
 }
@@ -911,14 +947,14 @@
     }
     @media #{$breakpoint-md}{
         margin: var(--gap) 0 0 var(--gap);
-        height: 24.5em;
+        height: 26.5em;
         width: 18em;
         &:nth-child(5){
             margin-top: 2em;
         }
     }
     @media #{$breakpoint-lg}, #{$breakpoint-xl}{
-        height: 19em;
+        height: 100%;
         &:nth-child(1){
             grid-column: 2;
         }
@@ -930,10 +966,10 @@
         }
     }
     @media #{$breakpoint-lg}{
-        height: 24em;
+        height: 100%;
     }
     @media #{$breakpoint-xxl}{
-        height: 17em;
+        height: 100%;
     }
 }
 
@@ -1053,6 +1089,7 @@
     }
     
 }
+
 
 .price-text{
     color: $base-text-color;
