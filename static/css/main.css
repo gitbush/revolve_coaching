@@ -818,6 +818,10 @@ template {
   font-style: italic;
 }
 
+.fa-instagram {
+  color: #3b403f;
+}
+
 /**
  * Set up a decent box model on the root element
  */
@@ -3876,7 +3880,7 @@ input[type='checkbox'] {
     -ms-grid-row: 1;
     grid-row: 1/1;
     text-align: start;
-    padding: 0 0 0 1em;
+    padding: 0 0 0 1.5em;
   }
   .home-about .home-about-img {
     -ms-grid-column: 2;
@@ -3953,7 +3957,7 @@ input[type='checkbox'] {
 .home-about-subtitle {
   font-family: "Roboto", serif;
   font-size: 1.3em;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 0;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.2em;
@@ -4464,23 +4468,6 @@ input[type='checkbox'] {
   }
 }
 
-.why-mhairi-title {
-  text-align: center;
-  margin: 2em 0;
-}
-
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .why-mhairi-title {
-    margin: 2em 1em;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .why-mhairi-title {
-    margin: 0;
-  }
-}
-
 .why-mhairi-content {
   margin-top: 0;
   padding-bottom: 3em;
@@ -4529,6 +4516,14 @@ input[type='checkbox'] {
 
 .why-mhairi-content .why-mhairi-title {
   padding-top: 0;
+  text-align: center;
+  margin: 2em 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .why-mhairi-content .why-mhairi-title {
+    margin: 2em 1em;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -4540,7 +4535,8 @@ input[type='checkbox'] {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     text-align: start;
-    padding: 0 0 0 1em;
+    margin: 0;
+    padding: 0 0 0 1.5em;
   }
 }
 
@@ -7804,7 +7800,7 @@ input[type='checkbox'] {
     -ms-grid-row: 1;
     grid-row: 1/1;
     text-align: start;
-    padding: 0 0 0 1em;
+    padding: 0 0 0 1.5em;
   }
   .home-about .home-about-img {
     -ms-grid-column: 2;
@@ -7881,7 +7877,7 @@ input[type='checkbox'] {
 .home-about-subtitle {
   font-family: "Roboto", serif;
   font-size: 1.3em;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 0;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.2em;
@@ -8392,23 +8388,6 @@ input[type='checkbox'] {
   }
 }
 
-.why-mhairi-title {
-  text-align: center;
-  margin: 2em 0;
-}
-
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .why-mhairi-title {
-    margin: 2em 1em;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .why-mhairi-title {
-    margin: 0;
-  }
-}
-
 .why-mhairi-content {
   margin-top: 0;
   padding-bottom: 3em;
@@ -8457,6 +8436,14 @@ input[type='checkbox'] {
 
 .why-mhairi-content .why-mhairi-title {
   padding-top: 0;
+  text-align: center;
+  margin: 2em 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .why-mhairi-content .why-mhairi-title {
+    margin: 2em 1em;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -8468,7 +8455,8 @@ input[type='checkbox'] {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     text-align: start;
-    padding: 0 0 0 1em;
+    margin: 0;
+    padding: 0 0 0 1.5em;
   }
 }
 
