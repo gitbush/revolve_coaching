@@ -188,17 +188,6 @@ let questions = [
   }
 ];
 
-// create our results
-let results = [
-  {
-      result : `You were ready yesterday! <br><br> There’s nothing standing in your way. Book your free, no obligation call here to find out a little more and get to know eachother better. <br><br>Let’s chat!`,
-  },
-  {
-      result : `You might not be ready… yet. Think of the questions you answered ‘false’ to. What would it take to turn some of those to ‘true’? You might benefit from having a 1 to 1 chat. Book a call with me below. `,
-  }
-];
-
-
 // create some variables
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
@@ -300,6 +289,16 @@ function checkAnswer(btn){
   }
 }
 
+// create our results
+let results = [
+  {
+      result : `You were ready yesterday! <br><br> There’s nothing standing in your way. Book your free, no obligation call here to find out a little more and get to know eachother better. <br><br>Let’s chat!`,
+  },
+  {
+      result : `You might not be ready… yet. <br><br> Think of the questions you answered ‘false’ to. What would it take to turn some of those to ‘true’? You might benefit from having a 1 to 1 chat. <br><br>Book a call with me below. `,
+  }
+];
+
 // Show resuting text from quiz
 function resultRender(){
   quiz.style.display ="none";
@@ -310,8 +309,8 @@ function resultRender(){
     quizStart.innerHTML = `BOOK A CHAT`;
     quizStart.href = `https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339`;
   } 
-  else if(trueCount < 6){
-    quizIntroText.innerHTML = `${results[2].result}`;
+  else{
+    quizIntroText.innerHTML = `${results[1].result}`;
     quizStart.innerHTML = `BOOK A CHAT`;
     quizStart.href = `https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339`;
 

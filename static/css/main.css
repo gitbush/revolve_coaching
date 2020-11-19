@@ -2482,7 +2482,7 @@ input[type='checkbox'] {
   border: none;
   font-size: 1.1em;
   padding: .6em 1.8em;
-  margin: 1em;
+  margin: .5em 1em;
   text-transform: uppercase;
 }
 
@@ -3943,7 +3943,7 @@ input[type='checkbox'] {
 }
 
 .home-about-title {
-  margin: auto auto 0 auto;
+  margin: auto 1em 0 1em;
   text-align: center;
   padding-top: 3em;
 }
@@ -4517,7 +4517,7 @@ input[type='checkbox'] {
 .why-mhairi-content .why-mhairi-title {
   padding-top: 0;
   text-align: center;
-  margin: 2em 0;
+  margin: 2em 1.5em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -7863,7 +7863,7 @@ input[type='checkbox'] {
 }
 
 .home-about-title {
-  margin: auto auto 0 auto;
+  margin: auto 1em 0 1em;
   text-align: center;
   padding-top: 3em;
 }
@@ -8437,7 +8437,7 @@ input[type='checkbox'] {
 .why-mhairi-content .why-mhairi-title {
   padding-top: 0;
   text-align: center;
-  margin: 2em 0;
+  margin: 2em 1.5em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {

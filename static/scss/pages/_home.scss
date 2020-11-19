@@ -556,7 +556,7 @@
 }
 
 .home-about-title{
-    margin: auto auto 0 auto;
+    margin: auto 1em 0 1em;
     text-align: center;
     padding-top: 3em;
     @media #{$breakpoint-md}, #{$breakpoint-lg} {
@@ -966,7 +966,7 @@
     .why-mhairi-title{
         padding-top: 0;
         text-align: center;
-        margin: 2em 0;
+        margin: 2em 1.5em;
         @media #{$breakpoint-sm} {
             margin: 2em 1em;
         }
