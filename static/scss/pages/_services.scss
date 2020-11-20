@@ -421,9 +421,16 @@
     }
     .look-like-item{
         @media #{$breakpoint-min-md}{
-            align-self: end;
+            align-self: center;
+            padding: 0 .5em;
+            min-height: 2em;
             width: 40%!important;
             margin: var(--gap) 0 0 var(--gap);
+        }
+    }
+    .look-like-spacer{
+        @media #{$breakpoint-min-md}{
+            min-height: 2em;
         }
     }
 }
@@ -609,11 +616,11 @@
 .look-like-item{
     margin: 0;
 
-    &::after{
-        content: "·";
-        display: block;
-        text-align: center;
-    }
+    // &::after{
+    //     content: "·";
+    //     display: block;
+    //     text-align: center;
+    // }
 }
 
 // ---------------------------------------------------------------

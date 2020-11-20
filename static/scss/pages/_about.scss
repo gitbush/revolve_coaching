@@ -514,11 +514,19 @@
 
 .how-i-help-text{
     margin-bottom: 1em;
+    display: flex;
     @media #{$breakpoint-sm} {
         margin-bottom: 1em;
     }
-    @media #{$breakpoint-md} {
+    @media #{$breakpoint-min-md} {
+        display: flex;
+        min-height: 3em;
         margin-bottom: 1em;
+        align-items: center;
+    }
+    p{
+        display: inline-block;
+        margin: 0 .7em 0 0;
     }
 }
 // ---------------------------------------------------------------
