@@ -3872,41 +3872,6 @@ input[type='checkbox'] {
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
   }
-  .home-about .home-about-title {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-column: 3/5;
-    -ms-grid-row: 1;
-    grid-row: 1/1;
-    text-align: start;
-    padding: 0 0 0 1.5em;
-  }
-  .home-about .home-about-img {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 4;
-    grid-row: 1/5;
-  }
-  .home-about .home-about-text {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-column: 3/5;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    text-align: start;
-    padding: 0 0 0 1.5em;
-  }
-  .home-about .about-cta-btn {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-column: 3/5;
-    -ms-grid-row: 3;
-    grid-row: 3/3;
-    margin: auto;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3947,8 +3912,15 @@ input[type='checkbox'] {
   padding-top: 3em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
   .home-about-title {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+    text-align: start;
+    padding: 0 0 0 1.5em;
     margin: 1em auto 0 auto;
   }
 }
@@ -3995,6 +3967,12 @@ input[type='checkbox'] {
   .home-about-img {
     width: 100%;
     background-color: #fbf2ec;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
   }
 }
 
@@ -4039,6 +4017,30 @@ input[type='checkbox'] {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-about-text {
     padding: 0 5.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-about-text {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    text-align: start;
+    padding: 0 0 0 1.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-cta-btn {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+    margin: auto;
   }
 }
 
@@ -7807,41 +7809,6 @@ input[type='checkbox'] {
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
   }
-  .home-about .home-about-title {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-column: 3/5;
-    -ms-grid-row: 1;
-    grid-row: 1/1;
-    text-align: start;
-    padding: 0 0 0 1.5em;
-  }
-  .home-about .home-about-img {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 4;
-    grid-row: 1/5;
-  }
-  .home-about .home-about-text {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-column: 3/5;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    text-align: start;
-    padding: 0 0 0 1.5em;
-  }
-  .home-about .about-cta-btn {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-column: 3/5;
-    -ms-grid-row: 3;
-    grid-row: 3/3;
-    margin: auto;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -7882,8 +7849,15 @@ input[type='checkbox'] {
   padding-top: 3em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
   .home-about-title {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+    text-align: start;
+    padding: 0 0 0 1.5em;
     margin: 1em auto 0 auto;
   }
 }
@@ -7930,6 +7904,12 @@ input[type='checkbox'] {
   .home-about-img {
     width: 100%;
     background-color: #fbf2ec;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
   }
 }
 
@@ -7974,6 +7954,30 @@ input[type='checkbox'] {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-about-text {
     padding: 0 5.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-about-text {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    text-align: start;
+    padding: 0 0 0 1.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-cta-btn {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+    margin: auto;
   }
 }
 
@@ -9508,7 +9512,9 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) {
   .look-like-fade-sect {
-    margin: 1em 0 3em 0;
+    background-color: #e4f1f1;
+    padding: 2em 0 3em 0;
+    margin: 0;
   }
 }
 
@@ -9549,15 +9555,42 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .look-like-fade {
+    --gap: 1.2em;
+    padding: 1em 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .look-like-fade {
+    --gap: 1.5em;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .look-like-fade .look-like-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 .5em;
-    min-height: 2em;
+    min-height: 3em;
+    width: 33% !important;
+    margin: 0 var(--gap) 0 var(--gap);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .look-like-fade .look-like-item {
     width: 40% !important;
-    margin: var(--gap) 0 0 var(--gap);
   }
 }
 

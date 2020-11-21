@@ -510,27 +510,6 @@
         padding-bottom: 0;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
         grid-template-rows:repeat(3, 1fr);
-        .home-about-title{
-            grid-column: 3/5;
-            grid-row: 1/1;
-            text-align: start;
-            padding: 0 0 0 1.5em;
-        }
-        .home-about-img{
-            grid-column: 2/3;
-            grid-row: 1/5;
-        }
-        .home-about-text{
-            grid-column: 3/5;
-            grid-row: 2/3;
-            text-align: start;
-            padding: 0 0 0 1.5em;
-        }
-        .about-cta-btn{
-            grid-column: 3/5;
-            grid-row: 3/3;
-            margin: auto;
-        }
     }
     @media #{$breakpoint-md} {
         margin: 2em 0 3em 0;
@@ -555,11 +534,12 @@
     margin: auto 1em 0 1em;
     text-align: center;
     padding-top: 3em;
-    @media #{$breakpoint-md}, #{$breakpoint-lg} {
+    @media #{$breakpoint-min-md} {
+        grid-column: 3/5;
+        grid-row: 1/1;
+        text-align: start;
+        padding: 0 0 0 1.5em;
         margin: 1em auto 0 auto;
-    }
-    @media #{$breakpoint-xl} {
-        // margin: 2em auto 0 auto;
     }
 }
 
@@ -593,6 +573,8 @@
     @media #{$breakpoint-min-md} {
         width: 100%;
         background-color: $light-pink;
+        grid-column: 2/3;
+        grid-row: 1/5;
     }
     @media #{$breakpoint-md} {
         height: 90%;
@@ -621,6 +603,20 @@
     margin: auto;
     @media #{$breakpoint-sm} {
         padding: 0 5.5em;
+    }
+    @media #{$breakpoint-min-md} {
+        grid-column: 3/5;
+        grid-row: 2/3;
+        text-align: start;
+        padding: 0 0 0 1.5em;
+    }
+}
+
+.about-cta-btn{
+    @media #{$breakpoint-min-md} {
+        grid-column: 3/5;
+        grid-row: 3/3;
+        margin: auto;
     }
 }
 

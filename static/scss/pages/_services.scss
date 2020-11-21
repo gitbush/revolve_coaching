@@ -389,7 +389,9 @@
     margin: 3em 0;
     text-align: center;
     @media #{$breakpoint-min-md}{
-        margin: 1em 0 3em 0;
+        background-color: $aqua-bg;
+        padding: 2em 0 3em 0;
+        margin: 0;
     }
     
 
@@ -419,13 +421,26 @@
         margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
         width: calc(100% + var(--gap));
     }
+    @media #{$breakpoint-lg}{
+        --gap: 1.2em;
+        padding: 1em 0 0 0;
+    }
+    @media #{$breakpoint-xl}{
+        --gap: 1.5em;
+    }
     .look-like-item{
         @media #{$breakpoint-min-md}{
+            display: flex;
+            justify-content: center;
             align-self: center;
+            align-items: center;
             padding: 0 .5em;
-            min-height: 2em;
-            width: 40%!important;
-            margin: var(--gap) 0 0 var(--gap);
+            min-height: 3em;
+            width: 33% !important;
+            margin: 0 var(--gap) 0 var(--gap);
+        }
+        @media #{$breakpoint-md}, #{$breakpoint-lg}{
+            width: 40% !important;
         }
     }
     .look-like-spacer{
