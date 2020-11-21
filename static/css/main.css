@@ -9565,6 +9565,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 1200px) {
   .look-like-fade {
     --gap: 1.5em;
+    padding: 1em 0 0 0;
   }
 }
 
@@ -9592,6 +9593,10 @@ input[type='checkbox'] {
   .look-like-fade .look-like-item {
     width: 40% !important;
   }
+}
+
+.look-like-fade .look-like-spacer {
+  min-height: 2em;
 }
 
 @media only screen and (min-width: 768px) {

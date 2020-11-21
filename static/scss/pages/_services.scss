@@ -427,6 +427,7 @@
     }
     @media #{$breakpoint-xl}{
         --gap: 1.5em;
+        padding: 1em 0 0 0;
     }
     .look-like-item{
         @media #{$breakpoint-min-md}{
@@ -444,6 +445,7 @@
         }
     }
     .look-like-spacer{
+        min-height: 2em;
         @media #{$breakpoint-min-md}{
             min-height: 2em;
         }
