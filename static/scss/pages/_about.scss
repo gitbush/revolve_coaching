@@ -31,19 +31,19 @@
 
 .about-hero-img{
     text-align: center;
-    height: 28em;
+    height: 30em;
     width: 90vw;
     margin: auto;
 
     @media #{$breakpoint-md} {
         grid-column: 2/4;
         width: 100%;
-        height: 21em;
+        height: 26em;
     }
     @media #{$breakpoint-lg} {
         grid-column: 2/4;
         width: 100%;
-        height: 23em;
+        height: 25em;
     }
     @media #{$breakpoint-xl} {
         grid-column: 2/4;
@@ -52,7 +52,7 @@
     }
     @media #{$breakpoint-xxl}{
         grid-column: 2/4;
-        height: 18em;
+        height: 23em;
     }
 
     img{
@@ -64,16 +64,21 @@
         }
         @media #{$breakpoint-md} {
             width: 90%;
-            object-position: 50% 20%;
+            object-position: 50% 40%;
         }
         @media #{$breakpoint-lg} {
             width: 100%;
-            object-position: 50% 20%;
+            object-position: 50% 30%;
         }
         @media #{$breakpoint-xl} {
             width: 100%;
             object-fit: cover;
             object-position: 50% 15%;
+        }
+        @media #{$breakpoint-xxl} {
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 35%;
         }
     }
 }

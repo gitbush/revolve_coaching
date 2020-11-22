@@ -292,7 +292,7 @@ function checkAnswer(btn){
 // create our results
 let results = [
   {
-      result : `You were ready yesterday! <br><br> There’s nothing standing in your way. Book your free, no obligation call here to find out a little more and get to know eachother better. <br><br>Let’s chat!`,
+      result : `You were ready yesterday! <br><br> There’s nothing standing in your way. Book your free, no obligation call here to find out a little more and get to know each other better. <br><br>Let’s chat!`,
   },
   {
       result : `You might not be ready… yet. <br><br> Think of the questions you answered ‘false’ to. What would it take to turn some of those to ‘true’? You might benefit from having a 1 to 1 chat. <br><br>Book a call with me below. `,
