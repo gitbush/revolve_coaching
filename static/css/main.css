@@ -3503,21 +3503,13 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-alone-exert {
-    width: 80%;
     margin: 1em auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .testimonial-alone-exert {
-    width: 70%;
     margin: 1em auto;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .testimonial-alone-exert {
-    width: 60%;
   }
 }
 
@@ -3539,7 +3531,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-alone-exert p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
@@ -3551,7 +3543,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1600px) {
   .testimonial-alone-exert p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
@@ -7440,21 +7432,13 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-alone-exert {
-    width: 80%;
     margin: 1em auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .testimonial-alone-exert {
-    width: 70%;
     margin: 1em auto;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .testimonial-alone-exert {
-    width: 60%;
   }
 }
 
@@ -7476,7 +7460,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-alone-exert p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
@@ -7488,7 +7472,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1600px) {
   .testimonial-alone-exert p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 

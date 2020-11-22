@@ -274,15 +274,12 @@
         margin: 1em auto;
     }
     @media  #{$breakpoint-lg}{
-        width: 80%;
         margin: 1em auto;
     }
     @media  #{$breakpoint-xl}{
-        width: 70%;
         margin: 1em auto;
     }
     @media  #{$breakpoint-xxl}{
-        width: 60%;
 
     }
     p {
@@ -294,13 +291,13 @@
             font-size: 1.2em;
         }
         @media  #{$breakpoint-lg}{
-            font-size: 1.1em;
+            font-size: 1em;
         }
         @media  #{$breakpoint-xl}{
             font-size: 1.1em;
         }
         @media  #{$breakpoint-xxl}{
-            font-size: 1.1em;
+            font-size: 1em;
         }
     }
 }
