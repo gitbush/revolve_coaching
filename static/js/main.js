@@ -358,7 +358,13 @@ if(window.innerWidth < 769 && quizBanner){
 
 if(banner){
   let homeHero2 = document.getElementsByClassName('home-hero-2')[0]
+  let headerNav = document.getElementById('header-nav')
+  let headerName = document.getElementById('headerName')
   
+  homeHero2.style.objectPosition = "50% 60%"
+  headerNav.classList = 'toggle-header-relative'
+  headerName.classList = 'header-name-quiz d-md-none'
+
   if(window.innerWidth >= 360 && window.innerWidth <= 500){
     
     homeHero2.style.objectPosition = "50% 30%"

@@ -3096,8 +3096,8 @@ input[type='checkbox'] {
 }
 
 .home-hero .home-hero-2 {
-  -o-object-position: 50% 60%;
-     object-position: 50% 60%;
+  -o-object-position: 50% 40%;
+     object-position: 50% 40%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -7035,8 +7035,8 @@ input[type='checkbox'] {
 }
 
 .home-hero .home-hero-2 {
-  -o-object-position: 50% 60%;
-     object-position: 50% 60%;
+  -o-object-position: 50% 40%;
+     object-position: 50% 40%;
 }
 
 @media only screen and (max-width: 500px) {
