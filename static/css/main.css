@@ -1519,20 +1519,19 @@ footer {
   background: #fbf2ec;
   color: 0;
   cursor: pointer;
-  right: -23rem;
+  right: -25rem;
   padding: 1em 2em 1em 2em;
   position: fixed;
   top: 15px;
-  height: 24em;
-  width: 20em;
+  height: 23em;
+  width: 18em;
   z-index: 99;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .nav {
-    height: 22em;
-    width: 19em;
-    padding: 1em 1em 1em 2em;
+    height: 21em;
+    width: 16em;
   }
 }
 
@@ -1545,15 +1544,15 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .nav {
     height: 19.5em;
-    width: 16.5em;
+    width: 14em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .nav {
     padding: 1em 2em .6em 1.5em;
-    height: 18.5em;
-    width: 15em;
+    height: 17em;
+    width: 12.5em;
   }
 }
 
@@ -1561,15 +1560,15 @@ footer {
   .nav {
     padding: 1em 1em .8em 1.3em;
     height: 16em;
-    width: 14em;
+    width: 11em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .nav {
-    padding: 1em 1em .5em 1em;
+    padding: 1em 1em .8em 1em;
     height: 14em;
-    width: 12em;
+    width: 9em;
   }
 }
 
@@ -1852,19 +1851,7 @@ footer {
 
 .social-nav-item {
   margin: .5em;
-  font-size: 1.4em;
-}
-
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .social-nav-item {
-    font-size: 1.6em;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .social-nav-item {
-    font-size: 1.6em;
-  }
+  font-size: 1.3em;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1890,13 +1877,7 @@ footer {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: .5em;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
-  .social-nav {
-    bottom: .5em;
-  }
+  bottom: 5px;
 }
 
 a:focus {
@@ -3114,8 +3095,8 @@ input[type='checkbox'] {
 }
 
 .home-hero .home-hero-2 {
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -7053,8 +7034,8 @@ input[type='checkbox'] {
 }
 
 .home-hero .home-hero-2 {
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
 }
 
 @media only screen and (max-width: 500px) {

@@ -338,6 +338,7 @@ var placeholder = document.getElementsByClassName('placeholder')[0]
 var quizBanner = document.getElementsByClassName('quiz-banner')[0]
 var sticky = navbar.offsetTop;
 
+let banner = true
 
 if(window.innerWidth < 769 && quizBanner){
   window.onscroll = function() {myFunction()};
@@ -354,6 +355,19 @@ if(window.innerWidth < 769 && quizBanner){
   }
 }
 
+
+if(banner){
+  let homeHero2 = document.getElementsByClassName('home-hero-2')[0]
+  
+  if(window.innerWidth >= 360 && window.innerWidth <= 500){
+    
+    homeHero2.style.objectPosition = "50% 30%"
+  }
+
+  if(window.innerWidth >= 768){
+    homeHero2.style.objectPosition = "50% 22%"
+  }
+}
 
 /**
  * Smooth scroll
