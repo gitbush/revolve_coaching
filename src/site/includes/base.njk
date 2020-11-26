@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body>
+
+    {% include 'components/_banner.njk' %}
+
     <header id="header">
         <div class="header-logo d-none d-md-block">
             <a class="header-link" href="/">
@@ -39,9 +42,9 @@
                 <h2 class="logo-subtitle mb-0">The Roadblock Coach</h2>
             </a>
         </div>
-        <div class="toggle-header">
+        <div id="header-nav" class="toggle-header-relative">
             <a class="header-link" href="/">
-                <h1 class="header-name d-md-none">Mhairi Todd</h1>
+                <h1 class="header-name-quiz d-md-none">Mhairi Todd</h1>
             </a>
             <div class="nav-toggle">
                 <h5 class="nav-toggle-text">MENU</h5>
