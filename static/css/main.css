@@ -3830,6 +3830,13 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-section {
+    background: white;
+    height: 38em;
+  }
+}
+
 .gift-card-section .sect-title {
   margin: 0 0 1em 0;
 }
@@ -3851,6 +3858,25 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-intro {
+    width: 34em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85vw;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .gift-card-item {
   width: 85vw;
   margin: 4em auto;
@@ -3862,6 +3888,14 @@ input[type='checkbox'] {
   .gift-card-item {
     width: 24em;
     height: 33.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-item {
+    width: 31%;
+    height: 12.5em;
+    margin: 0;
   }
 }
 
@@ -3891,6 +3925,13 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-text {
+    top: 9em;
+    padding: 1em .5em;
+  }
+}
+
 .gift-card-text .normal-text {
   margin-bottom: 0;
 }
@@ -3901,6 +3942,14 @@ input[type='checkbox'] {
 
 .gift-card-btn {
   margin-top: 2em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-btn {
+    padding: .2em 1em;
+    margin: 1em auto 0 auto !important;
+    width: 7em;
+  }
 }
 
 .home-about {
@@ -7855,6 +7904,13 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-section {
+    background: white;
+    height: 38em;
+  }
+}
+
 .gift-card-section .sect-title {
   margin: 0 0 1em 0;
 }
@@ -7876,6 +7932,25 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-intro {
+    width: 34em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85vw;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .gift-card-item {
   width: 85vw;
   margin: 4em auto;
@@ -7887,6 +7962,14 @@ input[type='checkbox'] {
   .gift-card-item {
     width: 24em;
     height: 33.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-item {
+    width: 31%;
+    height: 12.5em;
+    margin: 0;
   }
 }
 
@@ -7916,6 +7999,13 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-text {
+    top: 9em;
+    padding: 1em .5em;
+  }
+}
+
 .gift-card-text .normal-text {
   margin-bottom: 0;
 }
@@ -7926,6 +8016,14 @@ input[type='checkbox'] {
 
 .gift-card-btn {
   margin-top: 2em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-btn {
+    padding: .2em 1em;
+    margin: 1em auto 0 auto !important;
+    width: 7em;
+  }
 }
 
 .home-about {
