@@ -386,10 +386,10 @@ if(banner){
 $(document).ready(function(){
 
 
-  $("#bannerBtn").click(function() {
+  $("#toTop").click(function() {
     $('html, body').animate({
-        scrollTop: $("#quizSection").offset().top -150
+        scrollTop: $("#header").offset().top -150
     }, 1000);
-  });
+  }); 
 
 });
