@@ -1,0 +1,22 @@
+// ---------------------------------------------------------------
+// Gift card detail section
+// ---------------------------------------------------------------
+
+.gift-card-detail{
+    display: flex;
+    width: 40em;
+    margin: auto;
+}
+
+.gift-card-img-carousel{
+    width: 45%;
+    margin: 0 1.5em;
+
+    img{
+        width: 100%;
+    }
+}
+
+.gift-card-description{
+    width: 50%;
+}

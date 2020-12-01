@@ -1513,6 +1513,27 @@ footer {
   }
 }
 
+.gift-card-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40em;
+  margin: auto;
+}
+
+.gift-card-img-carousel {
+  width: 45%;
+  margin: 0 1.5em;
+}
+
+.gift-card-img-carousel img {
+  width: 100%;
+}
+
+.gift-card-description {
+  width: 50%;
+}
+
 .nav {
   -webkit-transition: right .8s ease;
   transition: right .8s ease;
