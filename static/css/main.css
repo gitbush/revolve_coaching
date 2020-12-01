@@ -3824,8 +3824,20 @@ input[type='checkbox'] {
   background: #f0f3f3;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-section {
+    padding: 2em 0 4em 0;
+  }
+}
+
 .gift-card-section .sect-title {
   margin: 0 0 1em 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-section .sect-title {
+    padding: 0 2em;
+  }
 }
 
 .gift-card-intro {
@@ -3833,11 +3845,24 @@ input[type='checkbox'] {
   margin: auto;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-intro {
+    width: 80vw;
+  }
+}
+
 .gift-card-item {
   width: 85vw;
   margin: 4em auto;
   position: relative;
   height: 34.5em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-item {
+    width: 24em;
+    height: 33.5em;
+  }
 }
 
 .gift-card-img {
@@ -3858,6 +3883,12 @@ input[type='checkbox'] {
   top: 20em;
   right: 0;
   background: white;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-text {
+    width: 85%;
+  }
 }
 
 .gift-card-text .normal-text {
@@ -7818,8 +7849,20 @@ input[type='checkbox'] {
   background: #f0f3f3;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-section {
+    padding: 2em 0 4em 0;
+  }
+}
+
 .gift-card-section .sect-title {
   margin: 0 0 1em 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-section .sect-title {
+    padding: 0 2em;
+  }
 }
 
 .gift-card-intro {
@@ -7827,11 +7870,24 @@ input[type='checkbox'] {
   margin: auto;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-intro {
+    width: 80vw;
+  }
+}
+
 .gift-card-item {
   width: 85vw;
   margin: 4em auto;
   position: relative;
   height: 34.5em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-item {
+    width: 24em;
+    height: 33.5em;
+  }
 }
 
 .gift-card-img {
@@ -7852,6 +7908,12 @@ input[type='checkbox'] {
   top: 20em;
   right: 0;
   background: white;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-text {
+    width: 85%;
+  }
 }
 
 .gift-card-text .normal-text {

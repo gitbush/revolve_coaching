@@ -494,14 +494,23 @@
     padding: 2em 0 5em 0 ;
     background: $gray;
 
+    @media #{$breakpoint-sm} {
+        padding: 2em 0 4em 0;
+    }
     .sect-title{
         margin: 0 0 1em 0;
+        @media #{$breakpoint-sm} {
+            padding: 0 2em;
+        }
     }
 }
 
 .gift-card-intro{
     width: 90vw;
     margin: auto;
+    @media #{$breakpoint-sm} {
+        width: 80vw;
+    }
 }
 
 .gift-card-item{
@@ -509,6 +518,11 @@
     margin: 4em auto;
     position: relative;
     height: 34.5em;
+
+    @media #{$breakpoint-sm} {
+        width: 24em;
+        height: 33.5em;
+    }
 }
 
 .gift-card-img{
@@ -529,6 +543,10 @@
     top: 20em;
     right: 0;
     background: white;
+
+    @media #{$breakpoint-sm} {
+        width: 85%;
+    }
 
     .normal-text{
         margin-bottom: 0;
