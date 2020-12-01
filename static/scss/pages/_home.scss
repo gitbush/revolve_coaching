@@ -497,9 +497,18 @@
     @media #{$breakpoint-sm} {
         padding: 2em 0 4em 0;
     }
-    @media #{$breakpoint-md} {
+    @media #{$breakpoint-min-md} {
         background: white;
         height: 38em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 36em;
+    }
+    @media #{$breakpoint-xl} {
+        height: 34em;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 35em;
     }
     .sect-title{
         margin: 0 0 1em 0;
@@ -515,17 +524,23 @@
     @media #{$breakpoint-sm} {
         width: 80vw;
     }
-    @media #{$breakpoint-md} {
+    @media #{$breakpoint-min-md} {
         width: 34em;
     }
 }
 
 .gift-card-content{
-    @media #{$breakpoint-md} {
+    @media #{$breakpoint-min-md} {
         display: flex;
         width: 85vw;
         margin: auto;
         justify-content: space-between;
+    }
+    @media #{$breakpoint-xl} {
+        justify-content: space-around;
+    }
+    @media #{$breakpoint-xxl} {
+        justify-content: space-evenly;
     }
 }
 
@@ -539,10 +554,19 @@
         width: 24em;
         height: 33.5em;
     }
-    @media #{$breakpoint-md} {
+    @media #{$breakpoint-min-md} {
         width: 31%;
         height: 12.5em;
         margin: 0;
+    }
+    @media #{$breakpoint-lg} {
+        width: 29%;
+    }
+    @media #{$breakpoint-xl} {
+        width: 26%;
+    }
+    @media #{$breakpoint-xxl} {
+        width: 22%;
     }
 }
 
@@ -568,11 +592,13 @@
     @media #{$breakpoint-sm} {
         width: 85%;
     }
-    @media #{$breakpoint-md} {
+    @media #{$breakpoint-min-md} {
         top: 9em;
         padding: 1em .5em;
     }
-
+    @media #{$breakpoint-xxl} {
+        top: 12em
+    }
     .normal-text{
         margin-bottom: 0;
     }
@@ -584,7 +610,7 @@
 .gift-card-btn{
     margin-top: 2em;
 
-    @media #{$breakpoint-md} {
+    @media #{$breakpoint-min-md} {
         padding: .2em 1em;
         margin: 1em auto 0 auto!important;
         width: 7em;

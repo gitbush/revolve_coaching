@@ -3830,10 +3830,28 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-section {
     background: white;
     height: 38em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gift-card-section {
+    height: 36em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gift-card-section {
+    height: 34em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .gift-card-section {
+    height: 35em;
   }
 }
 
@@ -3858,13 +3876,13 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-intro {
     width: 34em;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3874,6 +3892,21 @@ input[type='checkbox'] {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gift-card-content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .gift-card-content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -3891,11 +3924,29 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-item {
     width: 31%;
     height: 12.5em;
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gift-card-item {
+    width: 29%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gift-card-item {
+    width: 26%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .gift-card-item {
+    width: 22%;
   }
 }
 
@@ -3925,10 +3976,16 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-text {
     top: 9em;
     padding: 1em .5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .gift-card-text {
+    top: 12em;
   }
 }
 
@@ -3944,7 +4001,7 @@ input[type='checkbox'] {
   margin-top: 2em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-btn {
     padding: .2em 1em;
     margin: 1em auto 0 auto !important;
@@ -7904,10 +7961,28 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-section {
     background: white;
     height: 38em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gift-card-section {
+    height: 36em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gift-card-section {
+    height: 34em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .gift-card-section {
+    height: 35em;
   }
 }
 
@@ -7932,13 +8007,13 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-intro {
     width: 34em;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7948,6 +8023,21 @@ input[type='checkbox'] {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gift-card-content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .gift-card-content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -7965,11 +8055,29 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-item {
     width: 31%;
     height: 12.5em;
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gift-card-item {
+    width: 29%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gift-card-item {
+    width: 26%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .gift-card-item {
+    width: 22%;
   }
 }
 
@@ -7999,10 +8107,16 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-text {
     top: 9em;
     padding: 1em .5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .gift-card-text {
+    top: 12em;
   }
 }
 
@@ -8018,7 +8132,7 @@ input[type='checkbox'] {
   margin-top: 2em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
   .gift-card-btn {
     padding: .2em 1em;
     margin: 1em auto 0 auto !important;
