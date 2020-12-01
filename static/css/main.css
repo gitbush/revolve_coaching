@@ -3817,6 +3817,61 @@ input[type='checkbox'] {
   padding: 0.6em;
 }
 
+.gift-card-section {
+  text-align: center;
+  margin: auto;
+  padding: 2em 0 5em 0;
+  background: #f0f3f3;
+}
+
+.gift-card-section .sect-title {
+  margin: 0 0 1em 0;
+}
+
+.gift-card-intro {
+  width: 90vw;
+  margin: auto;
+}
+
+.gift-card-item {
+  width: 85vw;
+  margin: 4em auto;
+  position: relative;
+  height: 34.5em;
+}
+
+.gift-card-img {
+  width: 100%;
+}
+
+.gift-card-img img {
+  width: 100%;
+}
+
+.gift-card-text {
+  width: 90%;
+  margin: auto;
+  padding: 1.5em .5em;
+  border: solid 1px #e0e0e0;
+  position: absolute;
+  left: 0;
+  top: 20em;
+  right: 0;
+  background: white;
+}
+
+.gift-card-text .normal-text {
+  margin-bottom: 0;
+}
+
+.gift-card-text .sect-subtitle {
+  margin-bottom: 1.5em;
+}
+
+.gift-card-btn {
+  margin-top: 2em;
+}
+
 .home-about {
   background-color: #f0f3f3;
   margin-top: 0;
@@ -7754,6 +7809,61 @@ input[type='checkbox'] {
   background-color: #fbf2ec;
   height: 100%;
   padding: 0.6em;
+}
+
+.gift-card-section {
+  text-align: center;
+  margin: auto;
+  padding: 2em 0 5em 0;
+  background: #f0f3f3;
+}
+
+.gift-card-section .sect-title {
+  margin: 0 0 1em 0;
+}
+
+.gift-card-intro {
+  width: 90vw;
+  margin: auto;
+}
+
+.gift-card-item {
+  width: 85vw;
+  margin: 4em auto;
+  position: relative;
+  height: 34.5em;
+}
+
+.gift-card-img {
+  width: 100%;
+}
+
+.gift-card-img img {
+  width: 100%;
+}
+
+.gift-card-text {
+  width: 90%;
+  margin: auto;
+  padding: 1.5em .5em;
+  border: solid 1px #e0e0e0;
+  position: absolute;
+  left: 0;
+  top: 20em;
+  right: 0;
+  background: white;
+}
+
+.gift-card-text .normal-text {
+  margin-bottom: 0;
+}
+
+.gift-card-text .sect-subtitle {
+  margin-bottom: 1.5em;
+}
+
+.gift-card-btn {
+  margin-top: 2em;
 }
 
 .home-about {
