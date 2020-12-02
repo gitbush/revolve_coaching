@@ -1517,12 +1517,12 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40em;
-  margin: auto;
+  width: 44em;
+  margin: 3em auto 2em auto;
 }
 
 .gift-card-img-carousel {
-  width: 45%;
+  width: 65%;
   margin: 0 1.5em;
 }
 
@@ -1531,7 +1531,23 @@ footer {
 }
 
 .gift-card-description {
-  width: 50%;
+  width: 55%;
+}
+
+.gift-card-description .sect-subtitle {
+  text-align: left;
+}
+
+.gift-card-description-title {
+  margin: 0 0 1em 0;
+}
+
+.gift-card-tc {
+  margin-top: 1em;
+}
+
+.snipcart-add-item {
+  border: none;
 }
 
 .nav {
