@@ -3,36 +3,97 @@
 // ---------------------------------------------------------------
 
 .gift-card-detail{
-    display: flex;
-    width: 44em;
-    margin: 3em auto 2em auto;
+    width: 90vw;
+    margin: 3em auto 6em auto;
+
+    @media #{$breakpoint-sm}{
+        width: 25em;
+    }
+    @media #{$breakpoint-md}{
+        width: 26em;
+    }
+    @media #{$breakpoint-min-lg}{
+        display: flex;
+        width: 44em;
+        margin: 3em auto 2em auto;
+    }
+    @media #{$breakpoint-xl}{
+        width: 48em;
+    }
+    @media #{$breakpoint-xxl}{
+        width: 44em;
+    }
+
 }
 
 .gift-card-img-carousel{
-    width: 65%;
-    margin: 0 1.5em;
+    width: 100%;
+    margin: auto;
+    @media #{$breakpoint-min-lg}{
+        width: 55%;
+        margin: 0 1.5em;    
+    }
+    @media #{$breakpoint-xl}{
+        width: 55%;    
+    }
+
 
     img{
         width: 100%;
+        @media #{$breakpoint-min-lg}{
+            width: 100%;
+        }
+        
     }
 }
 
 .gift-card-description{
-    width: 55%;
-
+    @media #{$breakpoint-min-lg}{
+        width: 55%;
+    }
     .sect-subtitle{
         text-align: left;
+        @media #{$breakpoint-min-lg}{
+            text-align: left;
+        }
+        
     }
 }
 
 .gift-card-description-title{
-    margin: 0 0 1em 0;
+    margin: 2em auto;
+    @media #{$breakpoint-min-lg}{
+        margin: 0 0 1em 0;
+    }
+    .sect-subtitle{
+        margin: 0 auto 1em 0;
+    }
+    
 }
 
 .gift-card-tc{
     margin-top: 1em;
+    @media #{$breakpoint-min-lg}{
+        margin-top: 1em;
+    }
+}
+
+.gift-card-tc-list{
+    margin: .5em auto;
 }
 
 .snipcart-add-item{
     border: none;
+    @media #{$breakpoint-min-lg}{
+        border: none;
+    }
+}
+
+.gift-card-buy-btn{
+    margin-top: 2em!important;
+    @media #{$breakpoint-xl}{
+        width: 70%!important;
+        margin-top: 1em!important;
+    }
+    
 }

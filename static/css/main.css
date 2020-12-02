@@ -1514,40 +1514,135 @@ footer {
 }
 
 .gift-card-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 44em;
-  margin: 3em auto 2em auto;
+  width: 90vw;
+  margin: 3em auto 6em auto;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .gift-card-detail {
+    width: 25em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-detail {
+    width: 26em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .gift-card-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 44em;
+    margin: 3em auto 2em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gift-card-detail {
+    width: 48em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .gift-card-detail {
+    width: 44em;
+  }
 }
 
 .gift-card-img-carousel {
-  width: 65%;
-  margin: 0 1.5em;
+  width: 100%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .gift-card-img-carousel {
+    width: 55%;
+    margin: 0 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gift-card-img-carousel {
+    width: 55%;
+  }
 }
 
 .gift-card-img-carousel img {
   width: 100%;
 }
 
-.gift-card-description {
-  width: 55%;
+@media only screen and (min-width: 992px) {
+  .gift-card-img-carousel img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .gift-card-description {
+    width: 55%;
+  }
 }
 
 .gift-card-description .sect-subtitle {
   text-align: left;
 }
 
+@media only screen and (min-width: 992px) {
+  .gift-card-description .sect-subtitle {
+    text-align: left;
+  }
+}
+
 .gift-card-description-title {
-  margin: 0 0 1em 0;
+  margin: 2em auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .gift-card-description-title {
+    margin: 0 0 1em 0;
+  }
+}
+
+.gift-card-description-title .sect-subtitle {
+  margin: 0 auto 1em 0;
 }
 
 .gift-card-tc {
   margin-top: 1em;
 }
 
+@media only screen and (min-width: 992px) {
+  .gift-card-tc {
+    margin-top: 1em;
+  }
+}
+
+.gift-card-tc-list {
+  margin: .5em auto;
+}
+
 .snipcart-add-item {
   border: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .snipcart-add-item {
+    border: none;
+  }
+}
+
+.gift-card-buy-btn {
+  margin-top: 2em !important;
+}
+
+@media only screen and (min-width: 1200px) {
+  .gift-card-buy-btn {
+    width: 70% !important;
+    margin-top: 1em !important;
+  }
 }
 
 .nav {
