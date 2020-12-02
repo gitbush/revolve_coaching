@@ -393,3 +393,17 @@ $(document).ready(function(){
   }); 
 
 });
+
+
+document.addEventListener( 'DOMContentLoaded', function () {
+
+	var primarySlider = new Splide( '#primary-slider', {
+		type       : 'fade',
+		// heightRatio: 0.5,
+		pagination : true,
+		arrows     : false,
+	} ); // do not call mount() here.
+	
+	primarySlider.mount();
+    
+} );

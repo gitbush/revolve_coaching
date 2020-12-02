@@ -14,7 +14,7 @@
     }
     @media #{$breakpoint-min-lg}{
         display: flex;
-        width: 44em;
+        width: 48em;
         margin: 3em auto 2em auto;
     }
     @media #{$breakpoint-xl}{
@@ -36,20 +36,35 @@
     @media #{$breakpoint-xl}{
         width: 55%;    
     }
+    
+}
 
-
-    img{
+.gift-card-splide-img{
+    width: 100%;
+    @media #{$breakpoint-min-lg}{
         width: 100%;
-        @media #{$breakpoint-min-lg}{
-            width: 100%;
-        }
-        
     }
 }
 
+.splide__pagination__page.is-active {
+    transform: scale(1.4);
+    background: grey;
+}
+
+.splide__pagination{
+    margin: 1em auto;
+    position: relative;
+ 
+}
+
+.splide__pagination__page{
+    margin: 0 .5em;
+}
+
+
 .gift-card-description{
     @media #{$breakpoint-min-lg}{
-        width: 55%;
+        width: 65%;
     }
     .sect-subtitle{
         text-align: left;

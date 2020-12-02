@@ -1535,7 +1535,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 44em;
+    width: 48em;
     margin: 3em auto 2em auto;
   }
 }
@@ -1570,19 +1570,34 @@ footer {
   }
 }
 
-.gift-card-img-carousel img {
+.gift-card-splide-img {
   width: 100%;
 }
 
 @media only screen and (min-width: 992px) {
-  .gift-card-img-carousel img {
+  .gift-card-splide-img {
     width: 100%;
   }
 }
 
+.splide__pagination__page.is-active {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  background: grey;
+}
+
+.splide__pagination {
+  margin: 1em auto;
+  position: relative;
+}
+
+.splide__pagination__page {
+  margin: 0 .5em;
+}
+
 @media only screen and (min-width: 992px) {
   .gift-card-description {
-    width: 55%;
+    width: 65%;
   }
 }
 
