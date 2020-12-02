@@ -410,3 +410,9 @@ document.addEventListener( 'DOMContentLoaded', function () {
 	primarySlider.mount();
     
 } );
+
+
+document.addEventListener('snipcart.ready', () => {
+  // You can safely use window.Snipcart here
+  
+});
