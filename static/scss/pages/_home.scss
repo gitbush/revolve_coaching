@@ -499,10 +499,11 @@
     }
     @media #{$breakpoint-min-md} {
         background: white;
+        padding: 2em 0 3em 0;
         height: 38em;
     }
     @media #{$breakpoint-lg} {
-        height: 36em;
+        height: 35em;
     }
     @media #{$breakpoint-xl} {
         height: 34em;
@@ -527,17 +528,26 @@
     @media #{$breakpoint-min-md} {
         width: 34em;
     }
+
+    .sect-subtitle{
+        margin-bottom: 1em;
+    }
 }
 
 .gift-card-content{
     @media #{$breakpoint-min-md} {
         display: flex;
         width: 85vw;
+        height: 20em;
         margin: auto;
         justify-content: space-between;
     }
+    @media #{$breakpoint-lg} {
+        height: 19em;
+    }
     @media #{$breakpoint-xl} {
         justify-content: space-around;
+        height: 18.5em;
     }
     @media #{$breakpoint-xxl} {
         justify-content: space-evenly;
@@ -548,15 +558,16 @@
     width: 85vw;
     margin: 4em auto;
     position: relative;
-    height: 34.5em;
+    height: auto;
+    border: solid 1px #e0e0e0;
+    background-color: white;
 
     @media #{$breakpoint-sm} {
         width: 24em;
-        height: 33.5em;
     }
     @media #{$breakpoint-min-md} {
         width: 31%;
-        height: 12.5em;
+        height: 100%;
         margin: 0;
     }
     @media #{$breakpoint-lg} {
@@ -572,9 +583,12 @@
 
 .gift-card-img{
     width: 100%;
-
+    @media #{$breakpoint-min-md} {
+        height: 10em;
+    }
     img{
         width: 100%;
+        height: 100%;
     }
 }
 
@@ -582,28 +596,35 @@
     width: 90%;
     margin: auto;
     padding: 1.5em .5em;
-    border: solid 1px #e0e0e0;
-    position: absolute;
-    left: 0;
-    top: 20em;
-    right: 0;
     background: white;
 
     @media #{$breakpoint-sm} {
         width: 85%;
     }
     @media #{$breakpoint-min-md} {
-        top: 9em;
-        padding: 1em .5em;
+        padding: 1em .5em 0 .5em;
+    }
+    @media #{$breakpoint-lg} {
+    }
+    @media #{$breakpoint-xl} {
     }
     @media #{$breakpoint-xxl} {
-        top: 12em
     }
     .normal-text{
         margin-bottom: 0;
     }
+    
     .sect-subtitle{
-        margin-bottom: 1.5em;
+        @media #{$breakpoint-min-md} {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+.gift-card-item-info{
+    margin: 1em auto;
+    @media #{$breakpoint-min-md} {
+        margin: .5em auto;
     }
 }
 
@@ -612,8 +633,12 @@
 
     @media #{$breakpoint-min-md} {
         padding: .2em 1em;
-        margin: 1em auto 0 auto!important;
+        margin: 0 auto 0 auto!important;
         width: 7em;
+        position: absolute;
+        bottom: 1em;
+        left: 0;
+        right: 0;
     }
 }
 
