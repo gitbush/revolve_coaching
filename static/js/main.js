@@ -9,6 +9,7 @@
     navToggle: document.querySelector('.nav-toggle'),
     nav: document.querySelector('nav'),
     navClose: document.querySelector('.svg-close'),
+    cartItem: document.querySelector('.snipcart-checkout'),
 
     
 
@@ -25,6 +26,8 @@
       hamburger.doToggle(e); });
     hamburger.navClose.addEventListener('click', function(e) { 
       hamburger.doToggle(e); });
+    hamburger.cartItem.addEventListener('click', function(e) {
+      hamburger.doToggle(e);})
   }
 
 }());

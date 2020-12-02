@@ -75,7 +75,7 @@
     width: 100vw;
     background-color: $gray;
     top: 0;
-    z-index: 99;
+    z-index: 7;
     text-align: initial;
     @media #{$breakpoint-min-md}{
         background-color: transparent;
