@@ -19,6 +19,7 @@
     }
     @media #{$breakpoint-xl}{
         width: 48em;
+        height: 29em;
     }
     @media #{$breakpoint-xxl}{
         width: 44em;
@@ -42,8 +43,26 @@
 .gift-card-splide-img{
     width: 100%;
     @media #{$breakpoint-min-lg}{
+        object-fit: cover;
+        min-width: 100%;
+        height: auto;
+    }
+}
+
+.splide__slide{
+    
+    @media #{$breakpoint-lg}{
+        max-height: 34em;
         width: 100%;
     }
+    @media #{$breakpoint-xl}{
+        max-height: 31em;
+        width: 100%;
+    }
+}
+
+.splide__list{
+    width: 100%;
 }
 
 .splide__pagination__page.is-active {
@@ -54,6 +73,7 @@
 .splide__pagination{
     margin: 1em auto;
     position: relative;
+    // top: -32.5em;
  
 }
 

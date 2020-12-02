@@ -1543,6 +1543,7 @@ footer {
 @media only screen and (min-width: 1200px) {
   .gift-card-detail {
     width: 48em;
+    height: 29em;
   }
 }
 
@@ -1576,8 +1577,29 @@ footer {
 
 @media only screen and (min-width: 992px) {
   .gift-card-splide-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .splide__slide {
+    max-height: 34em;
     width: 100%;
   }
+}
+
+@media only screen and (min-width: 1200px) {
+  .splide__slide {
+    max-height: 31em;
+    width: 100%;
+  }
+}
+
+.splide__list {
+  width: 100%;
 }
 
 .splide__pagination__page.is-active {
