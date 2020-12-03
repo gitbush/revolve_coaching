@@ -500,16 +500,13 @@
     @media #{$breakpoint-min-md} {
         background: white;
         padding: 2em 0 3em 0;
-        height: 38em;
+        height: auto;
     }
     @media #{$breakpoint-lg} {
-        height: 35em;
     }
     @media #{$breakpoint-xl} {
-        height: 34em;
     }
     @media #{$breakpoint-xxl} {
-        height: 35em;
     }
     .sect-title{
         margin: 0 0 1em 0;

@@ -132,3 +132,23 @@
     }
     
 }
+
+.snipcart-item-line__header{
+    @media #{$breakpoint-xs}{
+        flex-direction: column;
+    }
+    
+}
+
+.snipcart-item-line__title{
+    @media #{$breakpoint-xs}{
+        margin: 1em auto;
+    }
+    
+}
+
+.snipcart-item-line__media--small{
+    @media #{$breakpoint-xs}{
+        height: 8em;
+    }
+}
