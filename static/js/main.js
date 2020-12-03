@@ -341,7 +341,7 @@ var placeholder = document.getElementsByClassName('placeholder')[0]
 var quizBanner = document.getElementsByClassName('quiz-banner')[0]
 var sticky = navbar.offsetTop;
 
-let banner = true
+let banner = false
 
 if(window.innerWidth < 769 && quizBanner){
   window.onscroll = function() {myFunction()};
