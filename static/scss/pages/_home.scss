@@ -535,7 +535,7 @@
     @media #{$breakpoint-min-md} {
         display: flex;
         width: 85vw;
-        height: 20em;
+        height: 21em;
         margin: auto;
         justify-content: space-between;
     }
@@ -631,11 +631,16 @@
     @media #{$breakpoint-min-md} {
         padding: .2em 1em;
         margin: 0 auto 0 auto!important;
-        width: 7em;
         position: absolute;
         bottom: 1em;
         left: 0;
         right: 0;
+    }
+    @media #{$breakpoint-md} {
+        width: 80%;
+    }
+    @media #{$breakpoint-min-lg} {
+        width: 7em;
     }
 }
 

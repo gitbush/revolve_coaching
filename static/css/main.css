@@ -1713,14 +1713,14 @@ footer {
   padding: 1em 2em 1em 2em;
   position: fixed;
   top: 15px;
-  height: 24em;
+  height: 26em;
   width: 20em;
   z-index: 99;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .nav {
-    height: 22em;
+    height: 24em;
     width: 19em;
     padding: 1em 1em 1em 2em;
   }
@@ -1734,7 +1734,7 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .nav {
-    height: 19.5em;
+    height: 21em;
     width: 16.5em;
   }
 }
@@ -1750,7 +1750,7 @@ footer {
 @media only screen and (min-width: 1200px) {
   .nav {
     padding: 1em 1em .8em 1.3em;
-    height: 16em;
+    height: 17.5em;
     width: 14em;
   }
 }
@@ -1758,7 +1758,7 @@ footer {
 @media only screen and (min-width: 1600px) {
   .nav {
     padding: 1em 1em .5em 1em;
-    height: 14em;
+    height: 14.5em;
     width: 12em;
   }
 }
@@ -4065,7 +4065,7 @@ input[type='checkbox'] {
     display: -ms-flexbox;
     display: flex;
     width: 85vw;
-    height: 20em;
+    height: 21em;
     margin: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -4198,11 +4198,22 @@ input[type='checkbox'] {
   .gift-card-btn {
     padding: .2em 1em;
     margin: 0 auto 0 auto !important;
-    width: 7em;
     position: absolute;
     bottom: 1em;
     left: 0;
     right: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-btn {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .gift-card-btn {
+    width: 7em;
   }
 }
 
@@ -8203,7 +8214,7 @@ input[type='checkbox'] {
     display: -ms-flexbox;
     display: flex;
     width: 85vw;
-    height: 20em;
+    height: 21em;
     margin: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -8336,11 +8347,22 @@ input[type='checkbox'] {
   .gift-card-btn {
     padding: .2em 1em;
     margin: 0 auto 0 auto !important;
-    width: 7em;
     position: absolute;
     bottom: 1em;
     left: 0;
     right: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gift-card-btn {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .gift-card-btn {
+    width: 7em;
   }
 }
 

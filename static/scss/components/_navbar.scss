@@ -18,12 +18,12 @@ $nav-toggle-z-index: 2;
   padding: 1em 2em 1em 2em;
   position: fixed;
   top: 15px;
-  height: 24em;
+  height: 26em;
   width: 20em;
   z-index: 99;
   
   @media #{$breakpoint-sm} {
-    height: 22em;
+    height: 24em;
     width: 19em;
     padding: 1em 1em 1em 2em;
   }
@@ -31,7 +31,7 @@ $nav-toggle-z-index: 2;
     padding: 1em 1.5em 1em 1.5em;
   }
   @media #{$breakpoint-md} {
-    height: 19.5em;
+    height: 21em;
     width: 16.5em;
   }
   @media #{$breakpoint-lg} {
@@ -41,12 +41,12 @@ $nav-toggle-z-index: 2;
   }
   @media #{$breakpoint-xl} {
     padding: 1em 1em .8em 1.3em;
-    height: 16em;
+    height: 17.5em;
     width: 14em;
   }
   @media #{$breakpoint-xxl} {
     padding: 1em 1em .5em 1em;
-    height: 14em;
+    height: 14.5em;
     width: 12em;
   }
 }
