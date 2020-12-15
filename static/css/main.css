@@ -12596,4 +12596,37 @@ input[type='checkbox'] {
   width: 100%;
   border-radius: 100%;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .workshop-includes-content {
+    height: 27.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .workshop-includes-content {
+    height: 24.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .workshop-includes-content {
+    height: 23.5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .workshop-includes-content {
+    height: 21.5em;
+  }
+}
+
+.workshop-includes-list {
+  padding: 0 0 0 1em;
+  text-align: left;
+}
+
+.workshop-includes-item {
+  margin-bottom: 1em;
+}
 /*# sourceMappingURL=main.css.map */

@@ -74,3 +74,27 @@
         border-radius: 100%;
     }
 }
+
+.workshop-includes-content{
+    @media #{$breakpoint-md} {
+        height: 27.5em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 24.5em;
+    }
+    @media #{$breakpoint-xl} {
+        height: 23.5em;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 21.5em;
+    }
+}
+
+.workshop-includes-list{
+    padding: 0 0 0 1em;
+    text-align: left;
+}
+
+.workshop-includes-item{
+    margin-bottom: 1em;
+}
