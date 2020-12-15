@@ -12468,4 +12468,45 @@ input[type='checkbox'] {
 .tick-text {
   margin-left: .9em;
 }
+
+.right-hero-text {
+  color: white;
+  position: absolute;
+  bottom: 3em;
+  text-align: right;
+  margin-right: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-hero-text {
+    right: 0;
+    width: 20em;
+    bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .right-hero-text {
+    right: 3em;
+    bottom: 2em;
+  }
+}
+
+.right-hero-text .sect-title {
+  color: white;
+  font-size: 2.5em;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-hero-text .sect-title {
+    margin-bottom: 0.3em;
+    font-size: 2em;
+  }
+}
+
+.right-hero-text .sect-subtitle {
+  color: white;
+  text-align: right;
+}
 /*# sourceMappingURL=main.css.map */

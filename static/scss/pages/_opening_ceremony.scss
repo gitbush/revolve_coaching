@@ -1,0 +1,33 @@
+.right-hero-text{
+    color: white;
+    position: absolute;
+    bottom: 3em;
+    text-align: right;
+    margin-right: 1em;
+
+    @media #{$breakpoint-min-md} {
+        right: 0;
+        width: 20em;
+        bottom: 1em;
+    }
+    @media #{$breakpoint-min-lg} {
+        right: 3em;
+        bottom: 2em;
+    }
+
+    .sect-title{
+        color: white;
+        font-size: 2.5em;
+        padding: 0;
+        @media #{$breakpoint-min-md} {
+            margin-bottom: 0.3em;
+            font-size: 2em;
+        }
+    }
+
+    .sect-subtitle{
+        color: white;
+        text-align: right;
+    }
+    
+}
