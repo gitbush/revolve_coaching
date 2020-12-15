@@ -1,0 +1,26 @@
+.simple-section{
+    text-align: center;
+    padding: 3em 0;
+
+    .sect-title{
+        margin: 0 0 2em 0;
+    }
+
+    .about-cta-btn{
+        width: max-content;
+        margin: auto;
+    }
+}
+
+.simple-section-text{
+    margin: 2em auto 4em auto;
+    width: 90vw;
+
+    @media #{$breakpoint-min-md}{
+        margin: 2em auto 2em auto;
+        width: 32em;
+    }
+    @media #{$breakpoint-min-lg} {
+        margin: 2em auto 2em auto;
+    }
+}

@@ -359,6 +359,10 @@ template {
   }
 }
 
+.bg-gray {
+  background-color: #f0f3f3;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -1705,6 +1709,40 @@ footer {
 
 .insta-gift-cards {
   background: white !important;
+}
+
+.simple-section {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.simple-section .sect-title {
+  margin: 0 0 2em 0;
+}
+
+.simple-section .about-cta-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+
+.simple-section-text {
+  margin: 2em auto 4em auto;
+  width: 90vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .simple-section-text {
+    margin: 2em auto 2em auto;
+    width: 32em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .simple-section-text {
+    margin: 2em auto 2em auto;
+  }
 }
 
 .nav {
