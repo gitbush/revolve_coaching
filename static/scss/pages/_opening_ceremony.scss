@@ -31,3 +31,31 @@
     }
     
 }
+
+.ceremony-sub-content{
+    @media #{$breakpoint-min-md} {
+        width: 40em;
+    }
+}
+
+.ceremony-what{
+    width: 90vw;
+    margin: auto;
+
+    @media #{$breakpoint-min-md} {
+        width: 30em;
+    }
+
+    .about-cta-btn{
+        width: max-content;
+        margin: auto;
+    }
+}
+
+.ceremony-what-item{
+
+    &:nth-of-type(1){
+        margin: 1em 0 3em 0;
+    }
+    margin: 3em 0;
+}

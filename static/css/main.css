@@ -12509,4 +12509,36 @@ input[type='checkbox'] {
   color: white;
   text-align: right;
 }
+
+@media only screen and (min-width: 768px) {
+  .ceremony-sub-content {
+    width: 40em;
+  }
+}
+
+.ceremony-what {
+  width: 90vw;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .ceremony-what {
+    width: 30em;
+  }
+}
+
+.ceremony-what .about-cta-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+
+.ceremony-what-item {
+  margin: 3em 0;
+}
+
+.ceremony-what-item:nth-of-type(1) {
+  margin: 1em 0 3em 0;
+}
 /*# sourceMappingURL=main.css.map */
