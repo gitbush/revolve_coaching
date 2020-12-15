@@ -59,3 +59,18 @@
     }
     margin: 3em 0;
 }
+
+.circle-img{
+    height: auto;
+    width: 21em;
+    margin: 4em auto;
+
+    @media #{$breakpoint-min-lg} {
+        width: 18em;
+    }
+
+    img{
+        width: 100%;
+        border-radius: 100%;
+    }
+}
