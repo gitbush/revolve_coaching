@@ -12597,36 +12597,74 @@ input[type='checkbox'] {
   border-radius: 100%;
 }
 
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .worksop-includes {
+    padding: 2em 0;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .workshop-includes-content {
     height: 27.5em;
+    -ms-grid-columns: auto 22em 2em 16em auto;
+        grid-template-columns: auto 22em 2em 16em auto;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .workshop-includes-content {
-    height: 24.5em;
+    height: 22.5em;
+    -ms-grid-columns: auto 22em 2em 16em auto;
+        grid-template-columns: auto 22em 2em 16em auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .workshop-includes-content {
-    height: 23.5em;
+    height: 21.5em;
+    -ms-grid-columns: auto 22em 2em 16em auto;
+        grid-template-columns: auto 22em 2em 16em auto;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .workshop-includes-content {
-    height: 21.5em;
+    height: 20.5em;
+    -ms-grid-columns: auto 20em 2em 16em auto;
+        grid-template-columns: auto 20em 2em 16em auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .workshop-includes-content .home-about-title {
+    padding: 0 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .workshop-includes-content .why-mhairi-text {
+    padding: 0 0 0 0;
   }
 }
 
 .workshop-includes-list {
-  padding: 0 0 0 1em;
+  padding: 0 0 0 0;
   text-align: left;
+  list-style: none;
 }
 
 .workshop-includes-item {
   margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.workshop-includes-item .fa-check-circle {
+  margin-top: .28em;
+}
+
+.workshop-includes-item-text {
+  margin-left: .8em;
 }
 /*# sourceMappingURL=main.css.map */

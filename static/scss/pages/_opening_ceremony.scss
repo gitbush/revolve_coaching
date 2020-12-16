@@ -75,26 +75,57 @@
     }
 }
 
+.worksop-includes{
+    @media #{$breakpoint-xs}, #{$breakpoint-sm} {
+        padding: 2em 0;
+    }
+}
+
 .workshop-includes-content{
     @media #{$breakpoint-md} {
         height: 27.5em;
+        grid-template-columns: auto 22em 2em 16em auto;
     }
     @media #{$breakpoint-lg} {
-        height: 24.5em;
+        height: 22.5em;
+        grid-template-columns: auto 22em 2em 16em auto;
     }
     @media #{$breakpoint-xl} {
-        height: 23.5em;
+        height: 21.5em;
+        grid-template-columns: auto 22em 2em 16em auto;
     }
     @media #{$breakpoint-xxl} {
-        height: 21.5em;
+        height: 20.5em;
+        grid-template-columns: auto 20em 2em 16em auto;
+    }
+
+    .home-about-title{
+        @media #{$breakpoint-min-md} {
+            padding: 0 0 0 0;
+        }
+    }
+    .why-mhairi-text{
+        @media #{$breakpoint-min-md} {
+            padding: 0 0 0 0;
+        }
     }
 }
 
 .workshop-includes-list{
-    padding: 0 0 0 1em;
+    padding: 0 0 0 0;
     text-align: left;
+    list-style: none;
 }
 
 .workshop-includes-item{
     margin-bottom: 1em;
+    display: flex;
+
+    .fa-check-circle{
+        margin-top: .28em;
+    }
+}
+
+.workshop-includes-item-text{
+    margin-left: .8em;
 }
