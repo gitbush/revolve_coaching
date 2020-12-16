@@ -188,3 +188,19 @@
         font-size: 1.8em;
     }
 }
+
+.leave-with-list{
+    @media #{$breakpoint-xs} {
+        width: 80vw;
+    }
+    @media #{$breakpoint-md} {
+        width: 27em;
+    }
+    @media #{$breakpoint-lg} {
+        width: 26em;
+    }
+    @media #{$breakpoint-xl} {
+        width: 24em;
+    }
+    
+}
