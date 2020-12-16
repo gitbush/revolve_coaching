@@ -12764,6 +12764,12 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .leave-with-sect {
+    padding: 3em 0 1em 0;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .leave-with-list {
     width: 80vw;
@@ -12785,6 +12791,61 @@ input[type='checkbox'] {
 @media only screen and (min-width: 1200px) {
   .leave-with-list {
     width: 24em;
+  }
+}
+
+.brief-about-ceremony {
+  background-color: white;
+}
+
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .brief-about-ceremony {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .brief-about-ceremony {
+    height: 24em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .brief-about-ceremony {
+    height: 24em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .brief-about-ceremony {
+    height: 18em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .brief-about-ceremony {
+    height: 17em;
+    margin: 3em auto;
+  }
+}
+
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .brief-about-ceremony .home-about-text {
+    margin: 2em auto;
+  }
+}
+
+.stand-alone-cta-btn {
+  margin: 0em auto 4em auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .stand-alone-cta-btn .max-content-width {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

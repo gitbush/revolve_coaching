@@ -189,6 +189,14 @@
     }
 }
 
+.leave-with-sect{
+
+    @media #{$breakpoint-xl} {
+        padding: 3em 0 1em 0;
+    }
+    
+}
+
 .leave-with-list{
     @media #{$breakpoint-xs} {
         width: 80vw;
@@ -203,4 +211,45 @@
         width: 24em;
     }
     
+}
+
+.brief-about-ceremony{
+    background-color: white;
+    @media #{$breakpoint-xs}, #{$breakpoint-sm} {
+        grid-template-rows: auto;
+    }
+    @media #{$breakpoint-md} {
+        height: 24em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 24em;
+    }
+    @media #{$breakpoint-xl} {
+        height: 18em;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 17em;
+        margin: 3em auto;
+    }
+
+    .home-about-text{
+        @media #{$breakpoint-xs}, #{$breakpoint-sm} {
+            margin: 2em auto;
+        }
+        
+    }
+  
+}
+
+
+.stand-alone-cta-btn{
+    margin: 0em auto 4em auto;
+
+    .max-content-width{
+        @media #{$breakpoint-min-md} {
+            width: max-content;
+            margin: auto;
+        }
+    
+    }
 }
