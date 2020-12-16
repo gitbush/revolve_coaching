@@ -145,20 +145,46 @@
 .timer-digit-container{
     margin: 2em;
     @media #{$breakpoint-min-md} {
-        margin: 1em;
+        margin: 1em .5em;
     }
 }
 
 .timer-digit{
     background-color: #fbf2ec;
-    height: 8em;
-    width: 8em;
+    height: 7em;
+    width: 7em;
     border-radius: 15px;
     margin: 0 auto 1em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    @media #{$breakpoint-min-md} {
-        height: 5em;
-        width: 5em;
+    @media #{$breakpoint-md} {
+        height: 4.5em;
+        width: 4.5em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 4em;
+        width: 4em;
+    }
+    @media #{$breakpoint-xl} {
+        height: 3.5em;
+        width: 3.5em;
     }
     
+}
+
+.timer-text{
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 0;
+    @media #{$breakpoint-md} {
+        font-size: 2.2em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: 2.1em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: 1.8em;
+    }
 }

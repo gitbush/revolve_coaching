@@ -12698,22 +12698,69 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) {
   .timer-digit-container {
-    margin: 1em;
+    margin: 1em .5em;
   }
 }
 
 .timer-digit {
   background-color: #fbf2ec;
-  height: 8em;
-  width: 8em;
+  height: 7em;
+  width: 7em;
   border-radius: 15px;
   margin: 0 auto 1em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .timer-digit {
-    height: 5em;
-    width: 5em;
+    height: 4.5em;
+    width: 4.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .timer-digit {
+    height: 4em;
+    width: 4em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .timer-digit {
+    height: 3.5em;
+    width: 3.5em;
+  }
+}
+
+.timer-text {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .timer-text {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .timer-text {
+    font-size: 2.1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .timer-text {
+    font-size: 1.8em;
   }
 }
 /*# sourceMappingURL=main.css.map */
