@@ -1720,6 +1720,12 @@ footer {
   padding: 3em 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .simple-section {
+    padding: 2em 0;
+  }
+}
+
 .simple-section .sect-title {
   margin: 0 0 2em 0;
 }
@@ -12766,7 +12772,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1200px) {
   .leave-with-sect {
-    padding: 3em 0 1em 0;
+    padding: 2em 0 1em 0;
   }
 }
 
@@ -12841,11 +12847,17 @@ input[type='checkbox'] {
 }
 
 @media only screen and (min-width: 768px) {
+  .stand-alone-cta-btn {
+    margin: 0em auto 3em auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .stand-alone-cta-btn .max-content-width {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    margin: auto;
+    margin: 0em auto 3em auto;
   }
 }
 

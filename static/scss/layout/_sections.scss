@@ -1,6 +1,9 @@
 .simple-section{
     text-align: center;
     padding: 3em 0;
+    @media #{$breakpoint-min-md}{
+        padding: 2em 0;
+    }
 
     .sect-title{
         margin: 0 0 2em 0;

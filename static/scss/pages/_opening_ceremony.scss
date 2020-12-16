@@ -192,7 +192,7 @@
 .leave-with-sect{
 
     @media #{$breakpoint-xl} {
-        padding: 3em 0 1em 0;
+        padding: 2em 0 1em 0;
     }
     
 }
@@ -245,10 +245,13 @@
 .stand-alone-cta-btn{
     margin: 0em auto 4em auto;
 
+    @media #{$breakpoint-min-md} {
+        margin: 0em auto 3em auto;
+    }
     .max-content-width{
         @media #{$breakpoint-min-md} {
             width: max-content;
-            margin: auto;
+            margin: 0em auto 3em auto;
         }
     
     }
