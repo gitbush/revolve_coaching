@@ -18,12 +18,12 @@ $nav-toggle-z-index: 2;
   padding: 1em 2em 1em 2em;
   position: fixed;
   top: 15px;
-  height: 26em;
+  height: 29em;
   width: 20em;
   z-index: 99;
   
   @media #{$breakpoint-sm} {
-    height: 24em;
+    height: 26em;
     width: 19em;
     padding: 1em 1em 1em 2em;
   }
@@ -31,22 +31,22 @@ $nav-toggle-z-index: 2;
     padding: 1em 1.5em 1em 1.5em;
   }
   @media #{$breakpoint-md} {
-    height: 21em;
+    height: 23.5em;
     width: 16.5em;
   }
   @media #{$breakpoint-lg} {
     padding: 1em 2em .6em 1.5em;
-    height: 18.5em;
+    height: 21em;
     width: 15em;
   }
   @media #{$breakpoint-xl} {
     padding: 1em 1em .8em 1.3em;
-    height: 17.5em;
+    height: 19.5em;
     width: 14em;
   }
   @media #{$breakpoint-xxl} {
     padding: 1em 1em .5em 1em;
-    height: 14.5em;
+    height: 16.5em;
     width: 12em;
   }
 }
@@ -77,10 +77,59 @@ $nav-toggle-z-index: 2;
   
 }
 
+.dropdown-nav{
+  margin: 1em 0!important;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  padding: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropbtn:hover .dropdown-content {
+  display: block;
+}
+
 .nav-item{
   margin: .7em 0;
   font-size: .9em;
   font-family: $font-biko;
+  border: none;
+  background-color: inherit;
+  outline: none;
   @media #{$breakpoint-sm} {
     font-size: .95em;
   }

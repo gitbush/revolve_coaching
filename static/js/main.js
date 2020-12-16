@@ -473,3 +473,18 @@ let x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+let dropdownNavItem = document.getElementById('dropdown-btn');
+let dropdownNav = document.getElementById('dropdown-content');
+
+dropdownNavItem.addEventListener('click', function(){
+
+  if(dropdownNav.style.display = 'none'){
+    dropdownNav.style.display = 'block'
+  }
+  else if(dropdownNav.style.display = 'block'){
+    dropdownNav.style.display = 'none'
+  }
+  
+})
