@@ -109,6 +109,11 @@
             padding: 0 0 0 0;
         }
     }
+    .about-cta-btn{
+        width: max-content;
+        padding: .5em 1.5em;
+        margin: auto;
+    }
 }
 
 .workshop-includes-list{
@@ -128,4 +133,32 @@
 
 .workshop-includes-item-text{
     margin-left: .8em;
+}
+
+.timer-container{
+    @media #{$breakpoint-min-md} {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.timer-digit-container{
+    margin: 2em;
+    @media #{$breakpoint-min-md} {
+        margin: 1em;
+    }
+}
+
+.timer-digit{
+    background-color: #fbf2ec;
+    height: 8em;
+    width: 8em;
+    border-radius: 15px;
+    margin: 0 auto 1em auto;
+
+    @media #{$breakpoint-min-md} {
+        height: 5em;
+        width: 5em;
+    }
+    
 }

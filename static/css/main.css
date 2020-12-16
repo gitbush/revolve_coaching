@@ -363,6 +363,10 @@ template {
   background-color: #f0f3f3;
 }
 
+.bg-aqua {
+  background-color: #e4f1f1;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -1724,6 +1728,7 @@ footer {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  padding: .5em 1.5em;
   margin: auto;
 }
 
@@ -12647,6 +12652,14 @@ input[type='checkbox'] {
   }
 }
 
+.workshop-includes-content .about-cta-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: .5em 1.5em;
+  margin: auto;
+}
+
 .workshop-includes-list {
   padding: 0 0 0 0;
   text-align: left;
@@ -12666,5 +12679,41 @@ input[type='checkbox'] {
 
 .workshop-includes-item-text {
   margin-left: .8em;
+}
+
+@media only screen and (min-width: 768px) {
+  .timer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.timer-digit-container {
+  margin: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .timer-digit-container {
+    margin: 1em;
+  }
+}
+
+.timer-digit {
+  background-color: #fbf2ec;
+  height: 8em;
+  width: 8em;
+  border-radius: 15px;
+  margin: 0 auto 1em auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .timer-digit {
+    height: 5em;
+    width: 5em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
