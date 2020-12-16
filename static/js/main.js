@@ -397,7 +397,9 @@ $(document).ready(function(){
 
 });
 
-
+/**
+ * Gift card slider
+ */
 document.addEventListener( 'DOMContentLoaded', function () {
 
   const giftSplide = document.getElementById('primary-slider')
@@ -419,3 +421,55 @@ document.addEventListener('snipcart.ready', () => {
   // You can safely use window.Snipcart here
   
 });
+
+
+
+/**
+ * Countdown timer for opening ceremony
+ */
+
+// Set the date we're counting down to
+let countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// if remaining value is less than 10 add a leading 0
+function numberOfDigit(digit){
+  if(digit < 10){
+    digit = `${0}${digit}`
+    return digit
+  }
+  else{
+    digit = digit 
+    return digit
+  }
+}
+
+// Update the count down every 1 second
+let x = setInterval(function() {
+
+  // Get today's date and time
+  let now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  let distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("timer-days").innerHTML =  numberOfDigit(days);
+
+  document.getElementById("timer-hours").innerHTML = numberOfDigit(hours);
+
+  document.getElementById("timer-minutes").innerHTML =  numberOfDigit(minutes);
+
+  document.getElementById("timer-seconds").innerHTML = numberOfDigit(seconds);
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
