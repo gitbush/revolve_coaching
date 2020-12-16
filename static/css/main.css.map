@@ -28,7 +28,7 @@
         "../scss/pages/_services.scss",
         "../scss/pages/_contact.scss",
         "../scss/pages/_testimonials.scss",
-        "../scss/pages/_opening_ceremony.scss",
+        "../scss/pages/_opening_workshop.scss",
         "../scss/themes/_default.scss"
     ],
     "names": [],
