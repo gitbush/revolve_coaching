@@ -12848,4 +12848,38 @@ input[type='checkbox'] {
     margin: auto;
   }
 }
+
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .what-you-need-text {
+    width: 80vw;
+  }
+}
+
+.what-you-need-list {
+  margin: 2em 0 0 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .what-you-need-list {
+    margin: 0 0 0 5em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .what-you-need-list {
+    margin: 0 0 0 8em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .what-you-need-list {
+    margin: 0 0 0 10em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .what-you-need-list {
+    margin: 0 0 0 12em;
+  }
+}
 /*# sourceMappingURL=main.css.map */

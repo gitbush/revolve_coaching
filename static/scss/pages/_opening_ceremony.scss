@@ -253,3 +253,25 @@
     
     }
 }
+
+.what-you-need-text{
+    @media #{$breakpoint-xs}, #{$breakpoint-sm} {
+        width: 80vw;
+    }
+}
+
+.what-you-need-list{
+    margin: 2em 0 0 0;
+    @media #{$breakpoint-md} {
+        margin: 0 0 0 5em;
+    }
+    @media #{$breakpoint-lg} {
+        margin: 0 0 0 8em;
+    }
+    @media #{$breakpoint-xl} {
+        margin: 0 0 0 10em;
+    }
+    @media #{$breakpoint-xxl} {
+        margin: 0 0 0 12em;
+    }
+}
