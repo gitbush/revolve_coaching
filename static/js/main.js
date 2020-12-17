@@ -429,7 +429,7 @@ document.addEventListener('snipcart.ready', () => {
  */
 
 // Set the date we're counting down to
-let countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+let countDownDate = new Date("Jan 5, 2021 20:00:00").getTime();
 
 // if remaining value is less than 10 add a leading 0
 function numberOfDigit(digit){
@@ -475,16 +475,16 @@ let x = setInterval(function() {
 }, 1000);
 
 
-let dropdownNavItem = document.getElementById('dropdown-btn');
-let dropdownNav = document.getElementById('dropdown-content');
+// let dropdownNavItem = document.getElementById('dropdown-btn');
+// let dropdownNav = document.getElementById('dropdown-content');
 
-dropdownNavItem.addEventListener('click', function(){
+// dropdownNavItem.addEventListener('click', function(){
 
-  if(dropdownNav.style.display = 'none'){
-    dropdownNav.style.display = 'block'
-  }
-  else if(dropdownNav.style.display = 'block'){
-    dropdownNav.style.display = 'none'
-  }
+//   if(dropdownNav.style.display = 'none'){
+//     dropdownNav.style.display = 'block'
+//   }
+//   else if(dropdownNav.style.display = 'block'){
+//     dropdownNav.style.display = 'none'
+//   }
   
-})
+// })
