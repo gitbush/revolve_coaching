@@ -12518,7 +12518,25 @@ input[type='checkbox'] {
   margin-left: .9em;
 }
 
-.right-hero-text {
+.workshop-hero {
+  background-image: url(../img/Mhairi_pics/yellow-coat-fence.jpg);
+  background-position: 90% 40%;
+  background-attachment: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .workshop-hero {
+    background-position: 90% 0%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .workshop-hero .parallax-container {
+    min-height: 22.5em;
+  }
+}
+
+.left-hero-text {
   color: white;
   position: absolute;
   bottom: 3em;
@@ -12527,34 +12545,34 @@ input[type='checkbox'] {
 }
 
 @media only screen and (min-width: 768px) {
-  .right-hero-text {
-    right: 0;
+  .left-hero-text {
+    left: 0;
     width: 20em;
     bottom: 1em;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .right-hero-text {
-    right: 3em;
+  .left-hero-text {
+    left: 3em;
     bottom: 2em;
   }
 }
 
-.right-hero-text .sect-title {
+.left-hero-text .sect-title {
   color: white;
   font-size: 2.5em;
   padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .right-hero-text .sect-title {
+  .left-hero-text .sect-title {
     margin-bottom: 0.3em;
     font-size: 2em;
   }
 }
 
-.right-hero-text .sect-subtitle {
+.left-hero-text .sect-subtitle {
   color: white;
   text-align: right;
 }
@@ -12592,7 +12610,7 @@ input[type='checkbox'] {
 }
 
 .circle-img {
-  height: auto;
+  height: 21em;
   width: 21em;
   margin: 4em auto;
 }
@@ -12600,12 +12618,18 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) {
   .circle-img {
     width: 18em;
+    height: 18em;
   }
 }
 
 .circle-img img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 100%;
+  -o-object-position: 50% 10%;
+     object-position: 50% 10%;
 }
 
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
