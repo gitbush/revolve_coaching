@@ -359,6 +359,14 @@ template {
   }
 }
 
+.bg-gray {
+  background-color: #f0f3f3;
+}
+
+.bg-aqua {
+  background-color: #e4f1f1;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -1707,6 +1715,47 @@ footer {
   background: white !important;
 }
 
+.simple-section {
+  text-align: center;
+  padding: 3em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .simple-section {
+    padding: 2em 0;
+  }
+}
+
+.simple-section .sect-title {
+  margin: 0 0 2em 0;
+}
+
+.simple-section .about-cta-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: .5em 1.5em;
+  margin: auto;
+}
+
+.simple-section-text {
+  margin: 2em auto 4em auto;
+  width: 90vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .simple-section-text {
+    margin: 2em auto 2em auto;
+    width: 32em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .simple-section-text {
+    margin: 2em auto 2em auto;
+  }
+}
+
 .nav {
   -webkit-transition: right .8s ease;
   transition: right .8s ease;
@@ -1762,7 +1811,7 @@ footer {
 @media only screen and (min-width: 1600px) {
   .nav {
     padding: 1em 1em .5em 1em;
-    height: 14.5em;
+    height: 15.5em;
     width: 12em;
   }
 }
@@ -12467,5 +12516,406 @@ input[type='checkbox'] {
 
 .tick-text {
   margin-left: .9em;
+}
+
+.workshop-hero {
+  background-image: url(../img/Mhairi_pics/yellow-coat-fence.jpg);
+  background-position: 90% 40%;
+  background-attachment: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .workshop-hero {
+    background-position: 90% 0%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .workshop-hero .parallax-container {
+    min-height: 22.5em;
+  }
+}
+
+.left-hero-text {
+  color: white;
+  position: absolute;
+  bottom: 3em;
+  text-align: right;
+  margin-right: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .left-hero-text {
+    left: 0;
+    width: 20em;
+    bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .left-hero-text {
+    left: 3em;
+    bottom: 2em;
+  }
+}
+
+.left-hero-text .sect-title {
+  color: white;
+  font-size: 2.5em;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .left-hero-text .sect-title {
+    margin-bottom: 0.3em;
+    font-size: 2em;
+  }
+}
+
+.left-hero-text .sect-subtitle {
+  color: white;
+  text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .ceremony-sub-content {
+    width: 40em;
+  }
+}
+
+.ceremony-what {
+  width: 90vw;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .ceremony-what {
+    width: 30em;
+  }
+}
+
+.ceremony-what .about-cta-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+
+.ceremony-what-item {
+  margin: 3em 0;
+}
+
+.ceremony-what-item:nth-of-type(1) {
+  margin: 1em 0 3em 0;
+}
+
+.circle-img {
+  height: 21em;
+  width: 21em;
+  margin: 4em auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .circle-img {
+    width: 18em;
+    height: 18em;
+  }
+}
+
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  -o-object-position: 50% 10%;
+     object-position: 50% 10%;
+}
+
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .worksop-includes {
+    padding: 2em 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .workshop-includes-content {
+    height: 27.5em;
+    -ms-grid-columns: auto 22em 2em 16em auto;
+        grid-template-columns: auto 22em 2em 16em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .workshop-includes-content {
+    height: 22.5em;
+    -ms-grid-columns: auto 22em 2em 16em auto;
+        grid-template-columns: auto 22em 2em 16em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .workshop-includes-content {
+    height: 21.5em;
+    -ms-grid-columns: auto 22em 2em 16em auto;
+        grid-template-columns: auto 22em 2em 16em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .workshop-includes-content {
+    height: 20.5em;
+    -ms-grid-columns: auto 20em 2em 16em auto;
+        grid-template-columns: auto 20em 2em 16em auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .workshop-includes-content .home-about-title {
+    padding: 0 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .workshop-includes-content .why-mhairi-text {
+    padding: 0 0 0 0;
+  }
+}
+
+.workshop-includes-content .about-cta-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: .5em 1.5em;
+  margin: auto;
+}
+
+.workshop-includes-list {
+  padding: 0 0 0 0;
+  text-align: left;
+  list-style: none;
+}
+
+.workshop-includes-item {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.workshop-includes-item .fa-check-circle {
+  margin-top: .28em;
+}
+
+.workshop-includes-item-text {
+  margin-left: .8em;
+}
+
+@media only screen and (min-width: 768px) {
+  .timer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.timer-digit-container {
+  margin: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .timer-digit-container {
+    margin: 1em .5em;
+  }
+}
+
+.timer-digit {
+  background-color: #fbf2ec;
+  height: 7em;
+  width: 7em;
+  border-radius: 15px;
+  margin: 0 auto 1em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .timer-digit {
+    height: 4.5em;
+    width: 4.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .timer-digit {
+    height: 4em;
+    width: 4em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .timer-digit {
+    height: 3.5em;
+    width: 3.5em;
+  }
+}
+
+.timer-text {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .timer-text {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .timer-text {
+    font-size: 2.1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .timer-text {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .leave-with-sect {
+    padding: 2em 0 1em 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .leave-with-list {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .leave-with-list {
+    width: 27em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .leave-with-list {
+    width: 26em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .leave-with-list {
+    width: 24em;
+  }
+}
+
+.brief-about-ceremony {
+  background-color: white;
+}
+
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .brief-about-ceremony {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .brief-about-ceremony {
+    height: 24em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .brief-about-ceremony {
+    height: 24em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .brief-about-ceremony {
+    height: 18em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .brief-about-ceremony {
+    height: 17em;
+    margin: 3em auto;
+  }
+}
+
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .brief-about-ceremony .home-about-text {
+    margin: 2em auto;
+  }
+}
+
+.stand-alone-cta-btn {
+  margin: 0em auto 4em auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .stand-alone-cta-btn {
+    margin: 0em auto 3em auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .stand-alone-cta-btn .max-content-width {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0em auto 3em auto;
+  }
+}
+
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .what-you-need-text {
+    width: 80vw;
+  }
+}
+
+.what-you-need-list {
+  margin: 2em 0 0 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .what-you-need-list {
+    margin: 0 0 0 5em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .what-you-need-list {
+    margin: 0 0 0 8em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .what-you-need-list {
+    margin: 0 0 0 10em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .what-you-need-list {
+    margin: 0 0 0 12em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,300 @@
+.workshop-hero{
+    background-image: url(../img/Mhairi_pics/yellow-coat-fence.jpg);
+    background-position: 90% 40%;
+    background-attachment: scroll;
+    @media #{$breakpoint-min-md} {
+        background-position: 90% 0%;
+    }
+    
+    .parallax-container{
+        @media #{$breakpoint-min-lg} {
+            min-height: 22.5em;
+        }
+    }
+}
+
+.left-hero-text{
+    color: white;
+    position: absolute;
+    bottom: 3em;
+    text-align: right;
+    margin-right: 1em;
+
+    @media #{$breakpoint-min-md} {
+        left: 0;
+        width: 20em;
+        bottom: 1em;
+    }
+    @media #{$breakpoint-min-lg} {
+        left: 3em;
+        bottom: 2em;
+    }
+
+    .sect-title{
+        color: white;
+        font-size: 2.5em;
+        padding: 0;
+        @media #{$breakpoint-min-md} {
+            margin-bottom: 0.3em;
+            font-size: 2em;
+        }
+    }
+
+    .sect-subtitle{
+        color: white;
+        text-align: right;
+    }
+    
+}
+
+.ceremony-sub-content{
+    @media #{$breakpoint-min-md} {
+        width: 40em;
+    }
+}
+
+.ceremony-what{
+    width: 90vw;
+    margin: auto;
+
+    @media #{$breakpoint-min-md} {
+        width: 30em;
+    }
+
+    .about-cta-btn{
+        width: max-content;
+        margin: auto;
+    }
+}
+
+.ceremony-what-item{
+    
+    &:nth-of-type(1){
+        margin: 1em 0 3em 0;
+    }
+    margin: 3em 0;
+
+}
+
+.circle-img{
+    height: 21em;
+    width: 21em;
+    margin: 4em auto;
+
+    @media #{$breakpoint-min-lg} {
+        width: 18em;
+        height: 18em;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+        object-position: 50% 10%;
+    }
+}
+
+.worksop-includes{
+    @media #{$breakpoint-xs}, #{$breakpoint-sm} {
+        padding: 2em 0;
+    }
+}
+
+.workshop-includes-content{
+    @media #{$breakpoint-md} {
+        height: 27.5em;
+        grid-template-columns: auto 22em 2em 16em auto;
+    }
+    @media #{$breakpoint-lg} {
+        height: 22.5em;
+        grid-template-columns: auto 22em 2em 16em auto;
+    }
+    @media #{$breakpoint-xl} {
+        height: 21.5em;
+        grid-template-columns: auto 22em 2em 16em auto;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 20.5em;
+        grid-template-columns: auto 20em 2em 16em auto;
+    }
+
+    .home-about-title{
+        @media #{$breakpoint-min-md} {
+            padding: 0 0 0 0;
+        }
+    }
+    .why-mhairi-text{
+        @media #{$breakpoint-min-md} {
+            padding: 0 0 0 0;
+        }
+    }
+    .about-cta-btn{
+        width: max-content;
+        padding: .5em 1.5em;
+        margin: auto;
+    }
+}
+
+.workshop-includes-list{
+    padding: 0 0 0 0;
+    text-align: left;
+    list-style: none;
+}
+
+.workshop-includes-item{
+    margin-bottom: 1em;
+    display: flex;
+
+    .fa-check-circle{
+        margin-top: .28em;
+    }
+}
+
+.workshop-includes-item-text{
+    margin-left: .8em;
+}
+
+.timer-container{
+    @media #{$breakpoint-min-md} {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.timer-digit-container{
+    margin: 2em;
+    @media #{$breakpoint-min-md} {
+        margin: 1em .5em;
+    }
+}
+
+.timer-digit{
+    background-color: #fbf2ec;
+    height: 7em;
+    width: 7em;
+    border-radius: 15px;
+    margin: 0 auto 1em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media #{$breakpoint-md} {
+        height: 4.5em;
+        width: 4.5em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 4em;
+        width: 4em;
+    }
+    @media #{$breakpoint-xl} {
+        height: 3.5em;
+        width: 3.5em;
+    }
+    
+}
+
+.timer-text{
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 0;
+    @media #{$breakpoint-md} {
+        font-size: 2.2em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: 2.1em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: 1.8em;
+    }
+}
+
+.leave-with-sect{
+
+    @media #{$breakpoint-xl} {
+        padding: 2em 0 1em 0;
+    }
+    
+}
+
+.leave-with-list{
+    @media #{$breakpoint-xs} {
+        width: 80vw;
+    }
+    @media #{$breakpoint-md} {
+        width: 27em;
+    }
+    @media #{$breakpoint-lg} {
+        width: 26em;
+    }
+    @media #{$breakpoint-xl} {
+        width: 24em;
+    }
+    
+}
+
+.brief-about-ceremony{
+    background-color: white;
+    @media #{$breakpoint-xs}, #{$breakpoint-sm} {
+        grid-template-rows: auto;
+    }
+    @media #{$breakpoint-md} {
+        height: 24em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 24em;
+    }
+    @media #{$breakpoint-xl} {
+        height: 18em;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 17em;
+        margin: 3em auto;
+    }
+
+    .home-about-text{
+        @media #{$breakpoint-xs}, #{$breakpoint-sm} {
+            margin: 2em auto;
+        }
+        
+    }
+  
+}
+
+
+.stand-alone-cta-btn{
+    margin: 0em auto 4em auto;
+
+    @media #{$breakpoint-min-md} {
+        margin: 0em auto 3em auto;
+    }
+    .max-content-width{
+        @media #{$breakpoint-min-md} {
+            width: max-content;
+            margin: 0em auto 3em auto;
+        }
+    
+    }
+}
+
+.what-you-need-text{
+    @media #{$breakpoint-xs}, #{$breakpoint-sm} {
+        width: 80vw;
+    }
+}
+
+.what-you-need-list{
+    margin: 2em 0 0 0;
+    @media #{$breakpoint-md} {
+        margin: 0 0 0 5em;
+    }
+    @media #{$breakpoint-lg} {
+        margin: 0 0 0 8em;
+    }
+    @media #{$breakpoint-xl} {
+        margin: 0 0 0 10em;
+    }
+    @media #{$breakpoint-xxl} {
+        margin: 0 0 0 12em;
+    }
+}
