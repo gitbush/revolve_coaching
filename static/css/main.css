@@ -1766,14 +1766,14 @@ footer {
   padding: 1em 2em 1em 2em;
   position: fixed;
   top: 15px;
-  height: 26em;
+  height: 29em;
   width: 20em;
   z-index: 99;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .nav {
-    height: 24em;
+    height: 26em;
     width: 19em;
     padding: 1em 1em 1em 2em;
   }
@@ -1787,7 +1787,7 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .nav {
-    height: 21em;
+    height: 24em;
     width: 16.5em;
   }
 }
@@ -1795,7 +1795,7 @@ footer {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .nav {
     padding: 1em 2em .6em 1.5em;
-    height: 18.5em;
+    height: 21.5em;
     width: 15em;
   }
 }
@@ -1803,7 +1803,7 @@ footer {
 @media only screen and (min-width: 1200px) {
   .nav {
     padding: 1em 1em .8em 1.3em;
-    height: 17.5em;
+    height: 19.5em;
     width: 14em;
   }
 }
@@ -1811,7 +1811,7 @@ footer {
 @media only screen and (min-width: 1600px) {
   .nav {
     padding: 1em 1em .5em 1em;
-    height: 15.5em;
+    height: 17.5em;
     width: 12em;
   }
 }
@@ -1876,6 +1876,14 @@ footer {
   .nav-item {
     font-size: 1.1em;
   }
+}
+
+.dropdown-toggle {
+  text-decoration: none;
+}
+
+.dropdown-toggle:hover {
+  color: #3b403f;
 }
 
 .nav-close {

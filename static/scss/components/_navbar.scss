@@ -18,12 +18,12 @@ $nav-toggle-z-index: 2;
   padding: 1em 2em 1em 2em;
   position: fixed;
   top: 15px;
-  height: 26em;
+  height: 29em;
   width: 20em;
   z-index: 99;
   
   @media #{$breakpoint-sm} {
-    height: 24em;
+    height: 26em;
     width: 19em;
     padding: 1em 1em 1em 2em;
   }
@@ -31,22 +31,22 @@ $nav-toggle-z-index: 2;
     padding: 1em 1.5em 1em 1.5em;
   }
   @media #{$breakpoint-md} {
-    height: 21em;
+    height: 24em;
     width: 16.5em;
   }
   @media #{$breakpoint-lg} {
     padding: 1em 2em .6em 1.5em;
-    height: 18.5em;
+    height: 21.5em;
     width: 15em;
   }
   @media #{$breakpoint-xl} {
     padding: 1em 1em .8em 1.3em;
-    height: 17.5em;
+    height: 19.5em;
     width: 14em;
   }
   @media #{$breakpoint-xxl} {
     padding: 1em 1em .5em 1em;
-    height: 15.5em;
+    height: 17.5em;
     width: 12em;
   }
 }
@@ -97,6 +97,14 @@ $nav-toggle-z-index: 2;
     font-size: 1.1em;
   }
   
+}
+
+.dropdown-toggle{
+  text-decoration: none;
+
+  &:hover{
+    color: $base-text-color;
+  }
 }
 
 .nav-close{
