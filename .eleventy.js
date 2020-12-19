@@ -9,7 +9,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
       // "./src/admin": "./admin",
       "static": "./static",
-      "favicon_ico": "./favicon_ico"
+      "favicon_ico": "./favicon_ico",
+      // "decs.d.ts": ".decs.d.ts",
     });
 
   
