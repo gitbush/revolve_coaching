@@ -23,18 +23,22 @@ exports.handler = function(event, context){
         },
     };
     
-    (async () => {
-        try {
-            await sgMail.send(msg);
-        } catch (error) {
-            console.error(error);
-        
-            if (error.response) {
-            console.error(error.response.body.errors)
-            }
-        }
-        })();
-
+    let expression = parsedBody.eventName
+    switch (expression) {
+        case ('order.completed') :
+            (async () => {
+                try {
+                    await sgMail.send(msg);
+                } catch (error) {
+                    console.error(error);
+                
+                    if (error.response) {
+                    console.error(error.response.body.errors)
+                    }
+                }
+            })();
+            break
+    }
 }
 
 
