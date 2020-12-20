@@ -23,6 +23,7 @@
     "@11ty/eleventy": "^0.11.0"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.4.0",
     "axios": "^0.21.0",
     "netlify-lambda": "^2.0.2",
     "sib-api-v3-sdk": "^8.0.2"
