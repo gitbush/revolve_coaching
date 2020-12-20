@@ -39,24 +39,3 @@ exports.handler = function(event, context){
         
 
 }
-
-
-// axios({
-//     method: 'post',
-//     url: 'https://eni6ezxd7c2.x.pipedream.net/',
-//     data: { email: parsedBody.content.user.email}
-// })
-
-// sgMail
-    //     .send(msg)
-    //     .then(() => {}, error => {
-    //         console.error(error);
-
-    //         if (error.response) {
-    //         console.error(error.response.body)
-    //         }
-    //     });
-
-
-
-
