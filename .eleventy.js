@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = function (eleventyConfig) {
   
     // set copy asset folder to dist
@@ -21,7 +23,7 @@ module.exports = function (eleventyConfig) {
       dir: { 
         input: 'src/site', 
         output: 'dist',
-        includes: 'includes'
+        includes: 'includes',
     },
       dataTemplateEngine: 'njk',
       markdownTemplateEngine: 'njk'
