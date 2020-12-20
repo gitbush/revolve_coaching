@@ -1,70 +1,60 @@
-import axios from 'axios';
-
-import { ApiClient, TransactionalEmailsApi, SendSmtpEmail } from 'sib-api-v3-sdk';
-var defaultClient = ApiClient.instance;
-
-
-// Configure API key authorization: api-key
-var apiKey = defaultClient.authentications['api-key'];
-apiKey.apiKey = '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';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//apikey.apiKeyPrefix = 'Token';
-
-// Configure API key authorization: partner-key
-var partnerKey = defaultClient.authentications['partner-key'];
-partnerKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//partnerKey.apiKeyPrefix = 'Token';
+// sendgrid email
+const sgMail = require('@sendgrid/mail'); // bring in sendgrid module
+require('dotenv').config();
+// sgMail.setApiKey('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'); // set api key
+sgMail.setApiKey(process.env.sendgrid_api_key); // set api key
 
 
 
-
-export async function handler(event, context){
-
+// Lambda function to run when POST is sent from snipcart 
+// Parses data in to this function
+exports.handler = function(event, context){
+    
+    // JSON format data from snipcart
     const parsedBody = JSON.parse(event.body)
 
-    var apiInstance = new TransactionalEmailsApi();
-
-    var sendSmtpEmail = new SendSmtpEmail(
-        // {
-        //     sender: {name="tester", email: "devbushm@gmail.com"},
-        //     to: [parsedBody.content.user.email, ],
-        //     templateId: 2,
-        // }
-    ); // SendSmtpEmail | Values to send a transactional email
-
-    sendSmtpEmail = {
-        to: [{
-            email: parsedBody.content.user.email,
-            name: 'John Doe'
-        }],
-        templateId: 2,
-        params: {
-            name: 'John',
-            surname: 'Doe'
+    // build msg to send to sendgrid
+    const msg = {
+        to: parsedBody.content.user.email,
+        from: 'devbushm@gmail.com',
+        templateId: 'd-f9762fb3d88a47928554a334dc2a8641',
+        dynamicTemplateData: {
+          subject: 'Testing Templates',
+          name: parsedBody.content.user.billingAddressName,
         },
-        headers: {
-            'api-key': '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',
-            'content-type': 'application/json',
-            'accept': 'application/json',
+    };
+    
+    (async () => {
+        try {
+            await sgMail.send(msg);
+        } catch (error) {
+            console.error(error);
+        
+            if (error.response) {
+            console.error(error.response.body.errors)
+            }
         }
-    };
+        })();
 
-    apiInstance.sendTransacEmail(sendSmtpEmail).then(function(data) {
-    console.log('API called successfully. Returned data: ' + data);
-    }, function(error) {
-    console.error(error);
-    });
-
-    axios({
-        method: 'post',
-        url: 'https://eni6ezxd7c2.x.pipedream.net/',
-        data: { email: parsedBody.content.user.email}
-    })
-
-    return {
-        statusCode: 200,
-        body: JSON.stringify({message: "hello world"})
-    };
 }
+
+
+// axios({
+//     method: 'post',
+//     url: 'https://eni6ezxd7c2.x.pipedream.net/',
+//     data: { email: parsedBody.content.user.email}
+// })
+
+// sgMail
+    //     .send(msg)
+    //     .then(() => {}, error => {
+    //         console.error(error);
+
+    //         if (error.response) {
+    //         console.error(error.response.body)
+    //         }
+    //     });
+
+
+
 
