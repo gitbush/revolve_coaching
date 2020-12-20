@@ -11,15 +11,15 @@ exports.handler = function(event, context){
     
     // JSON format data from snipcart
     const parsedBody = JSON.parse(event.body)
-
+    // console.log(parsedBody.content.email)
     // build msg to send to sendgrid
     const msg = {
-        to: parsedBody.content.user.email,
+        to: parsedBody.content.email,
         from: 'devbushm@gmail.com',
         templateId: 'd-f9762fb3d88a47928554a334dc2a8641',
         dynamicTemplateData: {
           subject: 'Testing Templates',
-          name: parsedBody.content.user.billingAddressName,
+          name: parsedBody.content.billingAddressName,
         },
     };
     
