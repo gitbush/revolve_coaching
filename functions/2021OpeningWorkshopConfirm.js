@@ -15,10 +15,10 @@ exports.handler = function(event, context){
     // build msg to send to sendgrid
     const msg = {
         to: parsedBody.content.email,
-        from: 'devbushm@gmail.com',
-        templateId: 'd-f9762fb3d88a47928554a334dc2a8641',
+        from: {email: 'mhairi@revolvecoaching.co.uk', name: 'Mhairi Todd'},
+        templateId: 'd-eee87bdcff2741f6bbf78388b0ded934',
         dynamicTemplateData: {
-          subject: 'Testing Templates',
+          subject: '2021 Opening Workshop',
           name: parsedBody.content.billingAddressName,
         },
     };
@@ -27,6 +27,7 @@ exports.handler = function(event, context){
         (async () => {
             try {
                 await sgMail.send(msg);
+                console.log(parsedBody.content.email)
             } catch (error) {
                 console.error(error);
             
@@ -35,6 +36,8 @@ exports.handler = function(event, context){
                 }
             }
         })();
+    } else {
+        console.log(parsedBody.eventName)
     }
         
 
