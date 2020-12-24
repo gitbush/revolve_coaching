@@ -15,7 +15,7 @@ exports.handler = function(event, context){
     // build msg to send to sendgrid
     const msg = {
         to: parsedBody.content.email,
-        from: {email: 'mhairi@revolvecoaching.co.uk'},
+        from: {email: 'mhairi@revolvecoaching.co.uk', name: 'Mhairi Todd'},
         templateId: 'd-eee87bdcff2741f6bbf78388b0ded934',
         dynamicTemplateData: {
           subject: '2021 Opening Workshop',
@@ -27,7 +27,8 @@ exports.handler = function(event, context){
         (async () => {
             try {
                 await sgMail.send(msg);
-                console.log(parsedBody.content.email)
+                console.log(`To email: ${parsedBody.content.email}`)
+                console.log(`From email: ${msg.from.email}`)
             } catch (error) {
                 console.error(error);
             
