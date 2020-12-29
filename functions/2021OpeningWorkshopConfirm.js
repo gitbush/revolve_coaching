@@ -24,7 +24,7 @@ exports.handler = function(event, context){
     };
     
     if (parsedBody.eventName === 'order.completed') {
-        console.log(`From email: ${msg.from.email}`)
+        // console.log(`From email: ${msg.from.email}`)
         (async () => {
             try {
                 await sgMail.send(msg);
