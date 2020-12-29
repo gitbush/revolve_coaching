@@ -15,7 +15,7 @@ exports.handler = function(event, context){
     // build msg to send to sendgrid
     const msg = {
         to: parsedBody.content.email,
-        from: {email: 'mhairi@revolvecoaching.co.uk', name: 'Mhairi Todd'},
+        from: {email: 'em1990@revolvecoaching.co.uk', name: 'Mhairi Todd'},
         templateId: 'd-eee87bdcff2741f6bbf78388b0ded934',
         dynamicTemplateData: {
           subject: '2021 Opening Workshop',
