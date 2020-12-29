@@ -25,19 +25,30 @@ exports.handler = function(event, context){
     
     if (parsedBody.eventName === 'order.completed') {
         console.log(`From email: ${msg.from.email}`);
-        (async () => {
-            try {
-                await sgMail.send(msg);
-                console.log(`To email: ${parsedBody.content.email}`)
-                console.log(`From email: ${msg.from.email}`)
-            } catch (error) {
-                console.error(error);
-            
-                if (error.response) {
-                console.error(error.response.body.errors)
-                }
+        try {
+            sgMail.send(msg);
+            console.log(`To email: ${parsedBody.content.email}`)
+            console.log(`From email: ${msg.from.email}`)
+        } catch (error) {
+            console.error(error);
+        
+            if (error.response) {
+            console.error(error.response.body.errors)
             }
-        })();
+        }
+        // (async () => {
+        //     try {
+        //         await sgMail.send(msg);
+        //         console.log(`To email: ${parsedBody.content.email}`)
+        //         console.log(`From email: ${msg.from.email}`)
+        //     } catch (error) {
+        //         console.error(error);
+            
+        //         if (error.response) {
+        //         console.error(error.response.body.errors)
+        //         }
+        //     }
+        // })();
     } else {
         console.log(parsedBody.eventName)
     }
