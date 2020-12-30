@@ -477,6 +477,7 @@ if(timerDiv){
   }, 1000);  
 }
 
+
 // let dropdownNavItem = document.getElementById('dropdown-btn');
 // let dropdownNav = document.getElementById('dropdown-content');
 
