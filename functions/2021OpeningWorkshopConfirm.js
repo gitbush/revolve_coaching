@@ -41,7 +41,6 @@ exports.handler = function(event, context){
         })();
     } else {
         console.log(parsedBody.eventName)
-        console.log(parsedBody.content.items[0].id)
     }
         
 
