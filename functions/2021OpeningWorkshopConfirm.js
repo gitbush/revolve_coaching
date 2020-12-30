@@ -23,7 +23,7 @@ exports.handler = function(event, context){
         },
     };
     
-    if (parsedBody.eventName === 'order.completed') {
+    if (parsedBody.eventName === 'order.completed' && parsedBody.content.items[0].id === '#OC1') {
         console.log(parsedBody.eventName)
         console.log(`From email: ${msg.from.email}`);
         (async () => {
@@ -41,6 +41,7 @@ exports.handler = function(event, context){
         })();
     } else {
         console.log(parsedBody.eventName)
+        console.log(parsedBody.content.items[0].id)
     }
         
 
