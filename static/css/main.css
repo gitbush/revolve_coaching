@@ -2232,6 +2232,7 @@ a:focus {
   text-decoration: none;
   background-color: #f58c7c;
   color: white;
+  border: none;
   height: 100%;
   position: relative;
   margin: auto;
