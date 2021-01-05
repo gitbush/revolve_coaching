@@ -431,6 +431,7 @@ document.addEventListener('snipcart.ready', () => {
 // Set the date we're counting down to
 let countDownDate = new Date("Jan 5, 2021 20:00:00").getTime();
 
+
 // if remaining value is less than 10 add a leading 0
 function numberOfDigit(digit){
   if(digit < 10){
@@ -461,18 +462,33 @@ if(timerDiv){
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
     // Display the result in the element with id="demo"
-    document.getElementById("timer-days").innerHTML =  numberOfDigit(days);
+    let timerDays = document.getElementById("timer-days")
   
-    document.getElementById("timer-hours").innerHTML = numberOfDigit(hours);
+    let timerHours = document.getElementById("timer-hours")
   
-    document.getElementById("timer-minutes").innerHTML =  numberOfDigit(minutes);
+    let timerMins = document.getElementById("timer-minutes")
   
-    document.getElementById("timer-seconds").innerHTML = numberOfDigit(seconds);
+    let timerSecs = document.getElementById("timer-seconds")
+
+    timerDays.innerHTML = numberOfDigit(days);
+    timerHours.innerHTML = numberOfDigit(hours);
+    timerMins.innerHTML = numberOfDigit(minutes);
+    timerSecs.innerHTML = numberOfDigit(seconds);
   
     // If the count down is finished, write some text
     if (distance < 0) {
+      
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
+      timerDays.innerHTML = "00"
+      timerHours.innerHTML = "00"
+      timerMins.innerHTML = "00"
+      timerSecs.innerHTML = "00"
+
+      let workshopBtn = document.querySelectorAll(".opening-workshop-btn")
+      workshopBtn.forEach((btn) => {
+        btn.classList.remove("snipcart-add-item")
+        btn.innerHTML = "Replay available soon";
+      })
     }
   }, 1000);  
 }
