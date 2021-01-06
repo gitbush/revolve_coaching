@@ -486,8 +486,8 @@ if(timerDiv){
 
       let workshopBtn = document.querySelectorAll(".opening-workshop-btn")
       workshopBtn.forEach((btn) => {
-        btn.classList.remove("snipcart-add-item")
-        btn.innerHTML = "Replay available soon";
+        // btn.classList.remove("snipcart-add-item")
+        btn.innerHTML = "Get your replay";
       })
     }
   }, 1000);  
