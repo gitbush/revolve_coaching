@@ -16,7 +16,7 @@ exports.handler = function(event, context){
     const msg = {
         to: parsedBody.content.email,
         from: {email: 'mhairi@revolvecoaching.co.uk', name: 'Mhairi Todd'},
-        templateId: 'd-eee87bdcff2741f6bbf78388b0ded934',
+        templateId: 'd-100795842a1e421892d0cc2879e557ee',
         dynamicTemplateData: {
           subject: '2021 Opening Workshop',
           name: parsedBody.content.billingAddressName,
