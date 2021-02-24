@@ -2,7 +2,10 @@
     text-align: center;
     padding: 3em 0;
     @media #{$breakpoint-min-md}{
-        padding: 2em 0;
+        padding: 2em 4em;
+    }
+    @media #{$breakpoint-xl}{
+        padding: 2em 10em;
     }
 
     .sect-title{

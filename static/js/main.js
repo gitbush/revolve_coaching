@@ -430,6 +430,22 @@ document.addEventListener('snipcart.ready', () => {
 
 // Set the date we're counting down to
 let countDownDate = new Date("Jan 5, 2021 20:00:00").getTime();
+let CCWCountDownDate = new Date("March 30, 2021 20:00:00").getTime();
+
+// set which date to use based off event class name
+function setWhichDate(){
+  let theDate;
+  let whichTimer = document.getElementById("timer-days")
+
+  if (whichTimer.classList.contains("ow")){
+    theDate = countDownDate
+  }
+  else if(whichTimer.classList.contains("ccw")){
+    theDate = CCWCountDownDate
+  }
+  return theDate
+
+}
 
 
 // if remaining value is less than 10 add a leading 0
@@ -453,7 +469,7 @@ if(timerDiv){
     let now = new Date().getTime();
   
     // Find the distance between now and the count down date
-    let distance = countDownDate - now;
+    let distance = setWhichDate() - now;
   
     // Time calculations for days, hours, minutes and seconds
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
