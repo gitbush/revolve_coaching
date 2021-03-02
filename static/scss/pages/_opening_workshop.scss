@@ -222,6 +222,7 @@
 }
 
 .timer-digit-container{
+    font-family: "biko", serif;
     margin: 2em;
     @media #{$breakpoint-min-md} {
         margin: 1em .5em;

@@ -12843,6 +12843,7 @@ input[type='checkbox'] {
 }
 
 .timer-digit-container {
+  font-family: "biko", serif;
   margin: 2em;
 }
 
