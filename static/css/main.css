@@ -12583,6 +12583,24 @@ input[type='checkbox'] {
   }
 }
 
+.cc-workhop-hero {
+  background-image: url(../img/Mhairi_pics/circus-lane-comp.jpg);
+  background-position: 90% 40%;
+  background-attachment: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .cc-workhop-hero {
+    background-position: 90% 0%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cc-workhop-hero .parallax-container {
+    min-height: 22.5em;
+  }
+}
+
 .left-hero-text {
   color: white;
   position: absolute;
@@ -12622,6 +12640,47 @@ input[type='checkbox'] {
 .left-hero-text .sect-subtitle {
   color: white;
   text-align: right;
+}
+
+.right-hero-text {
+  color: white;
+  position: absolute;
+  bottom: 3em;
+  text-align: left;
+  margin-left: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-hero-text {
+    right: 0;
+    width: 20em;
+    bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .right-hero-text {
+    right: 3em;
+    bottom: 2em;
+  }
+}
+
+.right-hero-text .sect-title {
+  color: white;
+  font-size: 2.5em;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-hero-text .sect-title {
+    margin-bottom: 0.3em;
+    font-size: 2em;
+  }
+}
+
+.right-hero-text .sect-subtitle {
+  color: white;
+  text-align: left;
 }
 
 @media only screen and (min-width: 768px) {
@@ -12735,6 +12794,20 @@ input[type='checkbox'] {
   width: max-content;
   padding: .5em 1.5em;
   margin: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .workshop-includes-content .home-about-img img {
+    -o-object-position: 40% 50%;
+       object-position: 40% 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .workshop-includes-content .home-about-img img {
+    -o-object-position: 20% 20%;
+       object-position: 20% 20%;
+  }
 }
 
 .workshop-includes-list {

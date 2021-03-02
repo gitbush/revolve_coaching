@@ -13,6 +13,21 @@
     }
 }
 
+.cc-workhop-hero{
+    background-image: url(../img/Mhairi_pics/circus-lane-comp.jpg);
+    background-position: 90% 40%;
+    background-attachment: scroll;
+    @media #{$breakpoint-min-md} {
+        background-position: 90% 0%;
+    }
+    
+    .parallax-container{
+        @media #{$breakpoint-min-lg} {
+            min-height: 22.5em;
+        }
+    }
+}
+
 .left-hero-text{
     color: white;
     position: absolute;
@@ -43,6 +58,40 @@
     .sect-subtitle{
         color: white;
         text-align: right;
+    }
+    
+}
+
+.right-hero-text{
+    color: white;
+    position: absolute;
+    bottom: 3em;
+    text-align: left;
+    margin-left: 1em;
+
+    @media #{$breakpoint-min-md} {
+        right: 0;
+        width: 20em;
+        bottom: 1em;
+    }
+    @media #{$breakpoint-min-lg} {
+        right: 3em;
+        bottom: 2em;
+    }
+
+    .sect-title{
+        color: white;
+        font-size: 2.5em;
+        padding: 0;
+        @media #{$breakpoint-min-md} {
+            margin-bottom: 0.3em;
+            font-size: 2em;
+        }
+    }
+
+    .sect-subtitle{
+        color: white;
+        text-align: left;
     }
     
 }
@@ -133,6 +182,16 @@
         width: max-content;
         padding: .5em 1.5em;
         margin: auto;
+    }
+    .home-about-img{
+        img{
+            @media #{$breakpoint-md} {
+                object-position: 40% 50%;
+            }
+            @media #{$breakpoint-min-lg} {
+                object-position: 20% 20%;
+            }
+        }
     }
 }
 
