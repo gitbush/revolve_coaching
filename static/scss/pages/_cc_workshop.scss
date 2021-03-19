@@ -1,0 +1,44 @@
+.confidence-list-container{
+    margin: 1em auto;
+    @media #{$breakpoint-sm} {
+        margin: 2em auto;
+    }
+
+    @media #{$breakpoint-min-md} {
+        margin: 2em auto;
+    }
+    @media #{$breakpoint-xl} {
+        margin: 1em auto;
+    }
+}
+
+.confidence-list-item{
+    text-align: left;
+    @media #{$breakpoint-min-md} {
+        margin-bottom: .6em;
+    }
+}
+
+.confidence-list{
+    width: 20em;
+    padding-left: .9em;
+    margin: auto;
+    @media #{$breakpoint-sm} {
+        width: 26em;
+    }
+
+    @media #{$breakpoint-min-md} {
+        text-align: center;
+        width: 34em;
+    }
+
+}
+
+.cc-workshop-includes{
+    @media #{$breakpoint-md} {
+        height: 29.5em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 26.5em;
+    }
+}
