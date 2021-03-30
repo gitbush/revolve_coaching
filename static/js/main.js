@@ -439,6 +439,7 @@ function setWhichDate(){
 
   if (whichTimer.classList.contains("ow")){
     theDate = countDownDate
+    
   }
   else if(whichTimer.classList.contains("ccw")){
     theDate = CCWCountDownDate
@@ -446,7 +447,6 @@ function setWhichDate(){
   return theDate
 
 }
-
 
 // if remaining value is less than 10 add a leading 0
 function numberOfDigit(digit){
@@ -500,10 +500,18 @@ if(timerDiv){
       timerMins.innerHTML = "00"
       timerSecs.innerHTML = "00"
 
-      let workshopBtn = document.querySelectorAll(".opening-workshop-btn")
+      let workshopBtn = document.querySelectorAll(".opening-workshop-btn");
+      let whichTimer = document.getElementById("timer-days");
+
       workshopBtn.forEach((btn) => {
-        // btn.classList.remove("snipcart-add-item")
-        btn.innerHTML = "Get your replay";
+        // remove snipcart url on button if certain workshop with replay not yet available
+        if(whichTimer.classList.contains("ccw")){
+          btn.innerHTML = "Replay available soon";
+          btn.classList.remove('snipcart-add-item');
+        }
+        else {
+          btn.innerHTML = "Get the replay"
+        }
       })
     }
   }, 1000);  
