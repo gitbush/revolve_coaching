@@ -26,7 +26,7 @@ exports.handler = function(event, context){
             sendGridTemplateId = 'd-100795842a1e421892d0cc2879e557ee';
             emailSubject = '2021 Opening Workshop';
         } else if(parsedBody.content.items[0].id === '#WS1'){
-            sendGridTemplateId = 'd-41613ffd069b45c99294769fe2b5fe60 ';
+            sendGridTemplateId = 'd-41613ffd069b45c99294769fe2b5fe60';
             emailSubject = 'Confidence Collective Workshop';
         }
 
