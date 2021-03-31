@@ -505,12 +505,12 @@ if(timerDiv){
 
       workshopBtn.forEach((btn) => {
         // remove snipcart url on button if certain workshop with replay not yet available
-        if(whichTimer.classList.contains("ccw")){
-          btn.innerHTML = "Replay available soon";
-          btn.classList.remove('snipcart-add-item');
+        if(whichTimer.classList.contains("replay-avail")){
+          btn.innerHTML = "Get the replay";
         }
         else {
-          btn.innerHTML = "Get the replay"
+          btn.innerHTML = "Replay available soon";
+          btn.classList.remove('snipcart-add-item');
         }
       })
     }
