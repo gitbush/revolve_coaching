@@ -144,45 +144,66 @@
 // Who is it for
 // ---------------------------------------------------------------
 
+.who-is-it-for-section{
+    padding-top: 2em;
+    background-color: #f0f3f3;
+    @media #{$breakpoint-sm} {
+    }
+    @media #{$breakpoint-min-md} {
+        background-color: white;
+    }
+    @media #{$breakpoint-lg} {
+    }
+    @media #{$breakpoint-xl} {
+    }
+    @media #{$breakpoint-xxl} {
+    }
+}
+
+
 .who-is-it-for{
     margin-top: 0;
     padding-bottom: 2em;
     text-align: center;
     display: grid;
-    grid-template-rows: auto 32em auto;
+    grid-template-rows: auto auto auto;
 
     @media #{$breakpoint-sm} {
-        grid-template-rows: auto 32em auto;
-        margin-top: 2em;
+        grid-template-rows: auto 29em auto;
     }
     @media #{$breakpoint-min-md} {
         background-color: white;
-        height: 37.5em;
         padding-bottom: 0;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
         grid-template-rows:repeat(3, 1fr);
     }
     @media #{$breakpoint-md} {
-        margin: 2em 0 3em 0;
-        height: 21em;
+        margin: 0;
+        height: 25em;
     }
     @media #{$breakpoint-lg} {
         grid-template-columns: auto 16em repeat(2, 11em) auto;
-        height: 16em;
-        margin: 4em 0;
+        height: 19em;
+        margin: 2em 0;
     }
-    @media #{$breakpoint-xl}, #{$breakpoint-xxl} {
+    @media #{$breakpoint-xl} {
         grid-template-columns:  auto 13em repeat(2, 13em) auto;
-        margin: 4em 0;
-        height: 15em;
+        margin: 2em 0;
+        height: 19em;
     }
     @media #{$breakpoint-xxl} {
         grid-template-columns:  auto 12em repeat(2, 12em) auto;
-        height: 14em;
+        margin: 2em 0;
+        height: 16em;
     }
     .home-about-title{
         @media #{$breakpoint-sm} {
             padding-top: 1em;
+        }
+    }
+    .home-about-text{
+        @media #{$breakpoint-sm} {
+            margin: 1em auto;
         }
     }
 }
@@ -229,36 +250,50 @@
     }
 }
 
+// ---------------------------------------------------------------
+// How long, when how
+// ---------------------------------------------------------------
+
+.when-how{
+    @media #{$breakpoint-min-md} {
+        margin: 0;
+    }
+}
+
 .when-how-content{
+    padding: 2em 0 1em 0;
     @media #{$breakpoint-sm} {
         // grid-template-rows: auto 36em minmax(auto, 28em) 4em;
         margin-top: 2em;
+        
     }
     @media #{$breakpoint-min-md} {
         background-color: white;
-        height: 34.5em;
-        padding-bottom: 0;
+        height: 27.5em;
+        padding: 0;
         display: grid;
         grid-template-columns: auto 25em 2em 16em auto;
         grid-template-rows: repeat(3, 1fr);
+        margin: 2em 0 3em 0;
     }
     @media #{$breakpoint-lg} {
         grid-template-columns: auto 25em 2em 16em auto;
         // grid-template-rows: 4em 20em auto;
-        height: 31em;
+        height: 24em;
     }
     @media #{$breakpoint-xl} {
-        height: 29em;
+        height: 22em;
         // grid-template-rows: 4em 18em auto;
     }
     @media #{$breakpoint-xxl} {
-        height: 25em;
+        height: 21em;
         // grid-template-rows: 4em 16em auto;
     }
 
     .home-about-text{
+        margin: 0 auto;
         @media #{$breakpoint-min-md} {
-            margin-top: 0;
+            margin: 1em auto 1em auto;
         }
     }
 }
@@ -279,6 +314,10 @@
     }
 }
 
+// ---------------------------------------------------------------
+// The added value
+// ---------------------------------------------------------------
+
 .fa-whatsapp-square{
     color: rgba(18,140,126,1);
 }
@@ -292,17 +331,20 @@
 }
 
 .added-value{
-    margin: 1em auto;
+    margin: 4em auto;
     @media #{$breakpoint-sm} {
         margin: 1em auto;
     }
     @media #{$breakpoint-min-md} {
     }
     @media #{$breakpoint-lg} {
+        margin: 3em auto;
     }
     @media #{$breakpoint-xl} {
+        margin: 3em auto;
     }
     @media #{$breakpoint-xxl} {
+        margin: 3em auto;
     }
 
     .known-for-item{
@@ -310,4 +352,116 @@
             grid-template-rows: auto 7.5em;
         }
     }
+}
+
+// ---------------------------------------------------------------
+// The payment options
+// ---------------------------------------------------------------
+
+.payment-options{
+    text-align: center;
+    position: relative;
+    background: white;
+    padding-top: 1em;
+    @media #{$breakpoint-min-md}{
+        margin: 2em 0 3em 0;
+        padding: 0;
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}{
+        margin: 2em 0 4em 0;
+        padding: 0;
+    }
+}
+
+.payment-options-content{
+    @media #{$breakpoint-min-md}{
+        display: grid;
+        height: 30em;
+    }
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        margin: 2em 0 3em 0;
+        grid-template-columns: auto 13em 2em 13em 2em auto;
+    }
+    @media #{$breakpoint-lg}{
+        height: 22em;
+        grid-template-columns: auto 14em 1.5em 14em auto;
+    }
+    @media #{$breakpoint-xl}{
+        height: 19em;
+        grid-template-columns: auto 14em 2em 14em auto;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 17em;
+        grid-template-columns: auto 13em 2em 13em auto;
+    }
+}
+
+.payment-options-item{
+    background-color: $lightest-pink;
+    margin: 4em 1.5em;
+    height: auto;
+    padding: 2em 2em;
+    &:nth-child(1){
+        margin: 2em 1.5em;
+        background-color: rgba(197,219,206,0.2);
+        @media #{$breakpoint-sm}{
+            margin: 2em auto;
+        }
+    }
+    &:nth-child(2){
+        background-color: rgba(211,139,135,0.2);
+    }
+    @media #{$breakpoint-sm}{
+        height: auto;
+        margin: 4em auto;
+        width: 70%;
+    }
+    @media #{$breakpoint-min-md}{
+        background-color: $gray;
+        height: 100%;
+        &:nth-child(1){
+            grid-column: 2;
+            margin: 0;
+            background-color: rgba(197,219,206,0.2);
+        }
+        &:nth-child(2){
+            grid-column: 4;
+            background-color: rgba(211,139,135,0.2);
+        }
+    }
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        margin: 0;
+        padding: .8em .7em;
+        width: 100%;
+    }
+    @media #{$breakpoint-lg}{
+    }
+    @media #{$breakpoint-xl}{
+    }
+    @media #{$breakpoint-xxl}{
+        padding: .8em 1em;
+    }
+    .sect-subtitle{
+        margin-bottom: 1.5em;
+    }
+}
+
+.payment-figure{
+    position: relative;
+    width: 18em;
+    height: 6em;
+}
+
+.payment-figure-content{
+    position: absolute;
+    display: flex;
+    right: 0;
+    background-color: rgba(158,198,179,1);
+    bottom: 0;
+    left: 0;
+    top: 0;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }

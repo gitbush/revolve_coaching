@@ -13307,28 +13307,37 @@ input[type='checkbox'] {
   }
 }
 
+.who-is-it-for-section {
+  padding-top: 2em;
+  background-color: #f0f3f3;
+}
+
+@media only screen and (min-width: 768px) {
+  .who-is-it-for-section {
+    background-color: white;
+  }
+}
+
 .who-is-it-for {
   margin-top: 0;
   padding-bottom: 2em;
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 32em auto;
-      grid-template-rows: auto 32em auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .who-is-it-for {
-    -ms-grid-rows: auto 32em auto;
-        grid-template-rows: auto 32em auto;
-    margin-top: 2em;
+    -ms-grid-rows: auto 29em auto;
+        grid-template-rows: auto 29em auto;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .who-is-it-for {
     background-color: white;
-    height: 37.5em;
     padding-bottom: 0;
     -ms-grid-columns: 4em 15em (1fr)[2] 4em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
@@ -13339,8 +13348,8 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .who-is-it-for {
-    margin: 2em 0 3em 0;
-    height: 21em;
+    margin: 0;
+    height: 25em;
   }
 }
 
@@ -13348,17 +13357,17 @@ input[type='checkbox'] {
   .who-is-it-for {
     -ms-grid-columns: auto 16em (11em)[2] auto;
         grid-template-columns: auto 16em repeat(2, 11em) auto;
-    height: 16em;
-    margin: 4em 0;
+    height: 19em;
+    margin: 2em 0;
   }
 }
 
-@media only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
   .who-is-it-for {
     -ms-grid-columns: auto 13em (13em)[2] auto;
         grid-template-columns: auto 13em repeat(2, 13em) auto;
-    margin: 4em 0;
-    height: 15em;
+    margin: 2em 0;
+    height: 19em;
   }
 }
 
@@ -13366,13 +13375,20 @@ input[type='checkbox'] {
   .who-is-it-for {
     -ms-grid-columns: auto 12em (12em)[2] auto;
         grid-template-columns: auto 12em repeat(2, 12em) auto;
-    height: 14em;
+    margin: 2em 0;
+    height: 16em;
   }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .who-is-it-for .home-about-title {
     padding-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .who-is-it-for .home-about-text {
+    margin: 1em auto;
   }
 }
 
@@ -13445,6 +13461,16 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .when-how {
+    margin: 0;
+  }
+}
+
+.when-how-content {
+  padding: 2em 0 1em 0;
+}
+
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .when-how-content {
     margin-top: 2em;
@@ -13454,14 +13480,15 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .when-how-content {
     background-color: white;
-    height: 34.5em;
-    padding-bottom: 0;
+    height: 27.5em;
+    padding: 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto 25em 2em 16em auto;
         grid-template-columns: auto 25em 2em 16em auto;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
+    margin: 2em 0 3em 0;
   }
 }
 
@@ -13469,25 +13496,29 @@ input[type='checkbox'] {
   .when-how-content {
     -ms-grid-columns: auto 25em 2em 16em auto;
         grid-template-columns: auto 25em 2em 16em auto;
-    height: 31em;
+    height: 24em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .when-how-content {
-    height: 29em;
+    height: 22em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .when-how-content {
-    height: 25em;
+    height: 21em;
   }
+}
+
+.when-how-content .home-about-text {
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
   .when-how-content .home-about-text {
-    margin-top: 0;
+    margin: 1em auto 1em auto;
   }
 }
 
@@ -13520,7 +13551,7 @@ input[type='checkbox'] {
 }
 
 .added-value {
-  margin: 1em auto;
+  margin: 4em auto;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -13530,9 +13561,181 @@ input[type='checkbox'] {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .added-value {
+    margin: 3em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .added-value {
+    margin: 3em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .added-value {
+    margin: 3em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .added-value .known-for-item {
     -ms-grid-rows: auto 7.5em;
         grid-template-rows: auto 7.5em;
   }
+}
+
+.payment-options {
+  text-align: center;
+  position: relative;
+  background: white;
+  padding-top: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .payment-options {
+    margin: 2em 0 3em 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .payment-options {
+    margin: 2em 0 4em 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .payment-options-content {
+    display: -ms-grid;
+    display: grid;
+    height: 30em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .payment-options-content {
+    margin: 2em 0 3em 0;
+    -ms-grid-columns: auto 13em 2em 13em 2em auto;
+        grid-template-columns: auto 13em 2em 13em 2em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .payment-options-content {
+    height: 22em;
+    -ms-grid-columns: auto 14em 1.5em 14em auto;
+        grid-template-columns: auto 14em 1.5em 14em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .payment-options-content {
+    height: 19em;
+    -ms-grid-columns: auto 14em 2em 14em auto;
+        grid-template-columns: auto 14em 2em 14em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .payment-options-content {
+    height: 17em;
+    -ms-grid-columns: auto 13em 2em 13em auto;
+        grid-template-columns: auto 13em 2em 13em auto;
+  }
+}
+
+.payment-options-item {
+  background-color: rgba(251, 242, 236, 0.6);
+  margin: 4em 1.5em;
+  height: auto;
+  padding: 2em 2em;
+}
+
+.payment-options-item:nth-child(1) {
+  margin: 2em 1.5em;
+  background-color: rgba(197, 219, 206, 0.2);
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .payment-options-item:nth-child(1) {
+    margin: 2em auto;
+  }
+}
+
+.payment-options-item:nth-child(2) {
+  background-color: rgba(211, 139, 135, 0.2);
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .payment-options-item {
+    height: auto;
+    margin: 4em auto;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .payment-options-item {
+    background-color: #f0f3f3;
+    height: 100%;
+  }
+  .payment-options-item:nth-child(1) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    margin: 0;
+    background-color: rgba(197, 219, 206, 0.2);
+  }
+  .payment-options-item:nth-child(2) {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    background-color: rgba(211, 139, 135, 0.2);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .payment-options-item {
+    margin: 0;
+    padding: .8em .7em;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .payment-options-item {
+    padding: .8em 1em;
+  }
+}
+
+.payment-options-item .sect-subtitle {
+  margin-bottom: 1.5em;
+}
+
+.payment-figure {
+  position: relative;
+  width: 18em;
+  height: 6em;
+}
+
+.payment-figure-content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  background-color: #9ec6b3;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
