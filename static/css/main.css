@@ -13102,4 +13102,437 @@ input[type='checkbox'] {
     height: 26.5em;
   }
 }
+
+.our-journey {
+  text-align: center;
+  position: relative;
+  background: white;
+  padding-top: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-journey {
+    margin: 2em 0 3em 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .our-journey {
+    margin: 2em 0 4em 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .our-journey-content {
+    display: -ms-grid;
+    display: grid;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .our-journey-content {
+    margin: 2em 0 3em 0;
+    -ms-grid-rows: auto 2em 1fr;
+        grid-template-rows: auto 2em 1fr;
+    -ms-grid-columns: auto 13em 2em 13em 2em 13em auto;
+        grid-template-columns: auto 13em 2em 13em 2em 13em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .our-journey-content {
+    height: auto;
+    -ms-grid-columns: auto 14em 1.5em 14em 1.5em 14em auto;
+        grid-template-columns: auto 14em 1.5em 14em 1.5em 14em auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .our-journey-content {
+    height: auto;
+    -ms-grid-columns: auto 14em 2em 14em 2em 14em auto;
+        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .our-journey-content {
+    height: auto;
+    -ms-grid-columns: auto 13em 2em 13em 2em 13em auto;
+        grid-template-columns: auto 13em 2em 13em 2em 13em auto;
+  }
+}
+
+.our-journey-item {
+  background-color: rgba(251, 242, 236, 0.6);
+  margin: 4em 1.5em;
+  height: auto;
+  padding: 2em 2em;
+}
+
+.our-journey-item:nth-child(1) {
+  background-color: rgba(251, 242, 236, 0.6);
+  margin: 2em 1.5em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .our-journey-item:nth-child(1) {
+    margin: 2em auto;
+  }
+}
+
+.our-journey-item:nth-child(2) {
+  background-color: rgba(104, 152, 165, 0.2);
+}
+
+.our-journey-item:nth-child(3) {
+  background-color: rgba(197, 219, 206, 0.2);
+}
+
+.our-journey-item:nth-child(4) {
+  background-color: rgba(211, 139, 135, 0.2);
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .our-journey-item {
+    height: auto;
+    margin: 4em auto;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .our-journey-item {
+    background-color: #f0f3f3;
+    height: 100%;
+  }
+  .our-journey-item:nth-child(1) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-column: 3/6;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin: 0;
+  }
+  .our-journey-item:nth-child(2) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .our-journey-item:nth-child(3) {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .our-journey-item:nth-child(4) {
+    -ms-grid-column: 6;
+    grid-column: 6;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .our-journey-item {
+    margin: 0;
+    padding: .8em .7em;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .our-journey-item {
+    padding: .8em 1em;
+  }
+}
+
+.our-journey-item .sect-subtitle {
+  margin-bottom: 1.5em;
+}
+
+.our-journey-title {
+  margin: .8em 0 .5em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-journey-title {
+    margin: 0 0 .5em 0;
+  }
+}
+
+.our-journey-sub {
+  color: #f58c7c;
+  font-family: "biko", serif;
+  font-size: 1.25em;
+  margin: .5em 0 1.5em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .our-journey-sub {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .our-journey-sub {
+    font-size: .6em;
+  }
+}
+
+.our-journey-item-title {
+  margin: .8em .7em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .our-journey-item-title {
+    margin-bottom: .5em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .our-journey-item-title {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .our-journey-item-title {
+    font-size: .85em;
+  }
+}
+
+.who-is-it-for {
+  margin-top: 0;
+  padding-bottom: 2em;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 32em auto;
+      grid-template-rows: auto 32em auto;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .who-is-it-for {
+    -ms-grid-rows: auto 32em auto;
+        grid-template-rows: auto 32em auto;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .who-is-it-for {
+    background-color: white;
+    height: 37.5em;
+    padding-bottom: 0;
+    -ms-grid-columns: 4em 15em (1fr)[2] 4em;
+        grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .who-is-it-for {
+    margin: 2em 0 3em 0;
+    height: 21em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .who-is-it-for {
+    -ms-grid-columns: auto 16em (11em)[2] auto;
+        grid-template-columns: auto 16em repeat(2, 11em) auto;
+    height: 16em;
+    margin: 4em 0;
+  }
+}
+
+@media only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
+  .who-is-it-for {
+    -ms-grid-columns: auto 13em (13em)[2] auto;
+        grid-template-columns: auto 13em repeat(2, 13em) auto;
+    margin: 4em 0;
+    height: 15em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .who-is-it-for {
+    -ms-grid-columns: auto 12em (12em)[2] auto;
+        grid-template-columns: auto 12em repeat(2, 12em) auto;
+    height: 14em;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .who-is-it-for .home-about-title {
+    padding-top: 1em;
+  }
+}
+
+.who-is-it-for-img {
+  width: 85vw;
+  margin: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 90%;
+  background-color: white;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .who-is-it-for-img {
+    width: 65vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .who-is-it-for-img {
+    width: 100%;
+    background-color: #fbf2ec;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .who-is-it-for-img {
+    height: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .who-is-it-for-img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .who-is-it-for-img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .who-is-it-for-img {
+    height: 100%;
+  }
+}
+
+.who-is-it-for-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .who-is-it-for-img img {
+    -o-object-position: 50% 15%;
+       object-position: 50% 15%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .when-how-content {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .when-how-content {
+    background-color: white;
+    height: 34.5em;
+    padding-bottom: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 25em 2em 16em auto;
+        grid-template-columns: auto 25em 2em 16em auto;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .when-how-content {
+    -ms-grid-columns: auto 25em 2em 16em auto;
+        grid-template-columns: auto 25em 2em 16em auto;
+    height: 31em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .when-how-content {
+    height: 29em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .when-how-content {
+    height: 25em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .when-how-content .home-about-text {
+    margin-top: 0;
+  }
+}
+
+.when-how-item {
+  margin: 2em 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .when-how-item {
+    margin: 2em 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .when-how-item {
+    margin: 1em 0;
+  }
+}
+
+.fa-whatsapp-square {
+  color: #128c7e;
+}
+
+.fa-book {
+  color: #f58c7c;
+}
+
+.fa-users {
+  color: #fadcd2;
+}
+
+.added-value {
+  margin: 1em auto;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .added-value {
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .added-value .known-for-item {
+    -ms-grid-rows: auto 7.5em;
+        grid-template-rows: auto 7.5em;
+  }
+}
 /*# sourceMappingURL=main.css.map */

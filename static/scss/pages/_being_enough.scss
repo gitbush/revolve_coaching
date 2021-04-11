@@ -1,0 +1,313 @@
+// ---------------------------------------------------------------
+// Our journey
+// ---------------------------------------------------------------
+
+.our-journey{
+    text-align: center;
+    position: relative;
+    background: white;
+    padding-top: 1em;
+    @media #{$breakpoint-min-md}{
+        margin: 2em 0 3em 0;
+        padding: 0;
+    }
+    @media #{$breakpoint-lg}, #{$breakpoint-xl}{
+        margin: 2em 0 4em 0;
+        padding: 0;
+    }
+}
+
+.our-journey-content{
+    @media #{$breakpoint-min-md}{
+        display: grid;
+        height: auto;
+    }
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        margin: 2em 0 3em 0;
+        grid-template-rows: auto 2em 1fr;
+        grid-template-columns: auto 13em 2em 13em 2em 13em auto;
+    }
+    @media #{$breakpoint-lg}{
+        height: auto;
+        grid-template-columns: auto 14em 1.5em 14em 1.5em 14em auto;
+    }
+    @media #{$breakpoint-xl}{
+        height: auto;
+        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
+    }
+    @media #{$breakpoint-xxl}{
+        height: auto;
+        grid-template-columns: auto 13em 2em 13em 2em 13em auto;
+    }
+}
+
+.our-journey-item{
+    background-color: $lightest-pink;
+    margin: 4em 1.5em;
+    height: auto;
+    padding: 2em 2em;
+    &:nth-child(1){
+        background-color: rgba(251, 242, 236, 0.6);
+        margin: 2em 1.5em;
+        @media #{$breakpoint-sm}{
+            margin: 2em auto;
+        }
+    }
+    &:nth-child(2){
+        background-color: rgba(104,152,165,0.2);
+    }
+    &:nth-child(3){
+        background-color: rgba(197,219,206,0.2);
+    }
+    &:nth-child(4){
+        background-color: rgba(211,139,135,0.2);
+    }
+    @media #{$breakpoint-sm}{
+        height: auto;
+        margin: 4em auto;
+        width: 70%;
+    }
+    @media #{$breakpoint-min-md}{
+        background-color: $gray;
+        height: 100%;
+        &:nth-child(1){
+            grid-column: 3/6;
+            grid-row: 1;
+            margin: 0;
+        }
+        &:nth-child(2){
+            grid-column: 2;
+            grid-row: 3;
+        }
+        &:nth-child(3){
+            grid-column: 4;
+            grid-row: 3;
+        }
+        &:nth-child(4){
+            grid-column: 6;
+            grid-row: 3;
+        }
+    }
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        margin: 0;
+        padding: .8em .7em;
+        width: 100%;
+    }
+    @media #{$breakpoint-lg}{
+    }
+    @media #{$breakpoint-xl}{
+    }
+    @media #{$breakpoint-xxl}{
+        padding: .8em 1em;
+    }
+    .sect-subtitle{
+        margin-bottom: 1.5em;
+    }
+}
+
+.our-journey-title{
+    margin: .8em 0 .5em 0;
+    @media #{$breakpoint-min-md}{
+        margin: 0 0 .5em 0;
+    }
+}
+
+.our-journey-sub{
+    color: $pink;
+    font-family: $font-biko;
+    font-size: 1.25em;
+    margin:  .5em 0 1.5em;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}{
+        font-size: .8em;
+    }
+    @media #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        font-size: .6em;
+    }
+}
+
+.our-journey-item-title{
+    margin: .8em .7em;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        margin-bottom: .5em;
+        font-size: 1em;
+    }
+
+    @media #{$breakpoint-xl}{
+        font-size: .9em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .85em;
+    }
+}
+
+// ---------------------------------------------------------------
+// Who is it for
+// ---------------------------------------------------------------
+
+.who-is-it-for{
+    margin-top: 0;
+    padding-bottom: 2em;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 32em auto;
+
+    @media #{$breakpoint-sm} {
+        grid-template-rows: auto 32em auto;
+        margin-top: 2em;
+    }
+    @media #{$breakpoint-min-md} {
+        background-color: white;
+        height: 37.5em;
+        padding-bottom: 0;
+        grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
+        grid-template-rows:repeat(3, 1fr);
+    }
+    @media #{$breakpoint-md} {
+        margin: 2em 0 3em 0;
+        height: 21em;
+    }
+    @media #{$breakpoint-lg} {
+        grid-template-columns: auto 16em repeat(2, 11em) auto;
+        height: 16em;
+        margin: 4em 0;
+    }
+    @media #{$breakpoint-xl}, #{$breakpoint-xxl} {
+        grid-template-columns:  auto 13em repeat(2, 13em) auto;
+        margin: 4em 0;
+        height: 15em;
+    }
+    @media #{$breakpoint-xxl} {
+        grid-template-columns:  auto 12em repeat(2, 12em) auto;
+        height: 14em;
+    }
+    .home-about-title{
+        @media #{$breakpoint-sm} {
+            padding-top: 1em;
+        }
+    }
+}
+
+.who-is-it-for-img{
+    width: 85vw;
+    margin: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 90%;
+    background-color: white;
+    padding: 20px;
+    @media #{$breakpoint-sm} {
+        width: 65vw;
+    }
+    @media #{$breakpoint-min-md} {
+        width: 100%;
+        background-color: $light-pink;
+        grid-column: 2/3;
+        grid-row: 1/5;
+    }
+    @media #{$breakpoint-md} {
+        height: 90%;
+        margin: auto;
+    }
+    @media #{$breakpoint-lg} {
+        height: 100%;
+    }
+    @media #{$breakpoint-xl} {
+        height: 100%;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 100%;
+    }
+
+    img{
+        object-fit: cover;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        @media #{$breakpoint-lg}, #{$breakpoint-xl} {
+            object-position: 50% 15%;
+        }
+    }
+}
+
+.when-how-content{
+    @media #{$breakpoint-sm} {
+        // grid-template-rows: auto 36em minmax(auto, 28em) 4em;
+        margin-top: 2em;
+    }
+    @media #{$breakpoint-min-md} {
+        background-color: white;
+        height: 34.5em;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: auto 25em 2em 16em auto;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    @media #{$breakpoint-lg} {
+        grid-template-columns: auto 25em 2em 16em auto;
+        // grid-template-rows: 4em 20em auto;
+        height: 31em;
+    }
+    @media #{$breakpoint-xl} {
+        height: 29em;
+        // grid-template-rows: 4em 18em auto;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 25em;
+        // grid-template-rows: 4em 16em auto;
+    }
+
+    .home-about-text{
+        @media #{$breakpoint-min-md} {
+            margin-top: 0;
+        }
+    }
+}
+
+.when-how-item{
+    margin: 2em 0;
+    @media #{$breakpoint-sm} {
+        margin: 2em 0;
+    }
+    @media #{$breakpoint-min-md} {
+        margin: 1em 0;
+    }
+    @media #{$breakpoint-lg} {
+    }
+    @media #{$breakpoint-xl} {
+    }
+    @media #{$breakpoint-xxl} {
+    }
+}
+
+.fa-whatsapp-square{
+    color: rgba(18,140,126,1);
+}
+
+.fa-book{
+    color: rgba(245,140,124,1);
+}
+
+.fa-users{
+    color: rgba(250,220,210,1);
+}
+
+.added-value{
+    margin: 1em auto;
+    @media #{$breakpoint-sm} {
+        margin: 1em auto;
+    }
+    @media #{$breakpoint-min-md} {
+    }
+    @media #{$breakpoint-lg} {
+    }
+    @media #{$breakpoint-xl} {
+    }
+    @media #{$breakpoint-xxl} {
+    }
+
+    .known-for-item{
+        @media #{$breakpoint-lg} {
+            grid-template-rows: auto 7.5em;
+        }
+    }
+}
