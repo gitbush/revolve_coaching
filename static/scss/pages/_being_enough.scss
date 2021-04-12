@@ -376,23 +376,23 @@
 .payment-options-content{
     @media #{$breakpoint-min-md}{
         display: grid;
-        height: 30em;
+        height: 24em;
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 2em 0 3em 0;
-        grid-template-columns: auto 13em 2em 13em 2em auto;
+        grid-template-columns: auto 17em 3em 17em auto;
     }
     @media #{$breakpoint-lg}{
         height: 22em;
-        grid-template-columns: auto 14em 1.5em 14em auto;
+        grid-template-columns: auto 14em 4em 14em auto;
     }
     @media #{$breakpoint-xl}{
         height: 19em;
-        grid-template-columns: auto 14em 2em 14em auto;
+        grid-template-columns: auto 14em 4em 14em auto;
     }
     @media #{$breakpoint-xxl}{
         height: 17em;
-        grid-template-columns: auto 13em 2em 13em auto;
+        grid-template-columns: auto 13em 4em 13em auto;
     }
 }
 
@@ -400,6 +400,7 @@
     background-color: $lightest-pink;
     margin: 4em 1.5em;
     height: auto;
+    width: 90vw;
     padding: 2em 2em;
     &:nth-child(1){
         margin: 2em 1.5em;
@@ -414,7 +415,7 @@
     @media #{$breakpoint-sm}{
         height: auto;
         margin: 4em auto;
-        width: 70%;
+        width: 23em;
     }
     @media #{$breakpoint-min-md}{
         background-color: $gray;
@@ -450,6 +451,12 @@
     position: relative;
     width: 18em;
     height: 6em;
+    margin: auto;
+    @media #{$breakpoint-min-md}{
+        width: 70%;;
+        height: 4em;
+        margin-bottom: 2em;
+    }
 }
 
 .payment-figure-content{
@@ -464,4 +471,12 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+    margin-bottom: 0;
+    @media #{$breakpoint-md}{
+        
+    }
+}
+
+.bg-pink{
+    background-color: rgba(236,198,182,1);
 }

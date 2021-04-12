@@ -220,3 +220,40 @@ a:focus{outline:0;}
     }
 }
 
+.sign-me-up-btn{
+    background-color: rgba(158,198,179,1);
+    text-transform: uppercase;
+    color: $base-text-color;
+    font-size: 1.18em;
+    padding: .5em 1em;
+    letter-spacing: .2em;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    @media #{$breakpoint-sm} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-md} {
+        font-size: .8em;
+        padding: .55em .8em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: .8em;
+        padding: .20em .9em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: .7em;
+    }
+    @media #{$breakpoint-xxl} {
+        font-size: .6em;
+        padding: .6em .6em;
+    }
+    &:hover{
+        cursor: pointer;
+        color: $base-text-color;
+    }
+}

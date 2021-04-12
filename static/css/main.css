@@ -2470,6 +2470,61 @@ a:focus {
   }
 }
 
+.sign-me-up-btn {
+  background-color: #9ec6b3;
+  text-transform: uppercase;
+  color: #3b403f;
+  font-size: 1.18em;
+  padding: .5em 1em;
+  letter-spacing: .2em;
+  -webkit-box-shadow: 3px 5px 9px -7px #3b403f;
+          box-shadow: 3px 5px 9px -7px #3b403f;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .sign-me-up-btn {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sign-me-up-btn {
+    font-size: .8em;
+    padding: .55em .8em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sign-me-up-btn {
+    font-size: .8em;
+    padding: .20em .9em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sign-me-up-btn {
+    font-size: .7em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .sign-me-up-btn {
+    font-size: .6em;
+    padding: .6em .6em;
+  }
+}
+
+.sign-me-up-btn:hover {
+  cursor: pointer;
+  color: #3b403f;
+}
+
 /* Preloader CSS */
 #preloader {
   position: fixed;
@@ -13610,39 +13665,39 @@ input[type='checkbox'] {
   .payment-options-content {
     display: -ms-grid;
     display: grid;
-    height: 30em;
+    height: 24em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .payment-options-content {
     margin: 2em 0 3em 0;
-    -ms-grid-columns: auto 13em 2em 13em 2em auto;
-        grid-template-columns: auto 13em 2em 13em 2em auto;
+    -ms-grid-columns: auto 17em 3em 17em auto;
+        grid-template-columns: auto 17em 3em 17em auto;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .payment-options-content {
     height: 22em;
-    -ms-grid-columns: auto 14em 1.5em 14em auto;
-        grid-template-columns: auto 14em 1.5em 14em auto;
+    -ms-grid-columns: auto 14em 4em 14em auto;
+        grid-template-columns: auto 14em 4em 14em auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .payment-options-content {
     height: 19em;
-    -ms-grid-columns: auto 14em 2em 14em auto;
-        grid-template-columns: auto 14em 2em 14em auto;
+    -ms-grid-columns: auto 14em 4em 14em auto;
+        grid-template-columns: auto 14em 4em 14em auto;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .payment-options-content {
     height: 17em;
-    -ms-grid-columns: auto 13em 2em 13em auto;
-        grid-template-columns: auto 13em 2em 13em auto;
+    -ms-grid-columns: auto 13em 4em 13em auto;
+        grid-template-columns: auto 13em 4em 13em auto;
   }
 }
 
@@ -13650,6 +13705,7 @@ input[type='checkbox'] {
   background-color: rgba(251, 242, 236, 0.6);
   margin: 4em 1.5em;
   height: auto;
+  width: 90vw;
   padding: 2em 2em;
 }
 
@@ -13672,7 +13728,7 @@ input[type='checkbox'] {
   .payment-options-item {
     height: auto;
     margin: 4em auto;
-    width: 70%;
+    width: 23em;
   }
 }
 
@@ -13716,6 +13772,15 @@ input[type='checkbox'] {
   position: relative;
   width: 18em;
   height: 6em;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .payment-figure {
+    width: 70%;
+    height: 4em;
+    margin-bottom: 2em;
+  }
 }
 
 .payment-figure-content {
@@ -13737,5 +13802,10 @@ input[type='checkbox'] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 0;
+}
+
+.bg-pink {
+  background-color: #ecc6b6;
 }
 /*# sourceMappingURL=main.css.map */
