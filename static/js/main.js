@@ -517,17 +517,45 @@ if(timerDiv){
   }, 1000);  
 }
 
+/**
+ * Being Enough payment section
+ */
 
-// let dropdownNavItem = document.getElementById('dropdown-btn');
-// let dropdownNav = document.getElementById('dropdown-content');
 
-// dropdownNavItem.addEventListener('click', function(){
+const beingEnoughBtn = document.getElementById('beingEnoughBtn');
 
-//   if(dropdownNav.style.display = 'none'){
-//     dropdownNav.style.display = 'block'
-//   }
-//   else if(dropdownNav.style.display = 'block'){
-//     dropdownNav.style.display = 'none'
-//   }
-  
-// })
+beingEnoughBtn.addEventListener('click', function(e){
+
+  const onePayment = document.getElementById('radio1');
+  const twoPayments = document.getElementById('radio2');
+  const threePayments = document.getElementById('radio3');
+  const fourPayments = document.getElementById('radio4');
+  const fivePayments = document.getElementById('radio5');
+
+  if (onePayment.checked) {
+    beingEnoughBtn.href = ''
+    console.log('1')
+  } else if (twoPayments.checked){
+    beingEnoughBtn.href = ''
+    console.log('2')
+  }
+  else if (threePayments.checked){
+    beingEnoughBtn.href = ''
+    console.log('3')
+  }
+  else if (fourPayments.checked){
+    beingEnoughBtn.href = ''
+    console.log('4')
+  }
+  else if (fivePayments.checked){
+    beingEnoughBtn.href = ''
+    console.log('5')
+  }
+  else {
+    beingEnoughBtn.removeAttribute('href');
+    // beingEnoughBtn.setAttribute('data-toggle', 'tooltip')
+    // beingEnoughBtn.setAttribute('title', 'Please select an option above')
+    // $('#beingEnoughBtn').tooltip();
+  }
+})
+

@@ -379,7 +379,7 @@
         height: 34em;
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
-        margin: 2em 0 3em 0;
+        margin: 3em 0 3em 0;
         grid-template-columns: auto 17em auto;
     }
     @media #{$breakpoint-lg}{
@@ -572,7 +572,7 @@
       order: 1;
       z-index: 2;
       position: absolute;
-      right: 30px;
+      right: 15px;
       top: 50%;
       transform: translateY(-50%);
       cursor: pointer;

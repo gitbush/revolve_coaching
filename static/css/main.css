@@ -13672,7 +13672,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .payment-options-content {
-    margin: 2em 0 3em 0;
+    margin: 3em 0 3em 0;
     -ms-grid-columns: auto 17em auto;
         grid-template-columns: auto 17em auto;
   }
@@ -13916,7 +13916,7 @@ input[type='checkbox'] {
           order: 1;
   z-index: 2;
   position: absolute;
-  right: 30px;
+  right: 15px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
