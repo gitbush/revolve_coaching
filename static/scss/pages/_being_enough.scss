@@ -213,6 +213,10 @@ html{
     }
 }
 
+//  background-color: #e1e8ce
+//  background-color: #ffcca8
+//  background-color: #c6c2e4
+
 .our-journey-item{
     background-color: $lightest-pink;
     margin: 4em 1.5em;
@@ -226,13 +230,17 @@ html{
         }
     }
     &:nth-child(2){
-        background-color: rgba(104,152,165,0.2);
+        // background-color: rgba(104,152,165,0.2);
+        background-color: rgba(255, 204, 168, 0.5)
+        
     }
     &:nth-child(3){
-        background-color: rgba(197,219,206,0.2);
+        // background-color: rgba(197,219,206,0.2);
+        background-color: rgba(225, 232, 206, 0.5)
     }
     &:nth-child(4){
-        background-color: rgba(211,139,135,0.2);
+        // background-color: rgba(211,139,135,0.2);
+        background-color: rgba(198, 194, 228, 0.5)
     }
     @media #{$breakpoint-sm}{
         height: auto;

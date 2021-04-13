@@ -5398,7 +5398,7 @@ input[type='checkbox'] {
 .testimonial-container {
   position: relative;
   height: 23em;
-  background-image: url("../img/Mhairi_pics/chair-circus-lane-crop.jpg");
+  background-image: url("../img/Mhairi_pics/chair-circus-lane-comp.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9545,7 +9545,7 @@ input[type='checkbox'] {
 .testimonial-container {
   position: relative;
   height: 23em;
-  background-image: url("../img/Mhairi_pics/chair-circus-lane-crop.jpg");
+  background-image: url("../img/Mhairi_pics/chair-circus-lane-comp.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13495,15 +13495,15 @@ html {
 }
 
 .our-journey-item:nth-child(2) {
-  background-color: rgba(104, 152, 165, 0.2);
+  background-color: rgba(255, 204, 168, 0.5);
 }
 
 .our-journey-item:nth-child(3) {
-  background-color: rgba(197, 219, 206, 0.2);
+  background-color: rgba(225, 232, 206, 0.5);
 }
 
 .our-journey-item:nth-child(4) {
-  background-color: rgba(211, 139, 135, 0.2);
+  background-color: rgba(198, 194, 228, 0.5);
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
