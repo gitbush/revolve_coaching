@@ -7573,13 +7573,8 @@ input[type='checkbox'] {
   display: inline-block;
   margin: auto;
   bottom: 0;
+  width: auto;
   padding: .5em 1.5em;
-}
-
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .services-cta-btn {
-    width: 18em;
-  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -13318,16 +13313,59 @@ input[type='checkbox'] {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto 4em auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .video-section {
+    margin: 0 auto 3em auto;
+  }
+}
+
+.video-section .services-cta-btn {
+  width: auto;
 }
 
 .video-embed-container {
   width: 21em;
+  margin: 0 auto 2em auto;
   height: auto;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .video-embed-container {
+    margin: 0 auto 3em auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video-embed-container {
+    margin: 0 auto 2em auto;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .video-embed-container {
+    margin: 0 auto 2em auto;
     width: 23em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .video-embed-container {
+    margin: 0 auto 2em auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .video-embed-container {
+    margin: 0 auto 2em auto;
   }
 }
 
@@ -13370,9 +13408,14 @@ input[type='checkbox'] {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .our-journey {
   text-align: center;
   position: relative;
+  margin-bottom: 4em;
   background: white;
   padding-top: 1em;
 }

@@ -108,13 +108,36 @@
     display: flex;
     justify-content: center;
     margin: 0 auto 4em auto;
+    flex-direction: column;
+    align-items: center;
+    @media #{$breakpoint-xl}{
+        margin: 0 auto 3em auto;
+    }
+    .services-cta-btn{
+        width: auto;
+    }
+    
 }
 
 .video-embed-container{
     width: 21em;
+    margin: 0 auto 2em auto;
     height: auto;
+    @media #{$breakpoint-sm}{
+        margin: 0 auto 3em auto;
+    }
+    @media #{$breakpoint-md}{
+        margin: 0 auto 2em auto;
+    }
     @media #{$breakpoint-lg}{
+        margin: 0 auto 2em auto;
         width: 23em;
+    }
+    @media #{$breakpoint-xl}{
+        margin: 0 auto 2em auto;
+    }
+    @media #{$breakpoint-xxl}{
+        margin: 0 auto 2em auto;
     }
 }
 
@@ -146,9 +169,14 @@
 // Our journey
 // ---------------------------------------------------------------
 
+html{
+    scroll-behavior: smooth;
+}
+
 .our-journey{
     text-align: center;
     position: relative;
+    margin-bottom: 4em;
     background: white;
     padding-top: 1em;
     @media #{$breakpoint-min-md}{
