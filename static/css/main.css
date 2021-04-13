@@ -2473,6 +2473,7 @@ a:focus {
 .sign-me-up-btn {
   background-color: #9ec6b3;
   text-transform: uppercase;
+  text-decoration: none;
   color: #3b403f;
   font-size: 1.18em;
   padding: .1em 1em;

@@ -525,7 +525,7 @@ if(timerDiv){
 const beingEnoughBtn = document.getElementById('beingEnoughBtn');
 
 beingEnoughBtn.addEventListener('click', function(e){
-
+  
   const onePayment = document.getElementById('radio1');
   const twoPayments = document.getElementById('radio2');
   const threePayments = document.getElementById('radio3');
@@ -551,11 +551,9 @@ beingEnoughBtn.addEventListener('click', function(e){
     beingEnoughBtn.href = ''
     console.log('5')
   }
-  else {
+  else if (onePayment.checked !=true && twoPayments.checked !=true && threePayments.checked !=true && fourPayments.checked !=true && fivePayments.checked != true){
+    console.log('not')
     beingEnoughBtn.removeAttribute('href');
-    // beingEnoughBtn.setAttribute('data-toggle', 'tooltip')
-    // beingEnoughBtn.setAttribute('title', 'Please select an option above')
-    // $('#beingEnoughBtn').tooltip();
   }
 })
 
