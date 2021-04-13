@@ -13160,6 +13160,156 @@ input[type='checkbox'] {
   }
 }
 
+.being-enough-hero-container {
+  position: relative;
+  background-image: url("../img/Mhairi_pics/mhairi_front_flowers.jpg");
+  background-position: 50% 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .being-enough-hero-container {
+    background-image: url("../img/Mhairi_pics/mhairi_front_flowers.jpg");
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: .5em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .being-enough-hero-container {
+    background-position: 50% 0%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .being-enough-hero-container {
+    background-position: 50% 10%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .being-enough-hero-container {
+    background-position: 50% 15%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .being-enough-hero-container .parallax-container {
+    opacity: .4;
+  }
+}
+
+.being-enough-hero-parallax {
+  text-align: center;
+  color: white;
+  width: 24em;
+  height: 9em;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .being-enough-hero-parallax {
+    width: 27em;
+    height: 10em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .being-enough-hero-parallax {
+    width: 27em;
+    height: 7em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .being-enough-hero-parallax {
+    width: 24em;
+    height: 6em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .being-enough-hero-parallax {
+    width: 20em;
+    height: 7em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .being-enough-hero-parallax {
+    width: 20em;
+    height: 7em;
+  }
+}
+
+.being-enough-hero-parallax .sect-title {
+  color: white;
+  font-size: 1.8em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .being-enough-hero-parallax .sect-title {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .being-enough-hero-parallax .sect-title {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .being-enough-hero-parallax .sect-title {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .being-enough-hero-parallax .sect-title {
+    font-size: 1.15em;
+  }
+}
+
+.being-enough-hero-parallax .sect-subtitle {
+  color: white;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .being-enough-hero-parallax .sect-subtitle {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .being-enough-hero-parallax .sect-subtitle {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .being-enough-hero-parallax .sect-subtitle {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .being-enough-hero-parallax .sect-subtitle {
+    font-size: .9em;
+  }
+}
+
 .video-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13184,6 +13334,40 @@ input[type='checkbox'] {
 .video-embed {
   width: 100%;
   height: auto;
+}
+
+.intro-list {
+  margin: 1em 0 0 1em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .intro-list {
+    margin: 2em 0 2em 5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .intro-list {
+    margin: 2em 0 2em 5em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .intro-list {
+    margin: 2em 0 2em 6em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .intro-list {
+    margin: 1em 0 1em 6em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .intro-list {
+    margin: 1em 0 1em 5em;
+  }
 }
 
 .our-journey {

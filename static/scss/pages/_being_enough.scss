@@ -1,4 +1,106 @@
 // ---------------------------------------------------------------
+// Hero section
+// ---------------------------------------------------------------
+
+.being-enough-hero-container{
+    position: relative;
+    background-image: url("../img/Mhairi_pics/mhairi_front_flowers.jpg");
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    @media #{$breakpoint-min-md}{
+        background-image: url("../img/Mhairi_pics/mhairi_front_flowers.jpg");
+        background-position: 50% 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: .5em;
+    }
+    @media #{$breakpoint-lg}{
+        background-position: 50% 0%;
+    }
+    @media #{$breakpoint-xl}{
+        background-position: 50% 10%;
+    }
+    @media #{$breakpoint-xxl}{
+        background-position: 50% 15%;
+    }
+    .parallax-container{
+        @media #{$breakpoint-min-md}{
+            opacity: .4;
+        }
+    }
+}
+
+.being-enough-hero-parallax{
+    text-align: center;
+    color: white;
+    width: 24em;
+    height: 9em;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    @media #{$breakpoint-sm}{
+        width: 27em;
+        height: 10em;
+    }
+    @media #{$breakpoint-md}{
+        width: 27em;
+        height: 7em;
+    }
+    @media #{$breakpoint-lg}{
+        width: 24em;
+        height: 6em;
+    }
+    @media #{$breakpoint-xl}{
+        width: 20em;
+        height: 7em;
+    }
+    @media #{$breakpoint-xxl}{
+        width: 20em;
+        height: 7em;
+    }
+
+    .sect-title{
+        color: white;
+        font-size: 1.8em;
+        @media #{$breakpoint-sm}{
+            font-size: 2em;
+        }
+        @media #{$breakpoint-md}{
+            font-size: 1.3em;
+        }
+        @media #{$breakpoint-lg}{
+            font-size: 1.2em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: 1.15em;
+        }
+    }
+    .sect-subtitle{
+        color: white;
+        font-size: 1.5em;
+        @media #{$breakpoint-sm}{
+            font-size: 1.6em;
+        }
+        @media #{$breakpoint-md}{
+            font-size: 1.1em;
+        }
+        @media #{$breakpoint-lg}{
+            font-size: 1em;
+        }
+        @media #{$breakpoint-xl}{
+            font-size: .9em;
+        }
+    }
+}
+
+// ---------------------------------------------------------------
 // Video embed section
 // ---------------------------------------------------------------
 
@@ -19,6 +121,25 @@
 .video-embed{
     width: 100%;
     height: auto;
+}
+
+.intro-list{
+    margin: 1em 0 0 1em;
+    @media #{$breakpoint-sm}{
+        margin: 2em 0 2em 5em;
+    }
+    @media #{$breakpoint-md}{
+        margin: 2em 0 2em 5em;
+    }
+    @media #{$breakpoint-lg}{
+        margin: 2em 0 2em 6em;
+    }
+    @media #{$breakpoint-xl}{
+        margin: 1em 0 1em 6em;
+    }
+    @media #{$breakpoint-xxl}{
+        margin: 1em 0 1em 5em;
+    }
 }
 
 // ---------------------------------------------------------------
