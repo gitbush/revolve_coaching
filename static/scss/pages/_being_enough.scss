@@ -2,12 +2,23 @@
 // Video embed section
 // ---------------------------------------------------------------
 
-.video-embed-container{
+.video-section{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 4em auto;
+}
 
+.video-embed-container{
+    width: 21em;
+    height: auto;
+    @media #{$breakpoint-lg}{
+        width: 23em;
+    }
 }
 
 .video-embed{
-    
+    width: 100%;
+    height: auto;
 }
 
 // ---------------------------------------------------------------
@@ -415,7 +426,7 @@
     width: 90vw;
     padding: 2em 1em;
     &:nth-child(1){
-        margin: 2em 1.5em;
+        margin: 4em 1.5em 5em 1.5em;
         background-color: rgba(104,152,165,0.2);
         @media #{$breakpoint-sm}{
             margin: 2em auto;
@@ -499,6 +510,25 @@
     margin-bottom: 0;
     @media #{$breakpoint-md}{
         
+    }
+}
+
+.being-enough-price{
+    font-size: 1.5em;
+    @media #{$breakpoint-sm} {
+        font-size: 1.3em;
+    }
+    @media #{$breakpoint-md} {
+        font-size: 1.1em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: 1.05em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-xxl} {
+        font-size: 1em;
     }
 }
 
@@ -612,7 +642,6 @@
         margin: 2em auto 0em auto;
     }
     @media #{$breakpoint-xxl} {
-        font-size: .6em;
     }
 
 }
@@ -632,6 +661,6 @@
         font-size: .5em;
     }
     @media #{$breakpoint-xxl} {
-        font-size: .4em;
+        font-size: .5em;
     }
 }

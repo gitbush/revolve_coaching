@@ -650,7 +650,7 @@ template {
 
 @media only screen and (min-width: 1600px) {
   .normal-text {
-    font-size: .55em;
+    font-size: .62em;
   }
 }
 
@@ -13160,6 +13160,32 @@ input[type='checkbox'] {
   }
 }
 
+.video-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 4em auto;
+}
+
+.video-embed-container {
+  width: 21em;
+  height: auto;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .video-embed-container {
+    width: 23em;
+  }
+}
+
+.video-embed {
+  width: 100%;
+  height: auto;
+}
+
 .our-journey {
   text-align: center;
   position: relative;
@@ -13712,7 +13738,7 @@ input[type='checkbox'] {
 }
 
 .payment-options-item:nth-child(1) {
-  margin: 2em 1.5em;
+  margin: 4em 1.5em 5em 1.5em;
   background-color: rgba(104, 152, 165, 0.2);
 }
 
@@ -13824,6 +13850,40 @@ input[type='checkbox'] {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 0;
+}
+
+.being-enough-price {
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .being-enough-price {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .being-enough-price {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .being-enough-price {
+    font-size: 1.05em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .being-enough-price {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .being-enough-price {
+    font-size: 1em;
+  }
 }
 
 .bg-green {
@@ -13953,12 +14013,6 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 1600px) {
-  .form {
-    font-size: .6em;
-  }
-}
-
 .payment-small-text {
   font-size: 1em;
 }
@@ -13989,7 +14043,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1600px) {
   .payment-small-text {
-    font-size: .4em;
+    font-size: .5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
