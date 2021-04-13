@@ -523,37 +523,39 @@ if(timerDiv){
 
 
 const beingEnoughBtn = document.getElementById('beingEnoughBtn');
-
-beingEnoughBtn.addEventListener('click', function(e){
+if(beingEnoughBtn){
+  beingEnoughBtn.addEventListener('click', function(e){
   
-  const onePayment = document.getElementById('radio1');
-  const twoPayments = document.getElementById('radio2');
-  const threePayments = document.getElementById('radio3');
-  const fourPayments = document.getElementById('radio4');
-  const fivePayments = document.getElementById('radio5');
-
-  if (onePayment.checked) {
-    beingEnoughBtn.href = 'https://pay.gocardless.com/AL0003QB1A72VN'
-    console.log('1')
-  } else if (twoPayments.checked){
-    beingEnoughBtn.href = 'https://pay.gocardless.com/AL0003QB19HNZW'
-    console.log('2')
-  }
-  else if (threePayments.checked){
-    beingEnoughBtn.href = 'https://pay.gocardless.com/AL0003QB15Z45Z'
-    console.log('3')
-  }
-  else if (fourPayments.checked){
-    beingEnoughBtn.href = 'https://pay.gocardless.com/AL0003QB13EDTW'
-    console.log('4')
-  }
-  else if (fivePayments.checked){
-    beingEnoughBtn.href = 'https://pay.gocardless.com/AL0003QB11FF9Q'
-    console.log('5')
-  }
-  else if (onePayment.checked !=true && twoPayments.checked !=true && threePayments.checked !=true && fourPayments.checked !=true && fivePayments.checked != true){
-    console.log('not')
-    beingEnoughBtn.removeAttribute('href');
-  }
-})
+    const onePayment = document.getElementById('radio1');
+    const twoPayments = document.getElementById('radio2');
+    const threePayments = document.getElementById('radio3');
+    const fourPayments = document.getElementById('radio4');
+    const fivePayments = document.getElementById('radio5');
+  
+    if (onePayment.checked) {
+      beingEnoughBtn.href = 'https://pay.gocardless.com/AL0003QB1A72VN'
+      console.log('1')
+    } else if (twoPayments.checked){
+      beingEnoughBtn.href = 'https://pay.gocardless.com/AL0003QB19HNZW'
+      console.log('2')
+    }
+    else if (threePayments.checked){
+      beingEnoughBtn.href = 'https://pay.gocardless.com/AL0003QB15Z45Z'
+      console.log('3')
+    }
+    else if (fourPayments.checked){
+      beingEnoughBtn.href = 'https://pay.gocardless.com/AL0003QB13EDTW'
+      console.log('4')
+    }
+    else if (fivePayments.checked){
+      beingEnoughBtn.href = 'https://pay.gocardless.com/AL0003QB11FF9Q'
+      console.log('5')
+    }
+    else if (onePayment.checked !=true && twoPayments.checked !=true && threePayments.checked !=true && fourPayments.checked !=true && fivePayments.checked != true){
+      console.log('not')
+      beingEnoughBtn.removeAttribute('href');
+    }
+  })
+  
+}
 
