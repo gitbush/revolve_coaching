@@ -13199,6 +13199,50 @@ input[type='checkbox'] {
   }
 }
 
+.being-enough-terms-hero-container {
+  position: relative;
+  background-image: url("../img/Mhairi_pics/circus-lane-tower.jpg");
+  background-position: 50% 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .being-enough-terms-hero-container {
+    background-image: url("../img/Mhairi_pics/circus-lane-tower.jpg");
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: .5em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .being-enough-terms-hero-container {
+    background-position: 50% 0%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .being-enough-terms-hero-container {
+    background-position: 50% 10%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .being-enough-terms-hero-container {
+    background-position: 50% 15%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .being-enough-terms-hero-container .parallax-container {
+    opacity: .4;
+  }
+}
+
 .being-enough-hero-parallax {
   text-align: center;
   color: white;

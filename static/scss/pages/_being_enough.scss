@@ -33,6 +33,38 @@
     }
 }
 
+.being-enough-terms-hero-container{
+    position: relative;
+    background-image: url("../img/Mhairi_pics/circus-lane-tower.jpg");
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    @media #{$breakpoint-min-md}{
+        background-image: url("../img/Mhairi_pics/circus-lane-tower.jpg");
+        background-position: 50% 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: .5em;
+    }
+    @media #{$breakpoint-lg}{
+        background-position: 50% 0%;
+    }
+    @media #{$breakpoint-xl}{
+        background-position: 50% 10%;
+    }
+    @media #{$breakpoint-xxl}{
+        background-position: 50% 15%;
+    }
+    .parallax-container{
+        @media #{$breakpoint-min-md}{
+            opacity: .4;
+        }
+    }
+}
+
+
 .being-enough-hero-parallax{
     text-align: center;
     color: white;
