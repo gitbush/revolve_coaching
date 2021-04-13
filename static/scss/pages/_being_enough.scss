@@ -147,7 +147,7 @@
 }
 
 .intro-list{
-    margin: 1em 0 0 1em;
+    margin: 3em 0 3em 1em;
     @media #{$breakpoint-sm}{
         margin: 2em 0 2em 5em;
     }
@@ -479,7 +479,7 @@ html{
 }
 
 .when-how-item{
-    margin: 2em 0;
+    margin: 3em 0;
     @media #{$breakpoint-sm} {
         margin: 2em 0;
     }

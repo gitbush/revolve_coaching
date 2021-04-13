@@ -13375,7 +13375,7 @@ input[type='checkbox'] {
 }
 
 .intro-list {
-  margin: 1em 0 0 1em;
+  margin: 3em 0 3em 1em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -13833,7 +13833,7 @@ html {
 }
 
 .when-how-item {
-  margin: 2em 0;
+  margin: 3em 0;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
