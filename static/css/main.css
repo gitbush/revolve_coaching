@@ -11012,6 +11012,22 @@ input[type='checkbox'] {
   }
 }
 
+.package-price {
+  margin: 2em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .package-price {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .package-price .sect-subtitle {
+    margin-bottom: 1em;
+  }
+}
+
 .signature-content {
   display: -ms-grid;
   display: grid;
@@ -11048,26 +11064,26 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .signature-content {
     width: 100%;
-    height: 29em;
-    -ms-grid-columns: auto 14em 2em 14em 2em 14em auto;
-        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
+    height: auto;
+    -ms-grid-columns: auto 18em 3em 18em auto;
+        grid-template-columns: auto 18em 3em 18em auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .signature-content {
     width: 85%;
-    -ms-grid-columns: auto 15em 2em 15em 2em 15em auto;
-        grid-template-columns: auto 15em 2em 15em 2em 15em auto;
+    -ms-grid-columns: auto 18em 3em 18em auto;
+        grid-template-columns: auto 18em 3em 18em auto;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .signature-content {
     width: 85%;
-    height: 22em;
-    -ms-grid-columns: auto 15em 2em 15em 2em 15em auto;
-        grid-template-columns: auto 15em 2em 15em 2em 15em auto;
+    height: auto;
+    -ms-grid-columns: auto 18em 3em 18em auto;
+        grid-template-columns: auto 18em 3em 18em auto;
   }
 }
 
@@ -11085,7 +11101,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .coaching-package-item {
     margin: var(--gap) 0 0 var(--gap);
-    height: 26.5em;
+    height: 100%;
     width: 18em;
   }
   .coaching-package-item:nth-child(5) {
@@ -11104,10 +11120,6 @@ input[type='checkbox'] {
   .coaching-package-item:nth-child(3) {
     -ms-grid-column: 4;
     grid-column: 4;
-  }
-  .coaching-package-item:nth-child(5) {
-    -ms-grid-column: 6;
-    grid-column: 6;
   }
 }
 
@@ -11172,6 +11184,41 @@ input[type='checkbox'] {
 
 .includes-list {
   padding: 0;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .includes-list {
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .includes-list {
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .includes-list {
+    margin-bottom: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .includes-list {
+    margin-bottom: 1.5em;
+  }
+}
+
+.includes-fig {
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .includes-fig {
+    margin: 2em 0;
+  }
 }
 
 .includes-list-item {

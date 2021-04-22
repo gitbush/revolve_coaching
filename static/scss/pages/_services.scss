@@ -925,6 +925,23 @@
 }
 
 
+.package-price{
+    margin: 2em 0;
+    @media #{$breakpoint-min-md}{
+        margin: 0;
+    
+    }
+
+    .sect-subtitle{
+        @media #{$breakpoint-min-md}{
+            margin-bottom: 1em;
+        
+        }
+    }
+}
+
+
+
 .signature-content{
     display: grid;
     text-align: left;
@@ -949,17 +966,17 @@
     }
     @media #{$breakpoint-lg}{
         width: 100%;
-        height: 29em;
-        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
+        height: auto;
+        grid-template-columns: auto 18em 3em 18em auto;
     }
     @media #{$breakpoint-xl}{
         width: 85%;
-        grid-template-columns: auto 15em 2em 15em 2em 15em auto;
+        grid-template-columns: auto 18em 3em 18em auto;
     }
     @media #{$breakpoint-xxl}{
         width: 85%;
-        height: 22em;
-        grid-template-columns: auto 15em 2em 15em 2em 15em auto;
+        height: auto;
+        grid-template-columns: auto 18em 3em 18em auto;
     }
 }
 
@@ -971,7 +988,7 @@
     }
     @media #{$breakpoint-md}{
         margin: var(--gap) 0 0 var(--gap);
-        height: 26.5em;
+        height: 100%;
         width: 18em;
         &:nth-child(5){
             margin-top: 2em;
@@ -984,9 +1001,6 @@
         }
         &:nth-child(3){
             grid-column: 4;
-        }
-        &:nth-child(5){
-            grid-column: 6;
         }
     }
     @media #{$breakpoint-lg}{
@@ -1030,6 +1044,34 @@
 
 .includes-list{
     padding: 0;
+    margin-bottom: 1em;
+    @media #{$breakpoint-md}{
+        margin-bottom: 2em;
+    }
+    @media #{$breakpoint-lg}{
+        margin-bottom: 2em;
+    }
+    @media #{$breakpoint-xl}{
+        margin-bottom: 1.5em;
+    }
+
+    @media #{$breakpoint-xxl}{
+        margin-bottom: 1.5em;
+    }
+}
+
+.includes-fig{
+    margin: 0;
+    @media #{$breakpoint-md}{
+        margin: 2em 0 ;
+    }
+    @media #{$breakpoint-lg}{
+    }
+    @media #{$breakpoint-xl}{
+    }
+    @media #{$breakpoint-xxl}{
+    }
+
 }
 
 .includes-list-item{
