@@ -967,16 +967,16 @@
     @media #{$breakpoint-lg}{
         width: 100%;
         height: auto;
-        grid-template-columns: auto 18em 3em 18em auto;
+        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
     }
     @media #{$breakpoint-xl}{
         width: 85%;
-        grid-template-columns: auto 18em 3em 18em auto;
+        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
     }
     @media #{$breakpoint-xxl}{
         width: 85%;
         height: auto;
-        grid-template-columns: auto 18em 3em 18em auto;
+        grid-template-columns: auto 14em 3em 14em 3em 14em auto;
     }
 }
 
@@ -1002,6 +1002,9 @@
         &:nth-child(3){
             grid-column: 4;
         }
+        &:nth-child(5){
+            grid-column: 6;
+        }
     }
     @media #{$breakpoint-lg}{
         height: 100%;
@@ -1018,13 +1021,13 @@
         height: 8em;
     }
     @media #{$breakpoint-lg}{
-        height: 8em;
+        height: 10em;
     }
     @media #{$breakpoint-xl}{
-        height: 8em;
+        height: 9em;
     }
     @media #{$breakpoint-xxl}{
-        height: 7em;
+        height: 9em;
     }
 }
 

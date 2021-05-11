@@ -11065,16 +11065,16 @@ input[type='checkbox'] {
   .signature-content {
     width: 100%;
     height: auto;
-    -ms-grid-columns: auto 18em 3em 18em auto;
-        grid-template-columns: auto 18em 3em 18em auto;
+    -ms-grid-columns: auto 14em 2em 14em 2em 14em auto;
+        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .signature-content {
     width: 85%;
-    -ms-grid-columns: auto 18em 3em 18em auto;
-        grid-template-columns: auto 18em 3em 18em auto;
+    -ms-grid-columns: auto 14em 2em 14em 2em 14em auto;
+        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
   }
 }
 
@@ -11082,8 +11082,8 @@ input[type='checkbox'] {
   .signature-content {
     width: 85%;
     height: auto;
-    -ms-grid-columns: auto 18em 3em 18em auto;
-        grid-template-columns: auto 18em 3em 18em auto;
+    -ms-grid-columns: auto 14em 3em 14em 3em 14em auto;
+        grid-template-columns: auto 14em 3em 14em 3em 14em auto;
   }
 }
 
@@ -11121,6 +11121,10 @@ input[type='checkbox'] {
     -ms-grid-column: 4;
     grid-column: 4;
   }
+  .coaching-package-item:nth-child(5) {
+    -ms-grid-column: 6;
+    grid-column: 6;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -11148,19 +11152,19 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .coaching-package-intro {
-    height: 8em;
+    height: 10em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .coaching-package-intro {
-    height: 8em;
+    height: 9em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .coaching-package-intro {
-    height: 7em;
+    height: 9em;
   }
 }
 
