@@ -19,6 +19,13 @@
     }
 }
 
+.simple-section-title{
+    
+    @media #{$breakpoint-xs}{
+        margin: 0 .5em;
+    }
+}
+
 .simple-section-text{
     margin: 2em auto 4em auto;
     width: 90vw;
