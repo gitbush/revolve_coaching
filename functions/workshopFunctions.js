@@ -28,6 +28,11 @@ exports.handler = function(event, context){
         } else if(parsedBody.content.items[0].id === '#WS1'){
             sendGridTemplateId = 'd-41613ffd069b45c99294769fe2b5fe60';
             emailSubject = 'Confidence Collective Workshop';
+            console.log(parsedBody.content.items[0].id)
+        } else if(parsedBody.content.items[0].id === '#WS3'){
+            sendGridTemplateId = 'd-41613ffd069b45c99294769fe2b5fe60';
+            emailSubject = 'Limitless Abundance in career and business Workshop';
+            console.log(parsedBody.content.items[0].id)
         }
 
         // send sendgrid email with content
