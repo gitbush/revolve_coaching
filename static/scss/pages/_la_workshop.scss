@@ -21,3 +21,12 @@
         }
     }
 }
+
+.la-workshop-includes{
+    @media #{$breakpoint-md} {
+        height: 29.5em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 22.5em;
+    }
+}
