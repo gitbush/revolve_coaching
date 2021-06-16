@@ -21,10 +21,11 @@
 
 // 4. Layout-related sections
 @import
+  'layout/sections',
   'layout/header',
   'layout/footer',
-  'layout/gift_card',
-  'layout/sections';
+  'layout/gift_card';
+  
 
 // 5. Components
 @import
@@ -44,7 +45,8 @@
   'pages/testimonials',
   'pages/opening_workshop',
   'pages/cc_workshop',
-  'pages/being_enough';
+  'pages/being_enough',
+  'pages/la_workshop';
 
 // 7. Themes
 @import

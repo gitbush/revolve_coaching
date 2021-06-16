@@ -1,3 +1,19 @@
+
+.cc-workhop-hero{
+    background-image: url(../img/Mhairi_pics/circus-lane-comp.jpg);
+    background-position: 90% 40%;
+    background-attachment: scroll;
+    @media #{$breakpoint-min-md} {
+        background-position: 90% 0%;
+    }
+    
+    .parallax-container{
+        @media #{$breakpoint-min-lg} {
+            min-height: 22.5em;
+        }
+    }
+}
+
 .confidence-list-container{
     margin: 1em auto;
     @media #{$breakpoint-sm} {

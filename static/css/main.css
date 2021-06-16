@@ -1005,6 +1005,53 @@ break {
   }
 }
 
+.simple-section {
+  text-align: center;
+  padding: 3em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .simple-section {
+    padding: 2em 4em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .simple-section {
+    padding: 2em 10em;
+  }
+}
+
+.simple-section .sect-title {
+  margin: 0 0 2em 0;
+}
+
+.simple-section .about-cta-btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: .5em 1.5em;
+  margin: auto;
+}
+
+.simple-section-text {
+  margin: 2em auto 4em auto;
+  width: 90vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .simple-section-text {
+    margin: 2em auto 2em auto;
+    width: 32em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .simple-section-text {
+    margin: 2em auto 2em auto;
+  }
+}
+
 #header {
   text-align: left;
   width: 100vw;
@@ -1713,53 +1760,6 @@ footer {
 
 .insta-gift-cards {
   background: white !important;
-}
-
-.simple-section {
-  text-align: center;
-  padding: 3em 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .simple-section {
-    padding: 2em 4em;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .simple-section {
-    padding: 2em 10em;
-  }
-}
-
-.simple-section .sect-title {
-  margin: 0 0 2em 0;
-}
-
-.simple-section .about-cta-btn {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: .5em 1.5em;
-  margin: auto;
-}
-
-.simple-section-text {
-  margin: 2em auto 4em auto;
-  width: 90vw;
-}
-
-@media only screen and (min-width: 768px) {
-  .simple-section-text {
-    margin: 2em auto 2em auto;
-    width: 32em;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .simple-section-text {
-    margin: 2em auto 2em auto;
-  }
 }
 
 .nav {
@@ -12686,24 +12686,6 @@ input[type='checkbox'] {
   }
 }
 
-.cc-workhop-hero {
-  background-image: url(../img/Mhairi_pics/circus-lane-comp.jpg);
-  background-position: 90% 40%;
-  background-attachment: scroll;
-}
-
-@media only screen and (min-width: 768px) {
-  .cc-workhop-hero {
-    background-position: 90% 0%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .cc-workhop-hero .parallax-container {
-    min-height: 22.5em;
-  }
-}
-
 .left-hero-text {
   color: white;
   position: absolute;
@@ -13140,6 +13122,24 @@ input[type='checkbox'] {
 @media only screen and (min-width: 1600px) {
   .what-you-need-list {
     margin: 0 0 0 12em;
+  }
+}
+
+.cc-workhop-hero {
+  background-image: url(../img/Mhairi_pics/circus-lane-comp.jpg);
+  background-position: 90% 40%;
+  background-attachment: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .cc-workhop-hero {
+    background-position: 90% 0%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cc-workhop-hero .parallax-container {
+    min-height: 22.5em;
   }
 }
 
@@ -14366,6 +14366,36 @@ html {
 @media only screen and (min-width: 1600px) {
   .payment-small-text {
     font-size: .5em;
+  }
+}
+
+.la-workshop-hero {
+  background-image: url(../img/Mhairi_pics/mhairi_living_room.jpeg);
+  background-position: 30% 40%;
+  background-attachment: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .la-workshop-hero {
+    background-position: 90% 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .la-workshop-hero {
+    background-position: 90% 20%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .la-workshop-hero .parallax-container {
+    min-height: 22.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .la-workshop-hero .right-hero-text {
+    right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

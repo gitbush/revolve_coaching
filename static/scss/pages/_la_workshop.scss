@@ -1,0 +1,23 @@
+.la-workshop-hero{
+    background-image: url(../img/Mhairi_pics/mhairi_living_room.jpeg);
+    background-position: 30% 40%;
+    background-attachment: scroll;
+    @media #{$breakpoint-min-md} {
+        background-position: 90% 30%;
+    }
+    @media #{$breakpoint-xl} {
+        background-position: 90% 20%;
+    }
+    
+    .parallax-container{
+        @media #{$breakpoint-min-lg} {
+            min-height: 22.5em;
+        }
+    }
+
+    .right-hero-text{
+        @media #{$breakpoint-min-lg} {
+            right: 0;
+        }
+    }
+}
