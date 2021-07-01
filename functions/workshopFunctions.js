@@ -30,7 +30,7 @@ exports.handler = function(event, context){
             emailSubject = 'Confidence Collective Workshop';
             console.log(parsedBody.content.items[0].id)
         } else if(parsedBody.content.items[0].id === '#WS3'){
-            sendGridTemplateId = 'd-f9c5363cd0874ad0ae5cf8b9e75f4cea';
+            sendGridTemplateId = 'd-2e064b986e5046b4864a8db7c6d9d369';
             emailSubject = 'Limitless Abundance in career and business Workshop';
             console.log(parsedBody.content.items[0].id)
         }
