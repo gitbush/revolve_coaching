@@ -381,7 +381,7 @@ html{
     grid-template-rows: auto auto auto;
 
     @media #{$breakpoint-sm} {
-        grid-template-rows: auto 29em auto;
+        grid-template-rows: auto auto auto;
     }
     @media #{$breakpoint-min-md} {
         background-color: white;
@@ -391,7 +391,6 @@ html{
     }
     @media #{$breakpoint-md} {
         margin: 0;
-        height: 25em;
     }
     @media #{$breakpoint-lg} {
         grid-template-columns: auto 16em repeat(2, 11em) auto;
@@ -415,7 +414,7 @@ html{
     }
     .home-about-text{
         @media #{$breakpoint-sm} {
-            margin: 1em auto;
+            margin: 0 auto 1em auto;
         }
     }
 }
@@ -484,7 +483,8 @@ html{
         height: 27.5em;
         padding: 0;
         display: grid;
-        grid-template-columns: auto 25em 2em 16em auto;
+        // grid-template-columns: auto 25em 2em 16em auto
+        grid-template-columns: 4em repeat(2, 1fr) 15em 4em;;
         grid-template-rows: repeat(3, 1fr);
         margin: 2em 0 3em 0;
     }
@@ -506,12 +506,19 @@ html{
         margin: 0 auto;
         @media #{$breakpoint-min-md} {
             margin: 1em auto 1em auto;
+            grid-column: 2/4;
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
+            grid-row: 2/3;
+            margin: 1em auto 0 auto;
+            text-align: start;
+            padding: 0 1.5em 0 0.5em;
         }
     }
 }
 
 .when-how-item{
-    margin: 3em 0;
+    margin: 2em 0;
     @media #{$breakpoint-sm} {
         margin: 2em 0;
     }
@@ -523,6 +530,10 @@ html{
     @media #{$breakpoint-xl} {
     }
     @media #{$breakpoint-xxl} {
+    }
+
+    .home-about-subtitle{
+        margin-bottom: 1em;
     }
 }
 
@@ -544,10 +555,11 @@ html{
 
 .added-value{
     margin: 4em auto;
+    width: 95%;
     @media #{$breakpoint-sm} {
         margin: 1em auto;
     }
-    @media #{$breakpoint-min-md} {
+    @media #{$breakpoint-md} {
     }
     @media #{$breakpoint-lg} {
         margin: 3em auto;
@@ -564,6 +576,10 @@ html{
             grid-template-rows: auto 7.5em;
         }
     }
+
+    .known-for-text{
+        margin: auto 0.5em auto 0;
+    }
 }
 
 // ---------------------------------------------------------------
@@ -575,6 +591,9 @@ html{
     position: relative;
     background: white;
     padding-top: 1em;
+    @media #{$breakpoint-sm}{
+        margin: 0 0 4em 0;
+    }
     @media #{$breakpoint-min-md}{
         margin: 2em 0 3em 0;
         padding: 0;
@@ -733,7 +752,7 @@ html{
     background-color: #fff;
     border-radius: 5px;
     display: block;
-    margin: 10px 0;
+    margin: 10px auto;
     position: relative;
 
     label {
@@ -814,10 +833,10 @@ html{
 
 // codepen formatting
 .form {
-  padding: 0 16px;
-  width: 21em;
-  margin: 3em auto 0em auto;
-  line-height: 36px;
+    width: 90%;
+    margin: 3em auto 0em auto;
+    line-height: 36px;
+    line-height: 36px;
     @media #{$breakpoint-md} {
         width: 16em;
         margin: 2em auto 0em auto;

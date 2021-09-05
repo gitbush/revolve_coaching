@@ -1041,7 +1041,7 @@ break {
 }
 
 .simple-section-text {
-  margin: 2em auto 3em auto;
+  margin: 2em auto 2em auto;
   width: 90vw;
 }
 
@@ -13741,8 +13741,8 @@ html {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .who-is-it-for {
-    -ms-grid-rows: auto 29em auto;
-        grid-template-rows: auto 29em auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
   }
 }
 
@@ -13760,7 +13760,6 @@ html {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .who-is-it-for {
     margin: 0;
-    height: 25em;
   }
 }
 
@@ -13799,7 +13798,7 @@ html {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .who-is-it-for .home-about-text {
-    margin: 1em auto;
+    margin: 0 auto 1em auto;
   }
 }
 
@@ -13895,8 +13894,8 @@ html {
     padding: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 25em 2em 16em auto;
-        grid-template-columns: auto 25em 2em 16em auto;
+    -ms-grid-columns: 4em (1fr)[2] 15em 4em;
+        grid-template-columns: 4em repeat(2, 1fr) 15em 4em;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
     margin: 2em 0 3em 0;
@@ -13930,11 +13929,20 @@ html {
 @media only screen and (min-width: 768px) {
   .when-how-content .home-about-text {
     margin: 1em auto 1em auto;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    margin: 1em auto 0 auto;
+    text-align: start;
+    padding: 0 1.5em 0 0.5em;
   }
 }
 
 .when-how-item {
-  margin: 3em 0;
+  margin: 2em 0;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -13947,6 +13955,10 @@ html {
   .when-how-item {
     margin: 1em 0;
   }
+}
+
+.when-how-item .home-about-subtitle {
+  margin-bottom: 1em;
 }
 
 .fa-whatsapp-square {
@@ -13963,6 +13975,7 @@ html {
 
 .added-value {
   margin: 4em auto;
+  width: 95%;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -13996,11 +14009,21 @@ html {
   }
 }
 
+.added-value .known-for-text {
+  margin: auto 0.5em auto 0;
+}
+
 .payment-options {
   text-align: center;
   position: relative;
   background: white;
   padding-top: 1em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .payment-options {
+    margin: 0 0 4em 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -14226,7 +14249,7 @@ html {
   background-color: #fff;
   border-radius: 5px;
   display: block;
-  margin: 10px 0;
+  margin: 10px auto;
   position: relative;
 }
 
@@ -14314,9 +14337,9 @@ html {
 }
 
 .form {
-  padding: 0 16px;
-  width: 21em;
+  width: 90%;
   margin: 3em auto 0em auto;
+  line-height: 36px;
   line-height: 36px;
 }
 
