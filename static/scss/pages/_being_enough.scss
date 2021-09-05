@@ -4,33 +4,39 @@
 
 .being-enough-hero-container{
     position: relative;
-    background-image: url("../img/Mhairi_pics/mhairi_front_flowers.jpg");
+    background-image: url("../img/Mhairi_pics/enough_effect_mobile.jpeg");
     background-position: 50% 5%;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
+    background-size: contain;
+    min-height: 21em;
+    @media #{$breakpoint-sm}{
+        min-height: 34em;
+    }
     @media #{$breakpoint-min-md}{
-        background-image: url("../img/Mhairi_pics/mhairi_front_flowers.jpg");
+        background-image: url("../img/Mhairi_pics/enough_effect_large_banner.jpeg");
         background-position: 50% 5%;
         background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+        background-size: contain;
+        min-height: 23em;
         margin-top: .5em;
     }
     @media #{$breakpoint-lg}{
         background-position: 50% 0%;
+        min-height: 17em;
     }
     @media #{$breakpoint-xl}{
         background-position: 50% 10%;
+        min-height: 19em;
     }
     @media #{$breakpoint-xxl}{
         background-position: 50% 15%;
+        min-height: 22em;
     }
-    .parallax-container{
-        @media #{$breakpoint-min-md}{
-            opacity: .4;
-        }
-    }
+    // .parallax-container{
+    //     @media #{$breakpoint-min-md}{
+    //         opacity: .4;
+    //     }
+    // }
 }
 
 .being-enough-terms-hero-container{
@@ -170,6 +176,9 @@
     }
     @media #{$breakpoint-xxl}{
         margin: 0 auto 2em auto;
+    }
+    iframe{
+        width: 100%;
     }
 }
 
@@ -394,18 +403,16 @@ html{
     }
     @media #{$breakpoint-lg} {
         grid-template-columns: auto 16em repeat(2, 11em) auto;
-        height: 19em;
         margin: 2em 0;
     }
     @media #{$breakpoint-xl} {
         grid-template-columns:  auto 13em repeat(2, 13em) auto;
         margin: 2em 0;
-        height: 19em;
+        height: 26em;
     }
     @media #{$breakpoint-xxl} {
         grid-template-columns:  auto 12em repeat(2, 12em) auto;
         margin: 2em 0;
-        height: 16em;
     }
     .home-about-title{
         @media #{$breakpoint-sm} {
@@ -480,21 +487,22 @@ html{
     }
     @media #{$breakpoint-min-md} {
         background-color: white;
-        height: 27.5em;
+        height: 24.5em;
         padding: 0;
         display: grid;
         // grid-template-columns: auto 25em 2em 16em auto
-        grid-template-columns: 4em repeat(2, 1fr) 15em 4em;;
+        grid-template-columns: 4em repeat(2, 1fr) 15em 4em;
         grid-template-rows: repeat(3, 1fr);
         margin: 2em 0 3em 0;
     }
     @media #{$breakpoint-lg} {
-        grid-template-columns: auto 25em 2em 16em auto;
+        grid-template-columns: auto repeat(2, 11em) 16em auto;
         // grid-template-rows: 4em 20em auto;
         height: 24em;
     }
     @media #{$breakpoint-xl} {
         height: 22em;
+        grid-template-columns: auto repeat(2, 13em) 13em auto;
         // grid-template-rows: 4em 18em auto;
     }
     @media #{$breakpoint-xxl} {
@@ -569,16 +577,79 @@ html{
     }
     @media #{$breakpoint-xxl} {
         margin: 3em auto;
+        height: 19em;
+    }
+
+    .known-for-content{
+        @media #{$breakpoint-md}{
+            margin: 2em 0;
+            --gap: 1em;
+            flex-wrap: wrap;
+            margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+            width: calc(100% + var(--gap));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+        }
+        @media #{$breakpoint-lg}{
+            margin: 2em 0;
+            --gap: 1em;
+            flex-wrap: wrap;
+            margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+            width: calc(100% + var(--gap));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+        }
+        @media #{$breakpoint-xl}{
+            margin: 2em 0;
+            --gap: 2em;
+            flex-wrap: wrap;
+            margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+            width: calc(100% + var(--gap));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+        }
     }
 
     .known-for-item{
-        @media #{$breakpoint-lg} {
-            grid-template-rows: auto 7.5em;
+        @media #{$breakpoint-md}{
+            margin: var(--gap) 0 0 var(--gap);
+            height: 100%;
+            width: 18em;
         }
+        @media #{$breakpoint-lg} {
+            margin: var(--gap) 0 0 var(--gap);
+            height: 100%;
+            width: 18em;
+            grid-template-columns: auto;
+            grid-template-rows: auto 4em;
+        }
+        @media #{$breakpoint-xl} {
+            margin: var(--gap) 0 0 var(--gap);
+            height: 100%;
+            width: 18em;
+            grid-template-columns: auto;
+            grid-template-rows: auto 4em;
+        }
+        
     }
 
     .known-for-text{
         margin: auto 0.5em auto 0;
+        @media #{$breakpoint-min-md}{
+            margin: 1.5em 0.5em auto 0;
+        }
+    }
+
+    .known-for-title{
+        @media #{$breakpoint-min-md}{
+            margin-bottom: 2em;
+        }
     }
 }
 
@@ -607,11 +678,10 @@ html{
 .payment-options-content{
     @media #{$breakpoint-min-md}{
         display: grid;
-        height: 34em;
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 3em 0 3em 0;
-        grid-template-columns: auto 17em auto;
+        grid-template-columns: auto 19em auto;
     }
     @media #{$breakpoint-lg}{
         height: 31em;

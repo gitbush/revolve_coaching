@@ -13214,20 +13214,26 @@ input[type='checkbox'] {
 
 .being-enough-hero-container {
   position: relative;
-  background-image: url("../img/Mhairi_pics/mhairi_front_flowers.jpg");
+  background-image: url("../img/Mhairi_pics/enough_effect_mobile.jpeg");
   background-position: 50% 5%;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
+  background-size: contain;
+  min-height: 21em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .being-enough-hero-container {
+    min-height: 34em;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .being-enough-hero-container {
-    background-image: url("../img/Mhairi_pics/mhairi_front_flowers.jpg");
+    background-image: url("../img/Mhairi_pics/enough_effect_large_banner.jpeg");
     background-position: 50% 5%;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: contain;
+    min-height: 23em;
     margin-top: .5em;
   }
 }
@@ -13235,24 +13241,21 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .being-enough-hero-container {
     background-position: 50% 0%;
+    min-height: 17em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .being-enough-hero-container {
     background-position: 50% 10%;
+    min-height: 19em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .being-enough-hero-container {
     background-position: 50% 15%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .being-enough-hero-container .parallax-container {
-    opacity: .4;
+    min-height: 22em;
   }
 }
 
@@ -13468,6 +13471,10 @@ input[type='checkbox'] {
   .video-embed-container {
     margin: 0 auto 2em auto;
   }
+}
+
+.video-embed-container iframe {
+  width: 100%;
 }
 
 .video-embed {
@@ -13767,7 +13774,6 @@ html {
   .who-is-it-for {
     -ms-grid-columns: auto 16em (11em)[2] auto;
         grid-template-columns: auto 16em repeat(2, 11em) auto;
-    height: 19em;
     margin: 2em 0;
   }
 }
@@ -13777,7 +13783,7 @@ html {
     -ms-grid-columns: auto 13em (13em)[2] auto;
         grid-template-columns: auto 13em repeat(2, 13em) auto;
     margin: 2em 0;
-    height: 19em;
+    height: 26em;
   }
 }
 
@@ -13786,7 +13792,6 @@ html {
     -ms-grid-columns: auto 12em (12em)[2] auto;
         grid-template-columns: auto 12em repeat(2, 12em) auto;
     margin: 2em 0;
-    height: 16em;
   }
 }
 
@@ -13890,7 +13895,7 @@ html {
 @media only screen and (min-width: 768px) {
   .when-how-content {
     background-color: white;
-    height: 27.5em;
+    height: 24.5em;
     padding: 0;
     display: -ms-grid;
     display: grid;
@@ -13904,8 +13909,8 @@ html {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .when-how-content {
-    -ms-grid-columns: auto 25em 2em 16em auto;
-        grid-template-columns: auto 25em 2em 16em auto;
+    -ms-grid-columns: auto (11em)[2] 16em auto;
+        grid-template-columns: auto repeat(2, 11em) 16em auto;
     height: 24em;
   }
 }
@@ -13913,6 +13918,8 @@ html {
 @media only screen and (min-width: 1200px) {
   .when-how-content {
     height: 22em;
+    -ms-grid-columns: auto (13em)[2] 13em auto;
+        grid-template-columns: auto repeat(2, 13em) 13em auto;
   }
 }
 
@@ -13999,18 +14006,110 @@ html {
 @media only screen and (min-width: 1600px) {
   .added-value {
     margin: 3em auto;
+    height: 19em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .added-value .known-for-content {
+    margin: 2em 0;
+    --gap: 1em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+    width: calc(100% + var(--gap));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .added-value .known-for-content {
+    margin: 2em 0;
+    --gap: 1em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+    width: calc(100% + var(--gap));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .added-value .known-for-content {
+    margin: 2em 0;
+    --gap: 2em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+    width: calc(100% + var(--gap));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .added-value .known-for-item {
+    margin: var(--gap) 0 0 var(--gap);
+    height: 100%;
+    width: 18em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .added-value .known-for-item {
-    -ms-grid-rows: auto 7.5em;
-        grid-template-rows: auto 7.5em;
+    margin: var(--gap) 0 0 var(--gap);
+    height: 100%;
+    width: 18em;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto 4em;
+        grid-template-rows: auto 4em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .added-value .known-for-item {
+    margin: var(--gap) 0 0 var(--gap);
+    height: 100%;
+    width: 18em;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto 4em;
+        grid-template-rows: auto 4em;
   }
 }
 
 .added-value .known-for-text {
   margin: auto 0.5em auto 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .added-value .known-for-text {
+    margin: 1.5em 0.5em auto 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .added-value .known-for-title {
+    margin-bottom: 2em;
+  }
 }
 
 .payment-options {
@@ -14044,15 +14143,14 @@ html {
   .payment-options-content {
     display: -ms-grid;
     display: grid;
-    height: 34em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .payment-options-content {
     margin: 3em 0 3em 0;
-    -ms-grid-columns: auto 17em auto;
-        grid-template-columns: auto 17em auto;
+    -ms-grid-columns: auto 19em auto;
+        grid-template-columns: auto 19em auto;
   }
 }
 
