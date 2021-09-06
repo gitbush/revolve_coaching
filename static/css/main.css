@@ -13214,16 +13214,17 @@ input[type='checkbox'] {
 
 .being-enough-hero-container {
   position: relative;
-  background-image: url("../img/Mhairi_pics/Untitled design.png");
+  background-image: url("../img/Mhairi_pics/enough_effect_sm.jpeg");
   background-position: 50% 5%;
   background-repeat: no-repeat;
   background-size: contain;
-  min-height: 21em;
+  min-height: 27em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .being-enough-hero-container {
-    min-height: 34em;
+    background-image: url("../img/Mhairi_pics/enough_effect_sm.jpeg");
+    min-height: 36em;
   }
 }
 
@@ -13233,7 +13234,7 @@ input[type='checkbox'] {
     background-position: 50% 5%;
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 23em;
+    min-height: 17em;
     margin-top: .5em;
   }
 }
@@ -13241,21 +13242,21 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .being-enough-hero-container {
     background-position: 50% 0%;
-    min-height: 17em;
+    min-height: 19em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .being-enough-hero-container {
     background-position: 50% 10%;
-    min-height: 19em;
+    min-height: 21em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .being-enough-hero-container {
     background-position: 50% 15%;
-    min-height: 22em;
+    min-height: 24em;
   }
 }
 
