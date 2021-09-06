@@ -3645,6 +3645,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-img {
     position: absolute;
+    width: 100%;
   }
 }
 
@@ -7792,6 +7793,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-img {
     position: absolute;
+    width: 100%;
   }
 }
 

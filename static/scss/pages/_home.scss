@@ -44,6 +44,7 @@
         }
         .home-hero-img{
             height: 21em;
+            
     
             img {
                 height: 100%;
@@ -142,8 +143,10 @@
     transition: opacity 1.5s;
     height: 34em;
     opacity: 0;
+    
     @media #{$breakpoint-xs}, #{$breakpoint-sm} {
         position: absolute;
+        width: 100%;
     }
     @media #{$breakpoint-sm}{
         height: 52em;
