@@ -4,7 +4,8 @@
 
 .being-enough-hero-container{
     position: relative;
-    background-image: url("../img/Mhairi_pics/enough_effect_mobile.jpeg");
+    // background-image: url("../img/Mhairi_pics/enough_effect_mobile.jpeg");
+    background-image: url("../img/Mhairi_pics/Untitled design.png");
     background-position: 50% 5%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -160,7 +161,7 @@
 .video-embed-container{
     width: 21em;
     margin: 0 auto 2em auto;
-    height: auto;
+    height: 46em;
     @media #{$breakpoint-sm}{
         margin: 0 auto 3em auto;
     }
@@ -179,6 +180,7 @@
     }
     iframe{
         width: 100%;
+        height: 100%;
     }
 }
 
