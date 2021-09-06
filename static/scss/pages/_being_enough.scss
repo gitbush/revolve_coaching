@@ -168,16 +168,20 @@
     }
     @media #{$breakpoint-md}{
         margin: 0 auto 2em auto;
+        height: 37em;
     }
     @media #{$breakpoint-lg}{
         margin: 0 auto 2em auto;
         width: 23em;
+        height: 33em;
     }
     @media #{$breakpoint-xl}{
         margin: 0 auto 2em auto;
+        height: 30em;
     }
     @media #{$breakpoint-xxl}{
         margin: 0 auto 2em auto;
+        height: 30em;
     }
     iframe{
         width: 100%;

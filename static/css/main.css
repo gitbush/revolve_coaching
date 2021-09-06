@@ -13452,6 +13452,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .video-embed-container {
     margin: 0 auto 2em auto;
+    height: 37em;
   }
 }
 
@@ -13459,18 +13460,21 @@ input[type='checkbox'] {
   .video-embed-container {
     margin: 0 auto 2em auto;
     width: 23em;
+    height: 33em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .video-embed-container {
     margin: 0 auto 2em auto;
+    height: 30em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .video-embed-container {
     margin: 0 auto 2em auto;
+    height: 30em;
   }
 }
 
