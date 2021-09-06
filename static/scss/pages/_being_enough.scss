@@ -147,11 +147,14 @@
 .video-section{
     display: flex;
     justify-content: center;
-    margin: 0 auto 4em auto;
+    margin: 4em auto 4em auto;
     flex-direction: column;
     align-items: center;
+    @media #{$breakpoint-md}{
+        margin: 5em auto 2em auto;
+    }
     @media #{$breakpoint-xl}{
-        margin: 0 auto 3em auto;
+        margin: 4em auto 3em auto;
     }
     .services-cta-btn{
         width: auto;

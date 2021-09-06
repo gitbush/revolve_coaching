@@ -13417,7 +13417,7 @@ input[type='checkbox'] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto 4em auto;
+  margin: 4em auto 4em auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -13427,9 +13427,15 @@ input[type='checkbox'] {
           align-items: center;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video-section {
+    margin: 5em auto 2em auto;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .video-section {
-    margin: 0 auto 3em auto;
+    margin: 4em auto 3em auto;
   }
 }
 
