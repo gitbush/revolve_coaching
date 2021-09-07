@@ -13216,16 +13216,17 @@ input[type='checkbox'] {
 
 .being-enough-hero-container {
   position: relative;
-  background-image: url("../img/Mhairi_pics/enough_effect_mobile.jpeg");
+  background-image: url("../img/Mhairi_pics/enough_effect_sm.jpeg");
   background-position: 50% 5%;
   background-repeat: no-repeat;
   background-size: contain;
-  min-height: 21em;
+  min-height: 27em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .being-enough-hero-container {
-    min-height: 34em;
+    background-image: url("../img/Mhairi_pics/enough_effect_sm.jpeg");
+    min-height: 36em;
   }
 }
 
@@ -13235,7 +13236,7 @@ input[type='checkbox'] {
     background-position: 50% 5%;
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 23em;
+    min-height: 17em;
     margin-top: .5em;
   }
 }
@@ -13243,21 +13244,21 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .being-enough-hero-container {
     background-position: 50% 0%;
-    min-height: 17em;
+    min-height: 19em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .being-enough-hero-container {
     background-position: 50% 10%;
-    min-height: 19em;
+    min-height: 21em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .being-enough-hero-container {
     background-position: 50% 15%;
-    min-height: 22em;
+    min-height: 24em;
   }
 }
 
@@ -13418,7 +13419,7 @@ input[type='checkbox'] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto 4em auto;
+  margin: 4em auto 4em auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -13428,9 +13429,15 @@ input[type='checkbox'] {
           align-items: center;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video-section {
+    margin: 5em auto 2em auto;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .video-section {
-    margin: 0 auto 3em auto;
+    margin: 4em auto 3em auto;
   }
 }
 
@@ -13441,7 +13448,7 @@ input[type='checkbox'] {
 .video-embed-container {
   width: 21em;
   margin: 0 auto 2em auto;
-  height: auto;
+  height: 46em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -13453,6 +13460,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .video-embed-container {
     margin: 0 auto 2em auto;
+    height: 37em;
   }
 }
 
@@ -13460,23 +13468,27 @@ input[type='checkbox'] {
   .video-embed-container {
     margin: 0 auto 2em auto;
     width: 23em;
+    height: 33em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .video-embed-container {
     margin: 0 auto 2em auto;
+    height: 30em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .video-embed-container {
     margin: 0 auto 2em auto;
+    height: 30em;
   }
 }
 
 .video-embed-container iframe {
   width: 100%;
+  height: 100%;
 }
 
 .video-embed {
