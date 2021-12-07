@@ -66,10 +66,10 @@ exports.handler = function(event, context){
                 await sgMail.send(msg);
                 console.log(`To email: ${parsedBody.content.email}`)
             } catch (error) {
-                console.error(error);
+                console.error(`Error is: ${error}`);
             
                 if (error.response) {
-                console.error(error.response.body.errors)
+                console.error(`Error response is: ${error.response.body.errors}`)
                 }
             }
         })();
