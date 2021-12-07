@@ -33,6 +33,10 @@ exports.handler = function(event, context){
             sendGridTemplateId = 'd-2e064b986e5046b4864a8db7c6d9d369';
             emailSubject = 'Limitless Abundance in career and business Workshop';
             console.log(parsedBody.content.items[0].id)
+        } else if(parsedBody.content.items[0].id === '#CC1'){
+            sendGridTemplateId = 'd-00b87b761a474fbc8a9b91f50f002ea5';
+            emailSubject = '2021 Closing Ceremony ';
+            console.log(parsedBody.content.items[0].id)
         }
 
         // send sendgrid email with content
