@@ -1,0 +1,70 @@
+.cw-workshop-hero{
+    background-image: url(../img/Mhairi_pics/yellow-lean-fence.jpeg);
+    background-position: 90% 40%;
+    background-attachment: scroll;
+    @media #{$breakpoint-min-md} {
+        background-position: 90% 0%;
+    }
+    
+    .parallax-container{
+        @media #{$breakpoint-min-lg} {
+            min-height: 22.5em;
+        }
+    }
+}
+
+.cw-circle-img{
+    height: 21em;
+    width: 21em;
+    margin: 4em auto;
+
+    @media #{$breakpoint-min-lg} {
+        width: 18em;
+        height: 18em;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+        object-position: 50% 35%;
+    }
+}
+
+.simple-section-testimonial-alone-exert{
+    width: 90%;
+    color: #aa9659;
+    text-align: center;
+    margin: 0em auto 1em auto;
+    @media  #{$breakpoint-md}{
+        margin: 0em auto 1em auto;
+    }
+    @media  #{$breakpoint-lg}{
+        margin: 0em auto 1em auto;
+    }
+    @media  #{$breakpoint-xl}{
+        margin: 0em auto 1em auto;
+    }
+    @media  #{$breakpoint-xxl}{
+
+    }
+    p {
+        font-size: 1.7em;
+        @media  #{$breakpoint-sm}{
+            font-size: 1.4em;
+        }
+        @media  #{$breakpoint-md}{
+            font-size: 1.2em;
+        }
+        @media  #{$breakpoint-lg}{
+            font-size: 1em;
+        }
+        @media  #{$breakpoint-xl}{
+            font-size: 1.1em;
+        }
+        @media  #{$breakpoint-xxl}{
+            font-size: 1em;
+        }
+    }
+}

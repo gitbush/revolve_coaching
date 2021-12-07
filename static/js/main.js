@@ -432,6 +432,7 @@ document.addEventListener('snipcart.ready', () => {
 let countDownDate = new Date("Jan 5, 2021 20:00:00").getTime();
 let CCWCountDownDate = new Date("March 30, 2021 20:00:00").getTime();
 let LACountDownDate = new Date("June 30, 2021 20:00:00").getTime();
+let cwCountDownDate = new Date("December 22, 2021 20:00:00").getTime();
 
 
 // set which date to use based off event class name
@@ -448,6 +449,9 @@ function setWhichDate(){
   }
   else if(whichTimer.classList.contains("law")){
     theDate = LACountDownDate
+  }
+  else if(whichTimer.classList.contains("cw")){
+    theDate = cwCountDownDate
   }
   return theDate
 
