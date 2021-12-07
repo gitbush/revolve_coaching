@@ -61,18 +61,25 @@ exports.handler = function(event, context){
             },
         };
 
-        (async () => {
-            try {
-                await sgMail.send(msg);
-                console.log(`To email: ${parsedBody.content.email}`)
-            } catch (error) {
-                console.error(`Error is: ${error}`);
+        // (async () => {
+        //     try {
+        //         await sgMail.send(msg);
+        //         console.log(`To email: ${parsedBody.content.email}`)
+        //     } catch (error) {
+        //         console.error(`Error is: ${error}`);
             
-                if (error.response) {
-                console.error(`Error response is: ${error.response.body.errors}`)
-                }
-            }
-        })();
+        //         if (error.response) {
+        //         console.error(`Error response is: ${error.response.body.errors}`)
+        //         }
+        //     }
+        // })();
+
+        sgMail
+            .send(msg)
+            .then(() => console.log('Mail sent successfully'))
+            .catch(error => {
+                console.error(error);
+            });
 
     } else {
         console.log(parsedBody.eventName)
