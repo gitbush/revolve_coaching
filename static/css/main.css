@@ -11073,16 +11073,16 @@ input[type='checkbox'] {
   .signature-content {
     width: 100%;
     height: auto;
-    -ms-grid-columns: auto 14em 2em 14em 2em 14em auto;
-        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
+    -ms-grid-columns: auto 14em 3em 14em auto;
+        grid-template-columns: auto 14em 3em 14em auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .signature-content {
     width: 85%;
-    -ms-grid-columns: auto 14em 2em 14em 2em 14em auto;
-        grid-template-columns: auto 14em 2em 14em 2em 14em auto;
+    -ms-grid-columns: auto 14em 3em 14em auto;
+        grid-template-columns: auto 14em 3em 14em auto;
   }
 }
 
@@ -11090,8 +11090,8 @@ input[type='checkbox'] {
   .signature-content {
     width: 85%;
     height: auto;
-    -ms-grid-columns: auto 14em 3em 14em 3em 14em auto;
-        grid-template-columns: auto 14em 3em 14em 3em 14em auto;
+    -ms-grid-columns: auto 14em 4em 14em auto;
+        grid-template-columns: auto 14em 4em 14em auto;
   }
 }
 
