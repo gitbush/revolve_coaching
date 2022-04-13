@@ -1902,9 +1902,17 @@ footer {
   width: 25em;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .dropdown-menu {
+    width: 34em;
+    position: absolute;
+    left: -89px;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .dropdown-menu {
-    width: 28em;
+    width: 34em;
     position: absolute;
     left: -89px;
   }
@@ -1912,7 +1920,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .dropdown-menu {
-    width: 28em;
+    width: 34em;
     position: absolute;
     left: -89px;
   }

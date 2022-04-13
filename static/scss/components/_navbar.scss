@@ -109,14 +109,19 @@ $nav-toggle-z-index: 2;
 
 .dropdown-menu{
   width: 25em;
+  @media #{$breakpoint-md} {
+    width: 34em;
+    position: absolute;
+    left: -89px;
+  }
 
   @media #{$breakpoint-lg} {
-    width: 28em;
+    width: 34em;
     position: absolute;
     left: -89px;
   }
   @media #{$breakpoint-xl} {
-    width: 28em;
+    width: 34em;
     position: absolute;
     left: -89px;
   }
