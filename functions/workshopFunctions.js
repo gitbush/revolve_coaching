@@ -37,7 +37,12 @@ exports.handler = function(event, context){
             sendGridTemplateId = 'd-00b87b761a474fbc8a9b91f50f002ea5';
             emailSubject = '2021 Closing Ceremony ';
             console.log(parsedBody.content.items[0].id)
+        } else if(parsedBody.content.items[0].id === '#CC1'){
+            sendGridTemplateId = 'd-1b337c28038747549edcf375db8fe632';
+            emailSubject = 'The Authentic Self-Confidence Workshop';
+            console.log(parsedBody.content.items[0].id)
         }
+
 
         // send sendgrid email with content
         // msg template to send to sendGrid

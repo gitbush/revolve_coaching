@@ -12714,6 +12714,7 @@ input[type='checkbox'] {
   .left-hero-text {
     left: 3em;
     bottom: 2em;
+    width: 25em;
   }
 }
 
@@ -13211,6 +13212,24 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .cc-workshop-includes {
     height: 26.5em;
+  }
+}
+
+.as-workshop-hero {
+  background-image: url(../img/Mhairi_pics/mhairi_lean_phone.jpeg);
+  background-position: 90% 40%;
+  background-attachment: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .as-workshop-hero {
+    background-position: 90% 0%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .as-workshop-hero .parallax-container {
+    min-height: 22.5em;
   }
 }
 
