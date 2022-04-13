@@ -1,0 +1,11 @@
+.as-workshop-includes{
+    @media #{$breakpoint-md} {
+        height: 30.5em;
+    }
+    @media #{$breakpoint-lg} {
+        height: 26.5em;
+    }
+    @media #{$breakpoint-xl} {
+        height: 24.5em;
+    }
+}

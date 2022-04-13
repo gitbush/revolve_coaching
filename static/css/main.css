@@ -13214,6 +13214,24 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .as-workshop-includes {
+    height: 30.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .as-workshop-includes {
+    height: 26.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .as-workshop-includes {
+    height: 24.5em;
+  }
+}
+
 .being-enough-hero-container {
   position: relative;
   background-image: url("../img/Mhairi_pics/enough_effect_sm.jpeg");
