@@ -38,7 +38,7 @@ exports.handler = function(event, context){
             emailSubject = '2021 Closing Ceremony ';
             console.log(parsedBody.content.items[0].id)
         } else if(parsedBody.content.items[0].id === '#ASC1'){
-            sendGridTemplateId = 'd-1b337c28038747549edcf375db8fe632';
+            sendGridTemplateId = 'd-72d4945a08a24544a41a03ae3b4288e9';
             emailSubject = 'The Authentic Self-Confidence Workshop';
             console.log(parsedBody.content.items[0].id)
         }
