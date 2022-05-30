@@ -41,6 +41,10 @@ exports.handler = function(event, context){
             sendGridTemplateId = 'd-72d4945a08a24544a41a03ae3b4288e9';
             emailSubject = 'The Authentic Self-Confidence Workshop';
             console.log(parsedBody.content.items[0].id)
+        } else if(parsedBody.content.items[0].id === '#WS2'){
+            sendGridTemplateId = 'd-0fdef84c2b074ff68c06aa62ddbedf22';
+            emailSubject = 'How to stop caring what others think and set boundaries that work';
+            console.log(parsedBody.content.items[0].id)
         }
 
 
