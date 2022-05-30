@@ -434,6 +434,7 @@ let CCWCountDownDate = new Date("March 30, 2021 20:00:00").getTime();
 let LACountDownDate = new Date("June 30, 2021 20:00:00").getTime();
 let cwCountDownDate = new Date("December 22, 2021 20:00:00").getTime();
 let asCountDownDate = new Date("April 27, 2022 20:00:00").getTime();
+let ppCountDownDate = new Date("June 15, 2022 20:00:00").getTime();
 
 // set which date to use based off event class name
 function setWhichDate(){
@@ -455,6 +456,9 @@ function setWhichDate(){
   }
   else if(whichTimer.classList.contains("as")){
     theDate = asCountDownDate
+  }
+  else if(whichTimer.classList.contains("ppw")){
+    theDate = ppCountDownDate
   }
   return theDate
 

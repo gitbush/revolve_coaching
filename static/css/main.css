@@ -14597,6 +14597,116 @@ html {
   }
 }
 
+.workshop-hero {
+  background-image: url(../img/Mhairi_pics/yellow-coat-fence.jpg);
+  background-position: 90% 40%;
+  background-attachment: scroll;
+}
+
+@media only screen and (min-width: 768px) {
+  .workshop-hero {
+    background-position: 90% 0%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .workshop-hero .parallax-container {
+    min-height: 22.5em;
+  }
+}
+
+.left-hero-text-large {
+  color: white;
+  position: absolute;
+  bottom: 3em;
+  text-align: right;
+  margin-right: 1em;
+  width: 27em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .left-hero-text-large {
+    left: 0;
+    width: 30em;
+    bottom: 3em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .left-hero-text-large {
+    left: 0;
+    width: 23em;
+    bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .left-hero-text-large {
+    left: 1em;
+    bottom: 2em;
+    width: 25em;
+  }
+}
+
+.left-hero-text-large .sect-title {
+  color: white;
+  font-size: 1.5em;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .left-hero-text-large .sect-title {
+    margin-bottom: 0.3em;
+    font-size: 1.5em;
+  }
+}
+
+.left-hero-text-large .sect-subtitle {
+  color: white;
+  text-align: right;
+}
+
+.right-hero-text {
+  color: white;
+  position: absolute;
+  bottom: 3em;
+  text-align: left;
+  margin-left: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-hero-text {
+    right: 0;
+    width: 20em;
+    bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .right-hero-text {
+    right: 3em;
+    bottom: 2em;
+  }
+}
+
+.right-hero-text .sect-title {
+  color: white;
+  font-size: 2.5em;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .right-hero-text .sect-title {
+    margin-bottom: 0.3em;
+    font-size: 2em;
+  }
+}
+
+.right-hero-text .sect-subtitle {
+  color: white;
+  text-align: left;
+}
+
 .cw-workshop-hero {
   background-image: url(../img/Mhairi_pics/yellow-lean-fence.jpeg);
   background-position: 90% 40%;
