@@ -1,237 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
 
-    {% if my_project.environment === 'production' %}
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180198864-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        {% if my_project.environment === 'production' %}
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180198864-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
 
-        gtag('config', 'UA-180198864-1');
-        </script>
-    {% endif %}
+                gtag('config', 'UA-180198864-1');
+            </script>
 
-   
+            <!-- Facebook Pixel Code -->
+            <script>
+                !function (f, b, e, v, n, t, s) {
+                    if (f.fbq) 
+                        return;
+                    n = f.fbq = function () {
+                        n.callMethod
+                            ? n
+                                .callMethod
+                                .apply(n, arguments)
+                            : n
+                                .queue
+                                .push(arguments)
+                    };
+                    if (!f._fbq) 
+                        f._fbq = n;
+                    n.push = n;
+                    n.loaded = !0;
+                    n.version = '2.0';
+                    n.queue = [];
+                    t = b.createElement(e);
+                    t.async = !0;
+                    t.src = v;
+                    s = b.getElementsByTagName(e)[0];
+                    s
+                        .parentNode
+                        .insertBefore(t, s)
+                }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '750146979736671');
+                fbq('track', 'PageView');
+            </script>
+            <noscript>
+                <img height="1" width="1" src="https://www.facebook.com/tr?id=750146979736671&ev=PageView&noscript=1"/>
+            </noscript>
+            <!-- End Facebook Pixel Code -->
+        {% endif %}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="{{ metaDescription }}">
-    <title>{{ title }}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="{{ metaDescription }}">
+        <title>{{ title }}</title>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_ico/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_ico/favicon-16x16.png">
-    <link rel="manifest" href="/favicon_ico/manifest.json">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_ico/favicon-16x16.png">
+        <link rel="manifest" href="/favicon_ico/manifest.json">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="/static/css/main.css">
-</head>
-<body>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/css/splide.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
 
-    <header id="header">
-        <div class="header-logo d-none d-md-block">
-            <a class="header-link" href="/">
-                <h1 class="logo-1 mb-1">Mhairi Todd</h1>
-                <h2 class="logo-subtitle mb-0">The Roadblock Coach</h2>
-            </a>
-        </div>
-        <div id="header-nav" class="toggle-header">
-            <a class="header-link" href="/">
-                <h1 id="headerName" class="header-name d-md-none">Mhairi Todd</h1>
-            </a>
-            <div class="nav-toggle">
-                <h5 class="nav-toggle-text">MENU</h5>
-                <div class="nav-toggle-bar"></div>
+        <header id="header">
+            <div class="header-logo d-none d-md-block">
+                <a class="header-link" href="/">
+                    <h1 class="logo-1 mb-1">Mhairi Todd</h1>
+                    <h2 class="logo-subtitle mb-0">The Roadblock Coach</h2>
+                </a>
             </div>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li class="nav-item nav-close"><svg class="svg-close" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/></svg></li>
-                <li class="nav-item rob-font"><a href="/">Home</a></li>
-                <li class="nav-item rob-font"><a href="/about">Meet Mhairi</a></li>
-                <li class="nav-item rob-font"><a href="/services">Coaching Programs</a></li>
-                <li class="nav-item rob-font"><a href="/testimonials">Client Love</a></li>
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle nav-item rob-font" data-toggle="dropdown">Events</a>
-                    <div class="dropdown-menu nav-item rob-font">
-                        <div class="dropdown-item">
+            <div id="header-nav" class="toggle-header">
+                <a class="header-link" href="/">
+                    <h1 id="headerName" class="header-name d-md-none">Mhairi Todd</h1>
+                </a>
+                <div class="nav-toggle">
+                    <h5 class="nav-toggle-text">MENU</h5>
+                    <div class="nav-toggle-bar"></div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="nav-item nav-close">
+                        <svg class="svg-close" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/></svg>
+                    </li>
+                    <li class="nav-item rob-font">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="nav-item rob-font">
+                        <a href="/about">Meet Mhairi</a>
+                    </li>
+                    <li class="nav-item rob-font">
+                        <a href="/services">Coaching Programs</a>
+                    </li>
+                    <li class="nav-item rob-font">
+                        <a href="/testimonials">Client Love</a>
+                    </li>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle nav-item rob-font" data-toggle="dropdown">Events</a>
+                        <div class="dropdown-menu nav-item rob-font">
+                            <div class="dropdown-item">
                                 <a href="/authentic-self-confidence-workshop" class="">The Authentic Self-Confidence<br class="d-md-none"> Workshop</a>
-                        </div>
-                        <div class="dropdown-item">
+                            </div>
+                            <div class="dropdown-item">
                                 <a href="/2021-closing-ceremony" class="">2021 Closing Ceremony</a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="/business-workshops/limitless-abundance" class="">Limitless Abundance <br class="d-md-none"> Workshop</a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="/confidence-collective-workshop" class="">Confidence Collective <br class="d-md-none"> Workshop</a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="/boundaries-for-people-pleasers" class="">The Workshop for People <br class="d-md-none">Pleasers</a>
-                        </div>
-                    </div>
-                </div>
-                <li class="nav-item rob-font"><a href="/contact">Let's Chat</a></li>
-                <li class="nav-item rob-font">
-                    <a class="snipcart-checkout">Cart
-                        <span class="snipcart-total-price">£0.00</span>
-                        (<span class="snipcart-items-count">(0)</span>)
-                    </a>
-                </li>
-                <li class="nav-item social-nav">
-                    <span class="social-nav-item">
-                        <a href="https://www.instagram.com/theroadblockcoach/?hl=en" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </span>
-                    <span class="social-nav-item">
-                        <a href="https://www.linkedin.com/in/mhairi-todd-49515789/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </span>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
-    <!-- /Preloader -->
-    
-    <!-- logo on mobile -->
-    <div class="logo-xs-container d-md-none">
-        <div class="header-xs-logo">
-            <a class="header-link" href="/">
-                <h1 class="logo-1 mb-1">Mhairi Todd</h1>
-                <h2 class="logo-subtitle mb-0">The Roadblock Coach</h2>
-            </a>
-        </div>
-    </div>
-    
-    <!-- END: logo on mobile -->
-
-    {{ content | safe }}
-
-
-        <!-- instagram footer -->
-    <section class="contact-footer">
-        <div class="cf-content">
-            <div class="ig-intro">
-                <div class="ig-intro-content">
-                    <h3 class="sect-subtitle cf-title">
-                        Follow me on Instagram for fun, free resources, wise words and inspiration. 
-                    </h3>
-                    <p class="normal-text">
-                       (Or pretty pictures and a few laughs at the very least!)
-                    </p>
-                    <div class="about-cta-btn cf-button">
-                        <a href="https://www.instagram.com/theroadblockcoach/?hl=en" target="_blank" class="btn-pink normal-text">FOLLOW ME!</a>
-                    </div>
-                </div>
-            </div>
-            <!-- latest instagram posts -->
-            <a href="https://www.instagram.com/theroadblockcoach/?hl=en" target="_blank">
-                <div class="latest-posts">
-                    <div class="latest-post-item">
-                        <div class="latest-post-text">
-                            <h3 class="sect-subtitle">Latest Posts</h3>
-                            <div class="latest-post-ig">
-                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="/business-workshops/limitless-abundance" class="">Limitless Abundance <br class="d-md-none"> Workshop</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="/confidence-collective-workshop" class="">Confidence Collective <br class="d-md-none"> Workshop</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="/boundaries-for-people-pleasers" class="">The Workshop for People <br class="d-md-none">Pleasers</a>
                             </div>
                         </div>
                     </div>
-                    <div class="latest-post-item">
-                        <img src="/static/img/insta/feel-garden-comp2.jpg" alt="mhairi-life-coach-instagram-feel">
-                    </div>
-                    <div class="latest-post-item">
-                        <img src="/static/img/insta/sunday-comp2.jpg" alt="mhairi-life-coach-instagram-sunday">
-                    </div>
-                    <div class="latest-post-item">
-                        <img src="/static/img/insta/believe-comp2.jpg" alt="mhairi-life-coach-instagram-believe">
-                    </div>
-                    <div class="latest-post-item">
-                        <img src="/static/img/insta/succeed-comp2.jpg" alt="mhairi-life-coach-instagram-suceed">
-                    </div>
-                    <div class="latest-post-item">
-                        <img src="/static/img/insta/mindest-comp2.jpg" alt="mhairi-life-coach-instagram-mindset">
+                    <li class="nav-item rob-font">
+                        <a href="/contact">Let's Chat</a>
+                    </li>
+                    <li class="nav-item rob-font">
+                        <a class="snipcart-checkout">Cart
+                        <span class="snipcart-total-price">£0.00</span>
+                        (<span class="snipcart-items-count">(0)</span>)
+                    </a>
+                    </li>
+                    <li class="nav-item social-nav">
+                        <span class="social-nav-item">
+                            <a href="https://www.instagram.com/theroadblockcoach/?hl=en" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </span>
+                        <span class="social-nav-item">
+                            <a href="https://www.linkedin.com/in/mhairi-todd-49515789/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        <!-- /Preloader -->
+
+        <!-- logo on mobile -->
+        <div class="logo-xs-container d-md-none">
+            <div class="header-xs-logo">
+                <a class="header-link" href="/">
+                    <h1 class="logo-1 mb-1">Mhairi Todd</h1>
+                    <h2 class="logo-subtitle mb-0">The Roadblock Coach</h2>
+                </a>
+            </div>
+        </div>
+
+        <!-- END: logo on mobile -->
+
+        {{ content | safe }}
+
+        <!-- instagram footer -->
+        <section class="contact-footer">
+            <div class="cf-content">
+                <div class="ig-intro">
+                    <div class="ig-intro-content">
+                        <h3 class="sect-subtitle cf-title">
+                        Follow me on Instagram for fun, free resources, wise words and inspiration. 
+                    </h3>
+                        <p class="normal-text">
+                       (Or pretty pictures and a few laughs at the very least!)
+                    </p>
+                        <div class="about-cta-btn cf-button">
+                            <a href="https://www.instagram.com/theroadblockcoach/?hl=en" target="_blank" class="btn-pink normal-text">FOLLOW ME!</a>
+                        </div>
                     </div>
                 </div>
-            </a>
-            <!-- END: latest instagram posts -->
-        </div>
-        <!-- END: instagram footer -->
+                <!-- latest instagram posts -->
+                <a href="https://www.instagram.com/theroadblockcoach/?hl=en" target="_blank">
+                    <div class="latest-posts">
+                        <div class="latest-post-item">
+                            <div class="latest-post-text">
+                                <h3 class="sect-subtitle">Latest Posts</h3>
+                                <div class="latest-post-ig">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="latest-post-item">
+                            <img src="/static/img/insta/feel-garden-comp2.jpg" alt="mhairi-life-coach-instagram-feel">
+                        </div>
+                        <div class="latest-post-item">
+                            <img src="/static/img/insta/sunday-comp2.jpg" alt="mhairi-life-coach-instagram-sunday">
+                        </div>
+                        <div class="latest-post-item">
+                            <img src="/static/img/insta/believe-comp2.jpg" alt="mhairi-life-coach-instagram-believe">
+                        </div>
+                        <div class="latest-post-item">
+                            <img src="/static/img/insta/succeed-comp2.jpg" alt="mhairi-life-coach-instagram-suceed">
+                        </div>
+                        <div class="latest-post-item">
+                            <img src="/static/img/insta/mindest-comp2.jpg" alt="mhairi-life-coach-instagram-mindset">
+                        </div>
+                    </div>
+                </a>
+                <!-- END: latest instagram posts -->
+            </div>
+            <!-- END: instagram footer -->
 
-        <!-- back to top md min-->
-        <div class="back-to-top-md d-none d-md-block">
-            <a href="#header">
+            <!-- back to top md min-->
+            <div class="back-to-top-md d-none d-md-block">
+                <a href="#header">
+                    <div class="to-top">
+                        <!-- <i class="material-icons icon-up-arrow">arrow_upward</i> -->
+                        <svg class="icon-up-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 34">
+                            <path d="M9 20l1 1h68v4l1 1h1l5-6v-1l-5-5h-1l-1 1v4H10l-1 1z"></path>
+                        </svg>
+                        <h3 class="to-top-text">Back to top</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- END: back to top -->
+
+            <div class="cf-quick-links"></div>
+        </section>
+        <!-- END: instagram footer section -->
+
+        <!-- back to top mobile-->
+        <div class="back-to-top-footer d-md-none">
+            <a id="toTop" href="#header">
                 <div class="to-top">
-                    <!-- <i class="material-icons icon-up-arrow">arrow_upward</i> -->
-                    <svg class="icon-up-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 34"><path d="M9 20l1 1h68v4l1 1h1l5-6v-1l-5-5h-1l-1 1v4H10l-1 1z"></path></svg>
+                    <svg class="icon-up-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 34">
+                        <path d="M9 20l1 1h68v4l1 1h1l5-6v-1l-5-5h-1l-1 1v4H10l-1 1z"></path>
+                    </svg>
                     <h3 class="to-top-text">Back to top</h3>
                 </div>
             </a>
         </div>
         <!-- END: back to top -->
 
-        <div class="cf-quick-links"></div>
-    </section>
-    <!-- END: instagram footer section -->
-
-    <!-- back to top mobile-->
-    <div class="back-to-top-footer d-md-none">
-        <a id="toTop" href="#header">
-            <div class="to-top">
-                <svg class="icon-up-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 34"><path d="M9 20l1 1h68v4l1 1h1l5-6v-1l-5-5h-1l-1 1v4H10l-1 1z"></path></svg>
-                <h3 class="to-top-text">Back to top</h3>
-            </div>
-        </a>
-    </div>
-    <!-- END: back to top -->
-
-    <!-- footer -->
-    <footer class="sect-subtitle">
-        <div class="footer-text">
+        <!-- footer -->
+        <footer class="sect-subtitle">
+            <div class="footer-text">
             Website by Munro Designs
         </div>
-    </footer>
+        </footer>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
-    <!-- snipcart key -->
-    <script async src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"></script>
+        <!-- snipcart key -->
+        <script async src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"></script>
 
-    {% if my_project.environment === 'production' %}
+        {% if my_project.environment === 'production' %}
 
-        <!-- live snipcart keys -->
-        <div id="snipcart" data-api-key="Y2FiNmVmYzYtYmNlYi00MDVmLTliZTAtNjkwYmZmNGE4ZGI0NjM3NDI0MTM5NjIwOTMwODgz" data-currency="gbp"></div>
-        <div id="snipcart" data-api-key="S_OWViMGRjMmUtMDUwZS00NDQ0LTg4ZTItNmU5OTljNDVlZDQ1NjM3NDI0MjEyNDAxMTI2NTQ3" data-currency="gbp"></div>
+            <!-- live snipcart keys -->
+            <div id="snipcart" data-api-key="Y2FiNmVmYzYtYmNlYi00MDVmLTliZTAtNjkwYmZmNGE4ZGI0NjM3NDI0MTM5NjIwOTMwODgz" data-currency="gbp"></div>
+            <div id="snipcart" data-api-key="S_OWViMGRjMmUtMDUwZS00NDQ0LTg4ZTItNmU5OTljNDVlZDQ1NjM3NDI0MjEyNDAxMTI2NTQ3" data-currency="gbp"></div>
 
-    {% else %}
+        {% else %}
 
-        <!-- Test Snipcart keys -->
-        <div id="snipcart" data-api-key="NjJkNmNjYzEtYmQxZC00NjU3LTlmYzItOTk0NjBmMzE0NmU3NjM3NDI0MTM5NjIwOTMwODgz" data-currency="gbp"></div>
+            <!-- Test Snipcart keys -->
+            <div id="snipcart" data-api-key="NjJkNmNjYzEtYmQxZC00NjU3LTlmYzItOTk0NjBmMzE0NmU3NjM3NDI0MTM5NjIwOTMwODgz" data-currency="gbp"></div>
 
-    {% endif %}
+        {% endif %}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!--  script -->
-    <script src="/static/js/main.js"></script>
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!--  script -->
+        <script src="/static/js/main.js"></script>
+    </body>
 </html>
