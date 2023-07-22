@@ -568,7 +568,7 @@ template {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .sect-title {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
@@ -11442,6 +11442,10 @@ input[type='checkbox'] {
   .signature-button a {
     font-size: .56em;
   }
+}
+
+.services-small {
+  font-size: 58%;
 }
 
 .contact-hero-container {
