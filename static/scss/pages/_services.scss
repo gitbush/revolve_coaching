@@ -967,16 +967,16 @@
     @media #{$breakpoint-lg}{
         width: 100%;
         height: auto;
-        grid-template-columns: auto 14em 3em 14em auto;
+        grid-template-columns: auto 14em 3em 14em 3em 14em auto;
     }
     @media #{$breakpoint-xl}{
         width: 85%;
-        grid-template-columns: auto 14em 3em 14em auto;
+        grid-template-columns: auto 14em 3em 14em 3em 14em auto;
     }
     @media #{$breakpoint-xxl}{
         width: 85%;
         height: auto;
-        grid-template-columns: auto 14em 4em 14em auto;
+        grid-template-columns: auto 14em 3em 14em 3em 14em auto;
     }
 }
 
@@ -1018,16 +1018,16 @@
     margin-bottom: 2em;
     @media #{$breakpoint-md}{
         margin-bottom: 0;
-        height: 8em;
+        height: auto;
     }
     @media #{$breakpoint-lg}{
-        height: 10em;
+        height: auto;
     }
     @media #{$breakpoint-xl}{
-        height: 9em;
+        height: auto;
     }
     @media #{$breakpoint-xxl}{
-        height: 9em;
+        height: auto;
     }
 }
 
@@ -1218,3 +1218,6 @@
     }
 }
 
+.services-small{
+    font-size: 58%;
+}
